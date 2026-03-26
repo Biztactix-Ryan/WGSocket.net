@@ -1,0 +1,5942 @@
+entries:
+- id: EPIC-WNE-1
+  title: Rust Native Crate Foundation
+  type: epic
+  status: draft
+  points: null
+  story_id: null
+  epic_id: null
+  tags: []
+- id: EPIC-WNE-2
+  title: WireGuard Configuration
+  type: epic
+  status: draft
+  points: null
+  story_id: null
+  epic_id: null
+  tags: []
+- id: EPIC-WNE-3
+  title: C FFI & Header Generation
+  type: epic
+  status: draft
+  points: null
+  story_id: null
+  epic_id: null
+  tags: []
+- id: EPIC-WNE-4
+  title: C# Interop Layer
+  type: epic
+  status: draft
+  points: null
+  story_id: null
+  epic_id: null
+  tags: []
+- id: EPIC-WNE-5
+  title: C# Public API (Socket-Compatible)
+  type: epic
+  status: draft
+  points: null
+  story_id: null
+  epic_id: null
+  tags: []
+- id: EPIC-WNE-6
+  title: Rust Unit & Integration Tests
+  type: epic
+  status: draft
+  points: null
+  story_id: null
+  epic_id: null
+  tags: []
+- id: EPIC-WNE-7
+  title: C# Unit Tests
+  type: epic
+  status: draft
+  points: null
+  story_id: null
+  epic_id: null
+  tags: []
+- id: EPIC-WNE-8
+  title: End-to-End Integration Tests
+  type: epic
+  status: draft
+  points: null
+  story_id: null
+  epic_id: null
+  tags: []
+- id: EPIC-WNE-9
+  title: Build, CI/CD & NuGet Packaging
+  type: epic
+  status: draft
+  points: null
+  story_id: null
+  epic_id: null
+  tags: []
+- id: EPIC-WNE-10
+  title: Security Hardening
+  type: epic
+  status: draft
+  points: null
+  story_id: null
+  epic_id: null
+  tags: []
+- id: EPIC-WNE-11
+  title: Samples & Documentation
+  type: epic
+  status: draft
+  points: null
+  story_id: null
+  epic_id: null
+  tags: []
+- id: US-WNE-1
+  title: Cargo project setup & dependency wiring
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-1
+  tags: []
+- id: US-WNE-2
+  title: WireGuard config data model
+  type: story
+  status: backlog
+  points: 2
+  story_id: null
+  epic_id: EPIC-WNE-2
+  tags: []
+- id: US-WNE-3
+  title: wg.conf file parser
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-2
+  tags: []
+- id: US-WNE-4
+  title: Config validation
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-2
+  tags: []
+- id: US-WNE-5
+  title: boringtun tunnel integration
+  type: story
+  status: backlog
+  points: 5
+  story_id: null
+  epic_id: EPIC-WNE-1
+  tags: []
+- id: US-WNE-6
+  title: Programmatic config builder
+  type: story
+  status: backlog
+  points: 2
+  story_id: null
+  epic_id: EPIC-WNE-2
+  tags: []
+- id: US-WNE-7
+  title: Error code definitions & conventions
+  type: story
+  status: backlog
+  points: 2
+  story_id: null
+  epic_id: EPIC-WNE-3
+  tags: []
+- id: US-WNE-8
+  title: smoltcp interface & socket management
+  type: story
+  status: backlog
+  points: 5
+  story_id: null
+  epic_id: EPIC-WNE-1
+  tags: []
+- id: US-WNE-9
+  title: LibraryImport P/Invoke declarations
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-4
+  tags: []
+- id: US-WNE-10
+  title: Safe handle wrappers
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-4
+  tags: []
+- id: US-WNE-11
+  title: Error code to exception mapping
+  type: story
+  status: backlog
+  points: 2
+  story_id: null
+  epic_id: EPIC-WNE-4
+  tags: []
+- id: US-WNE-12
+  title: Buffer marshalling utilities
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-4
+  tags: []
+- id: US-WNE-13
+  title: Native library loading and platform resolution
+  type: story
+  status: backlog
+  points: 2
+  story_id: null
+  epic_id: EPIC-WNE-4
+  tags: []
+- id: US-WNE-14
+  title: Device lifecycle FFI (wg_device_new / wg_device_free)
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-3
+  tags: []
+- id: US-WNE-15
+  title: Tunnel composition engine (tunnel.rs)
+  type: story
+  status: backlog
+  points: 8
+  story_id: null
+  epic_id: EPIC-WNE-1
+  tags: []
+- id: US-WNE-16
+  title: Connection FFI (wg_connect / wg_listen / wg_accept / wg_close)
+  type: story
+  status: backlog
+  points: 5
+  story_id: null
+  epic_id: EPIC-WNE-3
+  tags: []
+- id: US-WNE-17
+  title: WgConfig & WgPeer configuration models
+  type: story
+  status: backlog
+  points: 2
+  story_id: null
+  epic_id: EPIC-WNE-5
+  tags: []
+- id: US-WNE-18
+  title: Data transfer FFI (wg_send / wg_recv)
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-3
+  tags: []
+- id: US-WNE-19
+  title: Stats and diagnostics FFI
+  type: story
+  status: backlog
+  points: 2
+  story_id: null
+  epic_id: EPIC-WNE-3
+  tags: []
+- id: US-WNE-20
+  title: WgDevice tunnel lifecycle
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-5
+  tags: []
+- id: US-WNE-21
+  title: cbindgen header generation setup
+  type: story
+  status: backlog
+  points: 2
+  story_id: null
+  epic_id: EPIC-WNE-3
+  tags: []
+- id: US-WNE-22
+  title: WgSocket.Socket synchronous API
+  type: story
+  status: backlog
+  points: 5
+  story_id: null
+  epic_id: EPIC-WNE-5
+  tags: []
+- id: US-WNE-23
+  title: Config parsing unit tests
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-6
+  tags: []
+- id: US-WNE-24
+  title: WgSocket.Socket asynchronous API
+  type: story
+  status: backlog
+  points: 5
+  story_id: null
+  epic_id: EPIC-WNE-5
+  tags: []
+- id: US-WNE-25
+  title: Packet composition and crypto tests
+  type: story
+  status: backlog
+  points: 5
+  story_id: null
+  epic_id: EPIC-WNE-6
+  tags: []
+- id: US-WNE-26
+  title: WgSocket.NetworkStream wrapper
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-5
+  tags: []
+- id: US-WNE-27
+  title: smoltcp interface tests
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-6
+  tags: []
+- id: US-WNE-28
+  title: Poll loop & I/O thread
+  type: story
+  status: backlog
+  points: 5
+  story_id: null
+  epic_id: EPIC-WNE-1
+  tags: []
+- id: US-WNE-29
+  title: Socket properties & state management
+  type: story
+  status: backlog
+  points: 2
+  story_id: null
+  epic_id: EPIC-WNE-5
+  tags: []
+- id: US-WNE-30
+  title: Tunnel composition integration tests
+  type: story
+  status: backlog
+  points: 5
+  story_id: null
+  epic_id: EPIC-WNE-6
+  tags: []
+- id: US-WNE-31
+  title: Single-file import experience & namespace design
+  type: story
+  status: backlog
+  points: 1
+  story_id: null
+  epic_id: EPIC-WNE-5
+  tags: []
+- id: US-WNE-32
+  title: FFI boundary safety tests
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-6
+  tags: []
+- id: US-WNE-33
+  title: WgConfig & WgPeer model tests
+  type: story
+  status: backlog
+  points: 2
+  story_id: null
+  epic_id: EPIC-WNE-7
+  tags: []
+- id: US-WNE-34
+  title: Resource cleanup and leak tests
+  type: story
+  status: backlog
+  points: 2
+  story_id: null
+  epic_id: EPIC-WNE-6
+  tags: []
+- id: US-WNE-35
+  title: Device & handle management
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-1
+  tags: []
+- id: US-WNE-36
+  title: Integration test harness setup
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-8
+  tags: []
+- id: US-WNE-37
+  title: P/Invoke marshalling tests
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-7
+  tags: []
+- id: US-WNE-38
+  title: TCP echo roundtrip test
+  type: story
+  status: backlog
+  points: 5
+  story_id: null
+  epic_id: EPIC-WNE-8
+  tags: []
+- id: US-WNE-39
+  title: Bidirectional concurrent data transfer
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-8
+  tags: []
+- id: US-WNE-40
+  title: Multi-peer topology test
+  type: story
+  status: backlog
+  points: 5
+  story_id: null
+  epic_id: EPIC-WNE-8
+  tags: []
+- id: US-WNE-41
+  title: AllowedIPs enforcement test
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-8
+  tags: []
+- id: US-WNE-42
+  title: Solution & project structure setup
+  type: story
+  status: backlog
+  points: 2
+  story_id: null
+  epic_id: EPIC-WNE-9
+  tags: []
+- id: US-WNE-43
+  title: Handshake and rekey verification
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-8
+  tags: []
+- id: US-WNE-44
+  title: Connection lifecycle and error handling tests
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-8
+  tags: []
+- id: US-WNE-45
+  title: Rust cross-compilation setup
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-9
+  tags: []
+- id: US-WNE-46
+  title: Safe handle lifecycle tests
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-7
+  tags: []
+- id: US-WNE-47
+  title: Performance and throughput benchmarks
+  type: story
+  status: backlog
+  points: 5
+  story_id: null
+  epic_id: EPIC-WNE-8
+  tags: []
+- id: US-WNE-48
+  title: GitHub Actions CI pipeline
+  type: story
+  status: backlog
+  points: 5
+  story_id: null
+  epic_id: EPIC-WNE-9
+  tags: []
+- id: US-WNE-49
+  title: External WireGuard peer interop
+  type: story
+  status: backlog
+  points: 5
+  story_id: null
+  epic_id: EPIC-WNE-8
+  tags: []
+- id: US-WNE-50
+  title: NuGet package configuration
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-9
+  tags: []
+- id: US-WNE-51
+  title: Key material zeroization
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-10
+  tags: []
+- id: US-WNE-52
+  title: cbindgen CI staleness check
+  type: story
+  status: backlog
+  points: 2
+  story_id: null
+  epic_id: EPIC-WNE-9
+  tags: []
+- id: US-WNE-53
+  title: Release & publish workflow
+  type: story
+  status: backlog
+  points: 2
+  story_id: null
+  epic_id: EPIC-WNE-9
+  tags: []
+- id: US-WNE-54
+  title: Exception mapping tests
+  type: story
+  status: backlog
+  points: 2
+  story_id: null
+  epic_id: EPIC-WNE-7
+  tags: []
+- id: US-WNE-55
+  title: EchoServer sample application
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-11
+  tags: []
+- id: US-WNE-56
+  title: ChatClient sample application
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-11
+  tags: []
+- id: US-WNE-57
+  title: README and quick-start guide
+  type: story
+  status: backlog
+  points: 2
+  story_id: null
+  epic_id: EPIC-WNE-11
+  tags: []
+- id: US-WNE-58
+  title: XML doc comments for IntelliSense
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-11
+  tags: []
+- id: US-WNE-59
+  title: No-log enforcement for secrets
+  type: story
+  status: backlog
+  points: 2
+  story_id: null
+  epic_id: EPIC-WNE-10
+  tags: []
+- id: US-WNE-60
+  title: Socket API surface tests
+  type: story
+  status: backlog
+  points: 5
+  story_id: null
+  epic_id: EPIC-WNE-7
+  tags: []
+- id: US-WNE-61
+  title: API reference documentation
+  type: story
+  status: backlog
+  points: 2
+  story_id: null
+  epic_id: EPIC-WNE-11
+  tags: []
+- id: US-WNE-62
+  title: FFI fuzz testing
+  type: story
+  status: backlog
+  points: 5
+  story_id: null
+  epic_id: EPIC-WNE-10
+  tags: []
+- id: US-WNE-63
+  title: NetworkStream tests
+  type: story
+  status: backlog
+  points: 2
+  story_id: null
+  epic_id: EPIC-WNE-7
+  tags: []
+- id: US-WNE-64
+  title: WgDevice lifecycle tests
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-7
+  tags: []
+- id: US-WNE-65
+  title: Dependency security scanning
+  type: story
+  status: backlog
+  points: 2
+  story_id: null
+  epic_id: EPIC-WNE-10
+  tags: []
+- id: US-WNE-66
+  title: Safe memory handling at FFI boundary
+  type: story
+  status: backlog
+  points: 3
+  story_id: null
+  epic_id: EPIC-WNE-10
+  tags: []
+- id: US-WNE-67
+  title: Supply chain hardening
+  type: story
+  status: backlog
+  points: 2
+  story_id: null
+  epic_id: EPIC-WNE-10
+  tags: []
+- id: US-WNE-1-1
+  title: 'Test: Cargo.toml defines cdylib crate type with boringtun and smoltcp dependencies'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-1
+  epic_id: null
+  tags: []
+- id: US-WNE-1-2
+  title: 'Test: cargo build produces platform-appropriate shared library (.so/.dll/.dylib)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-1
+  epic_id: null
+  tags: []
+- id: US-WNE-1-3
+  title: 'Test: cargo test runs empty test suite successfully'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-1
+  epic_id: null
+  tags: []
+- id: US-WNE-1-4
+  title: 'Test: Crate compiles on Linux and macOS and Windows targets'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-1
+  epic_id: null
+  tags: []
+- id: US-WNE-2-1
+  title: 'Test: WgConfig struct with private_key listen_port and address fields'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-2
+  epic_id: null
+  tags: []
+- id: US-WNE-2-2
+  title: 'Test: WgPeerConfig struct with public_key endpoint allowed_ips preshared_key
+    and persistent_keepalive fields'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-2
+  epic_id: null
+  tags: []
+- id: US-WNE-2-3
+  title: 'Test: All key fields use fixed-size byte arrays ([u8; 32]) not Strings'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-2
+  epic_id: null
+  tags: []
+- id: US-WNE-2-4
+  title: 'Test: Config structs derive Clone and Debug with key fields redacted in
+    Debug output'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-2
+  epic_id: null
+  tags: []
+- id: US-WNE-3-1
+  title: 'Test: Parses [Interface] section including PrivateKey ListenPort Address
+    and DNS fields'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-3
+  epic_id: null
+  tags: []
+- id: US-WNE-3-2
+  title: 'Test: Parses [Peer] sections including PublicKey Endpoint AllowedIPs PresharedKey
+    and PersistentKeepalive fields'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-3
+  epic_id: null
+  tags: []
+- id: US-WNE-3-3
+  title: 'Test: Handles multiple [Peer] sections in a single config file'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-3
+  epic_id: null
+  tags: []
+- id: US-WNE-3-4
+  title: 'Test: Ignores comments (# lines) and blank lines'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-3
+  epic_id: null
+  tags: []
+- id: US-WNE-3-5
+  title: 'Test: Returns descriptive error messages for malformed input including line
+    numbers'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-3
+  epic_id: null
+  tags: []
+- id: US-WNE-1-5
+  title: Initialize Cargo project with cdylib crate type
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-1
+  epic_id: null
+  tags: []
+- id: US-WNE-1-6
+  title: Add boringtun and smoltcp dependencies with feature flags
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-1
+  epic_id: null
+  tags: []
+- id: US-WNE-1-7
+  title: Add cross-platform build configuration and CI essentials
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-1
+  epic_id: null
+  tags: []
+- id: US-WNE-1-8
+  title: Verify cdylib builds and test suite runs on all targets
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-1
+  epic_id: null
+  tags: []
+- id: US-WNE-4-1
+  title: 'Test: Validates base64 key format and decoded length is exactly 32 bytes
+    for Curve25519 keys'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-4
+  epic_id: null
+  tags: []
+- id: US-WNE-4-2
+  title: 'Test: Validates CIDR notation in AllowedIPs (valid IP prefix and mask length)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-4
+  epic_id: null
+  tags: []
+- id: US-WNE-4-3
+  title: 'Test: Validates endpoint format (IP:port or hostname:port)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-4
+  epic_id: null
+  tags: []
+- id: US-WNE-4-4
+  title: 'Test: Rejects configs missing required fields (PrivateKey and at least one
+    peer with PublicKey)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-4
+  epic_id: null
+  tags: []
+- id: US-WNE-4-5
+  title: 'Test: Validates listen port range (1-65535)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-4
+  epic_id: null
+  tags: []
+- id: US-WNE-5-1
+  title: 'Test: Can create a boringtun Tunn instance from a private key and peer config'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-5
+  epic_id: null
+  tags: []
+- id: US-WNE-5-2
+  title: 'Test: Can encrypt plaintext IP packets into WireGuard transport messages'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-5
+  epic_id: null
+  tags: []
+- id: US-WNE-5-3
+  title: 'Test: Can decrypt incoming WireGuard packets to plaintext IP packets'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-5
+  epic_id: null
+  tags: []
+- id: US-WNE-5-4
+  title: 'Test: Handshake initiation and response work correctly'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-5
+  epic_id: null
+  tags: []
+- id: US-WNE-5-5
+  title: 'Test: Timer events (rekey and keepalive) are handled'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-5
+  epic_id: null
+  tags: []
+- id: US-WNE-6-1
+  title: 'Test: Builder pattern with fluent API (ConfigBuilder::new().private_key(...).peer(...).build())'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-6
+  epic_id: null
+  tags: []
+- id: US-WNE-6-2
+  title: 'Test: Accepts raw byte slices for keys (not just base64 strings)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-6
+  epic_id: null
+  tags: []
+- id: US-WNE-6-3
+  title: 'Test: Validates on build() call reusing the config validation logic'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-6
+  epic_id: null
+  tags: []
+- id: US-WNE-6-4
+  title: 'Test: Can construct config equivalent to any valid wg.conf file'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-6
+  epic_id: null
+  tags: []
+- id: US-WNE-7-1
+  title: 'Test: Enum or constants for all error codes (WG_OK=0'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-7
+  epic_id: null
+  tags: []
+- id: US-WNE-7-2
+  title: 'Test: WG_ERR_INVALID_HANDLE'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-7
+  epic_id: null
+  tags: []
+- id: US-WNE-7-3
+  title: 'Test: WG_ERR_INVALID_CONFIG'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-7
+  epic_id: null
+  tags: []
+- id: US-WNE-7-4
+  title: 'Test: WG_ERR_CONNECT_FAILED'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-7
+  epic_id: null
+  tags: []
+- id: US-WNE-7-5
+  title: 'Test: WG_ERR_WOULD_BLOCK'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-7
+  epic_id: null
+  tags: []
+- id: US-WNE-7-6
+  title: 'Test: WG_ERR_CLOSED'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-7
+  epic_id: null
+  tags: []
+- id: US-WNE-7-7
+  title: 'Test: WG_ERR_BUFFER_TOO_SMALL etc.) with negative integer values'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-7
+  epic_id: null
+  tags: []
+- id: US-WNE-7-8
+  title: 'Test: Error codes are negative integers so zero and positive values can
+    represent success/data'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-7
+  epic_id: null
+  tags: []
+- id: US-WNE-7-9
+  title: 'Test: wg_last_error() returns a null-terminated string describing the most
+    recent error on the calling thread'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-7
+  epic_id: null
+  tags: []
+- id: US-WNE-7-10
+  title: 'Test: Last-error uses thread-local storage so concurrent callers do not
+    clobber each other'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-7
+  epic_id: null
+  tags: []
+- id: US-WNE-5-6
+  title: Implement Tunn instance creation from private key and peer config
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-5
+  epic_id: null
+  tags: []
+- id: US-WNE-5-7
+  title: Implement encrypt and decrypt paths through boringtun
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-5
+  epic_id: null
+  tags: []
+- id: US-WNE-5-8
+  title: Implement handshake initiation and timer event handling
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-5
+  epic_id: null
+  tags: []
+- id: US-WNE-5-9
+  title: Test boringtun encrypt/decrypt roundtrip with two tunnel instances
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-5
+  epic_id: null
+  tags: []
+- id: US-WNE-2-5
+  title: Define WgConfig and WgPeerConfig structs
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-2
+  epic_id: null
+  tags: []
+- id: US-WNE-2-6
+  title: Implement custom Debug for key redaction
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-2
+  epic_id: null
+  tags: []
+- id: US-WNE-2-7
+  title: Define ConfigError enum
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-2
+  epic_id: null
+  tags: []
+- id: US-WNE-2-8
+  title: Tests for config data model
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-2
+  epic_id: null
+  tags: []
+- id: US-WNE-8-1
+  title: 'Test: Can create smoltcp Interface with a virtual device'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-8
+  epic_id: null
+  tags: []
+- id: US-WNE-8-2
+  title: 'Test: Can open TCP and UDP sockets on the interface'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-8
+  epic_id: null
+  tags: []
+- id: US-WNE-8-3
+  title: 'Test: Can bind/listen/connect/accept TCP sockets'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-8
+  epic_id: null
+  tags: []
+- id: US-WNE-8-4
+  title: 'Test: Socket buffers are correctly sized and configurable'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-8
+  epic_id: null
+  tags: []
+- id: US-WNE-8-5
+  title: 'Test: IP address and routing table configured from WireGuard AllowedIPs'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-8
+  epic_id: null
+  tags: []
+- id: US-WNE-9-1
+  title: 'Test: All LibraryImport declarations resolve correctly'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-9
+  epic_id: null
+  tags: []
+- id: US-WNE-9-2
+  title: 'Test: Marshalling attributes are correct for all P/Invoke parameters'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-9
+  epic_id: null
+  tags: []
+- id: US-WNE-9-3
+  title: 'Test: AOT source generator produces no warnings'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-9
+  epic_id: null
+  tags: []
+- id: US-WNE-9-4
+  title: 'Test: No legacy DllImport usage in codebase'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-9
+  epic_id: null
+  tags: []
+- id: US-WNE-3-6
+  title: Implement INI-style line tokenizer
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-3
+  epic_id: null
+  tags: []
+- id: US-WNE-3-7
+  title: Implement Interface section parser
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-3
+  epic_id: null
+  tags: []
+- id: US-WNE-3-8
+  title: Implement Peer section parser
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-3
+  epic_id: null
+  tags: []
+- id: US-WNE-3-9
+  title: Implement WgConfig::from_str and from_file
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-3
+  epic_id: null
+  tags: []
+- id: US-WNE-3-10
+  title: Tests for wg.conf parser
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-3
+  epic_id: null
+  tags: []
+- id: US-WNE-10-1
+  title: 'Test: WgDeviceHandle lifecycle and IsInvalid'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-10
+  epic_id: null
+  tags: []
+- id: US-WNE-10-2
+  title: 'Test: WgSocketHandle lifecycle and platform-conditional IsInvalid'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-10
+  epic_id: null
+  tags: []
+- id: US-WNE-10-3
+  title: 'Test: ReleaseHandle calls correct native free function'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-10
+  epic_id: null
+  tags: []
+- id: US-WNE-10-4
+  title: 'Test: ObjectDisposedException on use-after-dispose'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-10
+  epic_id: null
+  tags: []
+- id: US-WNE-10-5
+  title: 'Test: CriticalFinalizerObject cleanup guarantee'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-10
+  epic_id: null
+  tags: []
+- id: US-WNE-11-1
+  title: 'Test: WgException hierarchy structure and ErrorCode property'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-11
+  epic_id: null
+  tags: []
+- id: US-WNE-11-2
+  title: 'Test: Correct exception subclass thrown for each error code'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-11
+  epic_id: null
+  tags: []
+- id: US-WNE-11-3
+  title: 'Test: Native error string from wg_last_error included in exception message'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-11
+  epic_id: null
+  tags: []
+- id: US-WNE-11-4
+  title: 'Test: ThrowIfError returns cleanly on success codes'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-11
+  epic_id: null
+  tags: []
+- id: US-WNE-7-11
+  title: Define WgError enum and negative integer constants in lib.rs
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-7
+  epic_id: null
+  tags: []
+- id: US-WNE-7-12
+  title: Implement wg_last_error() with thread-local storage
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-7
+  epic_id: null
+  tags: []
+- id: US-WNE-7-13
+  title: Test error code values and wg_last_error thread safety
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-7
+  epic_id: null
+  tags: []
+- id: US-WNE-8-6
+  title: Implement smoltcp virtual device and Interface creation
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-8
+  epic_id: null
+  tags: []
+- id: US-WNE-8-7
+  title: Implement TCP and UDP socket creation and lifecycle
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-8
+  epic_id: null
+  tags: []
+- id: US-WNE-8-8
+  title: Implement IP address and route configuration from AllowedIPs
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-8
+  epic_id: null
+  tags: []
+- id: US-WNE-8-9
+  title: Test smoltcp socket operations with loopback virtual device
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-8
+  epic_id: null
+  tags: []
+- id: US-WNE-12-1
+  title: 'Test: Send operations accept ReadOnlySpan and pin correctly'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-12
+  epic_id: null
+  tags: []
+- id: US-WNE-12-2
+  title: 'Test: Receive operations write to Span and report actual length'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-12
+  epic_id: null
+  tags: []
+- id: US-WNE-12-3
+  title: 'Test: Buffer pinning prevents GC relocation during P/Invoke'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-12
+  epic_id: null
+  tags: []
+- id: US-WNE-12-4
+  title: 'Test: UTF-8 config string marshalling with null termination'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-12
+  epic_id: null
+  tags: []
+- id: US-WNE-12-5
+  title: 'Test: Key material validated as 32-byte ReadOnlySpan and never string-allocated'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-12
+  epic_id: null
+  tags: []
+- id: US-WNE-13-1
+  title: 'Test: Library resolves from runtimes/{rid}/native/ path'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-13
+  epic_id: null
+  tags: []
+- id: US-WNE-13-2
+  title: 'Test: DllNotFoundException contains helpful diagnostic message'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-13
+  epic_id: null
+  tags: []
+- id: US-WNE-13-3
+  title: 'Test: Platform RID resolution covers all supported targets'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-13
+  epic_id: null
+  tags: []
+- id: US-WNE-13-4
+  title: 'Test: Custom resolver falls back to default when custom probing fails'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-13
+  epic_id: null
+  tags: []
+- id: US-WNE-14-1
+  title: 'Test: wg_device_new accepts a null-terminated config string (wg.conf format)
+    and returns a positive handle on success...'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-14
+  epic_id: null
+  tags: []
+- id: US-WNE-14-2
+  title: 'Test: wg_device_new accepts a WgConfig struct pointer as an alternative
+    to string config'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-14
+  epic_id: null
+  tags: []
+- id: US-WNE-14-3
+  title: 'Test: wg_device_free releases all resources associated with the handle'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-14
+  epic_id: null
+  tags: []
+- id: US-WNE-14-4
+  title: 'Test: Double-free is safe -- returns WG_ERR_INVALID_HANDLE without crashing
+    or UB'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-14
+  epic_id: null
+  tags: []
+- id: US-WNE-14-5
+  title: 'Test: Config parsing errors are reported via return code and retrievable
+    via wg_last_error'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-14
+  epic_id: null
+  tags: []
+- id: US-WNE-4-6
+  title: Implement key validation (base64 + length)
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-4
+  epic_id: null
+  tags: []
+- id: US-WNE-4-7
+  title: Implement CIDR and endpoint validation
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-4
+  epic_id: null
+  tags: []
+- id: US-WNE-4-8
+  title: Implement full config validation pass
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-4
+  epic_id: null
+  tags: []
+- id: US-WNE-4-9
+  title: Tests for config validation
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-4
+  epic_id: null
+  tags: []
+- id: US-WNE-15-1
+  title: 'Test: Outbound path works: smoltcp IP packet -> boringtun encrypt -> UDP
+    send'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-15
+  epic_id: null
+  tags: []
+- id: US-WNE-15-2
+  title: 'Test: Inbound path works: UDP recv -> boringtun decrypt -> smoltcp process'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-15
+  epic_id: null
+  tags: []
+- id: US-WNE-15-3
+  title: 'Test: Handshake packets are handled correctly and not fed to smoltcp'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-15
+  epic_id: null
+  tags: []
+- id: US-WNE-15-4
+  title: 'Test: Timer-driven events (keepalive and rekey) fire correctly'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-15
+  epic_id: null
+  tags: []
+- id: US-WNE-15-5
+  title: 'Test: The composition handles both TCP and UDP socket types'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-15
+  epic_id: null
+  tags: []
+- id: US-WNE-16-1
+  title: 'Test: wg_connect initiates a TCP connection to a peer tunnel address and
+    port and returns a socket fd or negative err...'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-16
+  epic_id: null
+  tags: []
+- id: US-WNE-16-2
+  title: 'Test: wg_listen binds and listens on a tunnel address and port and returns
+    a listener fd or negative error code'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-16
+  epic_id: null
+  tags: []
+- id: US-WNE-16-3
+  title: 'Test: wg_accept blocks or polls for an incoming connection on a listener
+    fd and returns a new socket fd or negative e...'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-16
+  epic_id: null
+  tags: []
+- id: US-WNE-16-4
+  title: 'Test: wg_close closes a socket or listener fd and returns WG_OK or negative
+    error code'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-16
+  epic_id: null
+  tags: []
+- id: US-WNE-16-5
+  title: 'Test: All four functions validate the device handle and fd parameters returning
+    WG_ERR_INVALID_HANDLE for bad handles'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-16
+  epic_id: null
+  tags: []
+- id: US-WNE-17-1
+  title: 'Test: WgConfig class with PrivateKey (byte[]) and ListenPort and Address
+    and Peers collection'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-17
+  epic_id: null
+  tags: []
+- id: US-WNE-17-2
+  title: 'Test: WgPeer class with PublicKey and Endpoint and AllowedIPs and PresharedKey
+    and PersistentKeepalive'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-17
+  epic_id: null
+  tags: []
+- id: US-WNE-17-3
+  title: 'Test: Validation on construction rejects invalid keys/ports/addresses'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-17
+  epic_id: null
+  tags: []
+- id: US-WNE-17-4
+  title: 'Test: ToString() redacts key material to prevent accidental logging'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-17
+  epic_id: null
+  tags: []
+- id: US-WNE-17-5
+  title: 'Test: Builder or object initializer pattern for ergonomic construction'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-17
+  epic_id: null
+  tags: []
+- id: US-WNE-18-1
+  title: 'Test: wg_send copies data from caller buffer into smoltcp socket send buffer
+    and returns bytes actually sent'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-18
+  epic_id: null
+  tags: []
+- id: US-WNE-18-2
+  title: 'Test: wg_recv copies data from smoltcp socket receive buffer to caller buffer
+    and returns bytes actually received'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-18
+  epic_id: null
+  tags: []
+- id: US-WNE-18-3
+  title: 'Test: Both functions handle partial transfers by returning the actual byte
+    count transferred'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-18
+  epic_id: null
+  tags: []
+- id: US-WNE-18-4
+  title: 'Test: WG_ERR_WOULD_BLOCK is returned when the socket is not ready for send
+    or receive'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-18
+  epic_id: null
+  tags: []
+- id: US-WNE-18-5
+  title: 'Test: Null buffer pointer or zero length is handled safely returning appropriate
+    error code'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-18
+  epic_id: null
+  tags: []
+- id: US-WNE-6-5
+  title: Implement ConfigBuilder struct
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-6
+  epic_id: null
+  tags: []
+- id: US-WNE-6-6
+  title: Implement PeerBuilder and build() finalization
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-6
+  epic_id: null
+  tags: []
+- id: US-WNE-6-7
+  title: Tests for config builder
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-6
+  epic_id: null
+  tags: []
+- id: US-WNE-19-1
+  title: 'Test: wg_get_stats populates a caller-provided WgStats struct with tunnel
+    statistics including handshake age and byte...'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-19
+  epic_id: null
+  tags: []
+- id: US-WNE-19-2
+  title: 'Test: Stats struct is C-compatible with repr(C) layout'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-19
+  epic_id: null
+  tags: []
+- id: US-WNE-19-3
+  title: 'Test: wg_last_error returns a null-terminated error string for the most
+    recent error on the calling thread (shared im...'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-19
+  epic_id: null
+  tags: []
+- id: US-WNE-20-1
+  title: 'Test: WgDevice(WgConfig config) creates tunnel via native FFI layer'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-20
+  epic_id: null
+  tags: []
+- id: US-WNE-20-2
+  title: 'Test: Implements IDisposable and IAsyncDisposable for deterministic cleanup'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-20
+  epic_id: null
+  tags: []
+- id: US-WNE-20-3
+  title: 'Test: CreateSocket() factory returns new WgSocket.Socket bound to this device'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-20
+  epic_id: null
+  tags: []
+- id: US-WNE-20-4
+  title: 'Test: GetStats() returns tunnel health metrics (bytes tx/rx and handshake
+    time and peer status)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-20
+  epic_id: null
+  tags: []
+- id: US-WNE-20-5
+  title: 'Test: Ref-counting prevents disposal while sockets are still live'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-20
+  epic_id: null
+  tags: []
+- id: US-WNE-20-6
+  title: 'Test: Finalizer as safety net logs warning if Dispose was not called'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-20
+  epic_id: null
+  tags: []
+- id: US-WNE-9-5
+  title: Declare device lifecycle P/Invoke methods
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-9
+  epic_id: null
+  tags: []
+- id: US-WNE-9-6
+  title: Declare socket I/O P/Invoke methods
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-9
+  epic_id: null
+  tags: []
+- id: US-WNE-9-7
+  title: Declare peer and key management P/Invoke methods
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-9
+  epic_id: null
+  tags: []
+- id: US-WNE-9-8
+  title: Verify AOT source generator compilation
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-9
+  epic_id: null
+  tags: []
+- id: US-WNE-21-1
+  title: 'Test: cbindgen.toml is configured for C-style header output with appropriate
+    include guard and language setting'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-21
+  epic_id: null
+  tags: []
+- id: US-WNE-21-2
+  title: 'Test: build.rs invokes cbindgen to generate wgsocket.h during cargo build'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-21
+  epic_id: null
+  tags: []
+- id: US-WNE-21-3
+  title: 'Test: Generated header includes all extern C function declarations and error
+    code constants and struct definitions'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-21
+  epic_id: null
+  tags: []
+- id: US-WNE-21-4
+  title: 'Test: wgsocket.h is checked into the repository at a well-known path (include/wgsocket.h)'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-21
+  epic_id: null
+  tags: []
+- id: US-WNE-21-5
+  title: 'Test: CI step can diff-check the committed header against a freshly generated
+    one to detect staleness'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-21
+  epic_id: null
+  tags: []
+- id: US-WNE-22-1
+  title: 'Test: Connect(IPEndPoint) initiates TCP connection through the WireGuard
+    tunnel'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-22
+  epic_id: null
+  tags: []
+- id: US-WNE-22-2
+  title: 'Test: Bind(IPEndPoint) binds to a tunnel address'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-22
+  epic_id: null
+  tags: []
+- id: US-WNE-22-3
+  title: 'Test: Listen(int backlog) starts listening for incoming connections'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-22
+  epic_id: null
+  tags: []
+- id: US-WNE-22-4
+  title: 'Test: Accept() returns new Socket for each accepted connection'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-22
+  epic_id: null
+  tags: []
+- id: US-WNE-22-5
+  title: 'Test: Send(ReadOnlySpan<byte>) sends data and returns bytes sent'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-22
+  epic_id: null
+  tags: []
+- id: US-WNE-22-6
+  title: 'Test: Receive(Span<byte>) receives data and returns bytes received'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-22
+  epic_id: null
+  tags: []
+- id: US-WNE-22-7
+  title: 'Test: Close() and Dispose() release native and managed resources'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-22
+  epic_id: null
+  tags: []
+- id: US-WNE-22-8
+  title: 'Test: Method signatures match System.Net.Sockets.Socket as closely as possible'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-22
+  epic_id: null
+  tags: []
+- id: US-WNE-23-1
+  title: 'Test: Test valid wg.conf with single peer'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-23
+  epic_id: null
+  tags: []
+- id: US-WNE-23-2
+  title: 'Test: Test valid wg.conf with multiple peers'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-23
+  epic_id: null
+  tags: []
+- id: US-WNE-23-3
+  title: 'Test: Test all optional fields (PresharedKey PersistentKeepalive DNS)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-23
+  epic_id: null
+  tags: []
+- id: US-WNE-23-4
+  title: 'Test: Test malformed base64 keys (wrong length and invalid chars)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-23
+  epic_id: null
+  tags: []
+- id: US-WNE-23-5
+  title: 'Test: Test invalid CIDR (missing prefix and out of range)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-23
+  epic_id: null
+  tags: []
+- id: US-WNE-23-6
+  title: 'Test: Test malformed endpoints'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-23
+  epic_id: null
+  tags: []
+- id: US-WNE-23-7
+  title: 'Test: Test missing required fields'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-23
+  epic_id: null
+  tags: []
+- id: US-WNE-23-8
+  title: 'Test: Test comment and whitespace handling'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-23
+  epic_id: null
+  tags: []
+- id: US-WNE-23-9
+  title: 'Test: Test config builder produces equivalent output'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-23
+  epic_id: null
+  tags: []
+- id: US-WNE-15-6
+  title: Implement outbound packet path (smoltcp -> boringtun -> UDP)
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-15
+  epic_id: null
+  tags: []
+- id: US-WNE-15-7
+  title: Implement inbound packet path (UDP -> boringtun -> smoltcp)
+  type: task
+  status: todo
+  points: 3
+  story_id: US-WNE-15
+  epic_id: null
+  tags: []
+- id: US-WNE-15-8
+  title: Implement handshake packet routing and timer integration
+  type: task
+  status: todo
+  points: 3
+  story_id: US-WNE-15
+  epic_id: null
+  tags: []
+- id: US-WNE-15-9
+  title: Test full outbound and inbound packet flow through composition engine
+  type: task
+  status: todo
+  points: 3
+  story_id: US-WNE-15
+  epic_id: null
+  tags: []
+- id: US-WNE-10-6
+  title: Implement WgDeviceHandle SafeHandle subclass
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-10
+  epic_id: null
+  tags: []
+- id: US-WNE-10-7
+  title: Implement WgSocketHandle SafeHandle subclass
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-10
+  epic_id: null
+  tags: []
+- id: US-WNE-10-8
+  title: Wire SafeHandles into NativeMethods P/Invoke signatures
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-10
+  epic_id: null
+  tags: []
+- id: US-WNE-24-1
+  title: 'Test: ConnectAsync(IPEndPoint and CancellationToken) returns ValueTask'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-24
+  epic_id: null
+  tags: []
+- id: US-WNE-24-2
+  title: 'Test: AcceptAsync(CancellationToken) returns ValueTask<Socket>'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-24
+  epic_id: null
+  tags: []
+- id: US-WNE-24-3
+  title: 'Test: SendAsync(ReadOnlyMemory<byte> and CancellationToken) returns ValueTask<int>'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-24
+  epic_id: null
+  tags: []
+- id: US-WNE-24-4
+  title: 'Test: ReceiveAsync(Memory<byte> and CancellationToken) returns ValueTask<int>'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-24
+  epic_id: null
+  tags: []
+- id: US-WNE-24-5
+  title: 'Test: All async methods honor CancellationToken for cooperative cancellation'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-24
+  epic_id: null
+  tags: []
+- id: US-WNE-24-6
+  title: 'Test: Async methods do not block threadpool threads (truly async via native
+    callbacks)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-24
+  epic_id: null
+  tags: []
+- id: US-WNE-25-1
+  title: 'Test: Test boringtun encrypt produces valid WireGuard transport messages'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-25
+  epic_id: null
+  tags: []
+- id: US-WNE-25-2
+  title: 'Test: Test boringtun decrypt recovers original plaintext'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-25
+  epic_id: null
+  tags: []
+- id: US-WNE-25-3
+  title: 'Test: Test encrypt-then-decrypt roundtrip preserves data'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-25
+  epic_id: null
+  tags: []
+- id: US-WNE-25-4
+  title: 'Test: Test handshake initiation message format'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-25
+  epic_id: null
+  tags: []
+- id: US-WNE-25-5
+  title: 'Test: Test handshake response message format'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-25
+  epic_id: null
+  tags: []
+- id: US-WNE-25-6
+  title: 'Test: Test anti-replay (duplicate nonce rejected)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-25
+  epic_id: null
+  tags: []
+- id: US-WNE-25-7
+  title: 'Test: Test timer-driven rekey produces new session'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-25
+  epic_id: null
+  tags: []
+- id: US-WNE-25-8
+  title: 'Test: Test keepalive packets generated correctly'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-25
+  epic_id: null
+  tags: []
+- id: US-WNE-26-1
+  title: 'Test: NetworkStream(Socket socket) constructor wraps a WgSocket.Socket'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-26
+  epic_id: null
+  tags: []
+- id: US-WNE-26-2
+  title: 'Test: Inherits from System.IO.Stream'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-26
+  epic_id: null
+  tags: []
+- id: US-WNE-26-3
+  title: 'Test: Read/Write/ReadAsync/WriteAsync delegate to underlying socket Send/Receive
+    methods'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-26
+  epic_id: null
+  tags: []
+- id: US-WNE-26-4
+  title: 'Test: CanRead/CanWrite/CanSeek report correctly (CanSeek is false)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-26
+  epic_id: null
+  tags: []
+- id: US-WNE-26-5
+  title: 'Test: Disposing NetworkStream optionally disposes underlying socket (ownsSocket
+    parameter)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-26
+  epic_id: null
+  tags: []
+- id: US-WNE-26-6
+  title: 'Test: Compatible with StreamReader/StreamWriter and ASP.NET Core and HttpClient'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-26
+  epic_id: null
+  tags: []
+- id: US-WNE-27-1
+  title: 'Test: Test TCP socket open/bind/listen/accept on smoltcp interface'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-27
+  epic_id: null
+  tags: []
+- id: US-WNE-27-2
+  title: 'Test: Test TCP connect to listening socket (loopback)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-27
+  epic_id: null
+  tags: []
+- id: US-WNE-27-3
+  title: 'Test: Test data send/receive through smoltcp TCP'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-27
+  epic_id: null
+  tags: []
+- id: US-WNE-27-4
+  title: 'Test: Test UDP socket send/receive'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-27
+  epic_id: null
+  tags: []
+- id: US-WNE-27-5
+  title: 'Test: Test socket buffer sizing'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-27
+  epic_id: null
+  tags: []
+- id: US-WNE-27-6
+  title: 'Test: Test multiple concurrent sockets on same interface'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-27
+  epic_id: null
+  tags: []
+- id: US-WNE-27-7
+  title: 'Test: Test socket close and resource cleanup'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-27
+  epic_id: null
+  tags: []
+- id: US-WNE-11-5
+  title: Define WgException hierarchy
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-11
+  epic_id: null
+  tags: []
+- id: US-WNE-11-6
+  title: Implement ThrowIfError helper and wg_last_error integration
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-11
+  epic_id: null
+  tags: []
+- id: US-WNE-28-1
+  title: 'Test: Each WgDevice spawns a dedicated I/O thread'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-28
+  epic_id: null
+  tags: []
+- id: US-WNE-28-2
+  title: 'Test: Poll loop checks real UDP socket for incoming packets using non-blocking
+    I/O'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-28
+  epic_id: null
+  tags: []
+- id: US-WNE-28-3
+  title: 'Test: Poll loop drives smoltcp timers and outbound packet processing'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-28
+  epic_id: null
+  tags: []
+- id: US-WNE-28-4
+  title: 'Test: Thread shuts down cleanly when device is dropped'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-28
+  epic_id: null
+  tags: []
+- id: US-WNE-28-5
+  title: 'Test: Application threads interact via smoltcp socket buffers with thread-safe
+    access'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-28
+  epic_id: null
+  tags: []
+- id: US-WNE-29-1
+  title: 'Test: Connected property reflects current connection state'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-29
+  epic_id: null
+  tags: []
+- id: US-WNE-29-2
+  title: 'Test: LocalEndPoint and RemoteEndPoint properties return correct IPEndPoints'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-29
+  epic_id: null
+  tags: []
+- id: US-WNE-29-3
+  title: 'Test: Available property reports bytes ready to read'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-29
+  epic_id: null
+  tags: []
+- id: US-WNE-29-4
+  title: 'Test: SocketType and ProtocolType properties expose socket configuration'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-29
+  epic_id: null
+  tags: []
+- id: US-WNE-29-5
+  title: 'Test: Blocking property toggles synchronous mode behavior'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-29
+  epic_id: null
+  tags: []
+- id: US-WNE-29-6
+  title: 'Test: State transitions validated with clear exceptions (e.g. cannot Send
+    before Connect)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-29
+  epic_id: null
+  tags: []
+- id: US-WNE-30-1
+  title: 'Test: Test full outbound path (app data to smoltcp to boringtun to encrypted
+    packet)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-30
+  epic_id: null
+  tags: []
+- id: US-WNE-30-2
+  title: 'Test: Test full inbound path (encrypted packet to boringtun to smoltcp to
+    app data)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-30
+  epic_id: null
+  tags: []
+- id: US-WNE-30-3
+  title: 'Test: Test bidirectional data flow through two paired tunnels'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-30
+  epic_id: null
+  tags: []
+- id: US-WNE-30-4
+  title: 'Test: Test handshake completes between two tunnel instances'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-30
+  epic_id: null
+  tags: []
+- id: US-WNE-30-5
+  title: 'Test: Test data flows after successful handshake'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-30
+  epic_id: null
+  tags: []
+- id: US-WNE-30-6
+  title: 'Test: Test large payload (>MTU) fragmentation and reassembly'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-30
+  epic_id: null
+  tags: []
+- id: US-WNE-30-7
+  title: 'Test: Test concurrent sends from multiple sockets'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-30
+  epic_id: null
+  tags: []
+- id: US-WNE-31-1
+  title: 'Test: Namespace is WgSocket (not WgSocket.Net or WgSocket.Sockets)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-31
+  epic_id: null
+  tags: []
+- id: US-WNE-31-2
+  title: 'Test: using WgSocket gives access to Socket and WgDevice and WgConfig and
+    WgPeer and NetworkStream'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-31
+  epic_id: null
+  tags: []
+- id: US-WNE-31-3
+  title: 'Test: No naming conflicts with System.Net.Sockets when both namespaces are
+    imported'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-31
+  epic_id: null
+  tags: []
+- id: US-WNE-31-4
+  title: 'Test: IntelliSense-friendly API surface with XML doc comments on all public
+    members'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-31
+  epic_id: null
+  tags: []
+- id: US-WNE-32-1
+  title: 'Test: Test wg_device_new with valid config returns valid handle'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-32
+  epic_id: null
+  tags: []
+- id: US-WNE-32-2
+  title: 'Test: Test wg_device_new with invalid config returns error code'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-32
+  epic_id: null
+  tags: []
+- id: US-WNE-32-3
+  title: 'Test: Test all functions with invalid handle return WG_ERR_INVALID_HANDLE'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-32
+  epic_id: null
+  tags: []
+- id: US-WNE-32-4
+  title: 'Test: Test wg_send/wg_recv with null buffer pointer'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-32
+  epic_id: null
+  tags: []
+- id: US-WNE-32-5
+  title: 'Test: Test wg_send/wg_recv with zero length'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-32
+  epic_id: null
+  tags: []
+- id: US-WNE-32-6
+  title: 'Test: Test double wg_device_free (safe and returns error)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-32
+  epic_id: null
+  tags: []
+- id: US-WNE-32-7
+  title: 'Test: Test double wg_close (safe and returns error)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-32
+  epic_id: null
+  tags: []
+- id: US-WNE-32-8
+  title: 'Test: Test concurrent FFI calls from multiple threads'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-32
+  epic_id: null
+  tags: []
+- id: US-WNE-32-9
+  title: 'Test: Test wg_last_error returns correct error string'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-32
+  epic_id: null
+  tags: []
+- id: US-WNE-12-6
+  title: Implement Span-based send buffer marshalling
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-12
+  epic_id: null
+  tags: []
+- id: US-WNE-12-7
+  title: Implement Span-based receive buffer marshalling
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-12
+  epic_id: null
+  tags: []
+- id: US-WNE-12-8
+  title: Implement UTF-8 config string and key material marshalling
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-12
+  epic_id: null
+  tags: []
+- id: US-WNE-33-1
+  title: 'Test: Test WgConfig construction with valid parameters'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-33
+  epic_id: null
+  tags: []
+- id: US-WNE-33-2
+  title: 'Test: Test WgPeer construction with valid parameters'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-33
+  epic_id: null
+  tags: []
+- id: US-WNE-33-3
+  title: 'Test: Test validation rejects null/empty private key'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-33
+  epic_id: null
+  tags: []
+- id: US-WNE-33-4
+  title: 'Test: Test validation rejects invalid key length'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-33
+  epic_id: null
+  tags: []
+- id: US-WNE-33-5
+  title: 'Test: Test validation rejects invalid endpoint format'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-33
+  epic_id: null
+  tags: []
+- id: US-WNE-33-6
+  title: 'Test: Test validation rejects invalid CIDR in AllowedIPs'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-33
+  epic_id: null
+  tags: []
+- id: US-WNE-33-7
+  title: 'Test: Test ToString() redacts key material (never shows private key or PSK)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-33
+  epic_id: null
+  tags: []
+- id: US-WNE-33-8
+  title: 'Test: Test builder/initializer pattern works correctly'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-33
+  epic_id: null
+  tags: []
+- id: US-WNE-34-1
+  title: 'Test: Test device free releases all sockets'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-34
+  epic_id: null
+  tags: []
+- id: US-WNE-34-2
+  title: 'Test: Test no memory leaks after create/use/free cycle (valgrind or similar)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-34
+  epic_id: null
+  tags: []
+- id: US-WNE-34-3
+  title: 'Test: Test key material is zeroed after device free'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-34
+  epic_id: null
+  tags: []
+- id: US-WNE-34-4
+  title: 'Test: Test I/O thread terminates after device free'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-34
+  epic_id: null
+  tags: []
+- id: US-WNE-34-5
+  title: 'Test: Test handle map doesn''t grow unboundedly after repeated create/free'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-34
+  epic_id: null
+  tags: []
+- id: US-WNE-13-5
+  title: Implement NativeLibrary.SetDllImportResolver for wgsocket
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-13
+  epic_id: null
+  tags: []
+- id: US-WNE-13-6
+  title: Implement enhanced DllNotFoundException diagnostics
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-13
+  epic_id: null
+  tags: []
+- id: US-WNE-14-6
+  title: Implement handle table and wg_device_new with string config
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-14
+  epic_id: null
+  tags: []
+- id: US-WNE-14-7
+  title: Implement wg_device_new_from_struct with WgConfig FFI struct
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-14
+  epic_id: null
+  tags: []
+- id: US-WNE-14-8
+  title: Implement wg_device_free with double-free safety
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-14
+  epic_id: null
+  tags: []
+- id: US-WNE-14-9
+  title: 'Test device lifecycle: create, free, double-free, invalid config'
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-14
+  epic_id: null
+  tags: []
+- id: US-WNE-28-6
+  title: Implement I/O thread spawn and shutdown mechanism
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-28
+  epic_id: null
+  tags: []
+- id: US-WNE-28-7
+  title: Implement non-blocking poll loop with timer integration
+  type: task
+  status: todo
+  points: 3
+  story_id: US-WNE-28
+  epic_id: null
+  tags: []
+- id: US-WNE-28-8
+  title: Implement thread-safe socket buffer access for application threads
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-28
+  epic_id: null
+  tags: []
+- id: US-WNE-28-9
+  title: Test I/O thread lifecycle and thread-safe socket access
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-28
+  epic_id: null
+  tags: []
+- id: US-WNE-17-6
+  title: Implement WgPeer configuration model
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-17
+  epic_id: null
+  tags: []
+- id: US-WNE-17-7
+  title: Implement WgConfig configuration model
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-17
+  epic_id: null
+  tags: []
+- id: US-WNE-17-8
+  title: Test WgPeer and WgConfig models
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-17
+  epic_id: null
+  tags: []
+- id: US-WNE-33-9
+  title: Scaffold WgConfigTests and WgPeerTests test classes
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-33
+  epic_id: null
+  tags: []
+- id: US-WNE-33-10
+  title: Implement WgConfig and WgPeer happy-path construction tests
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-33
+  epic_id: null
+  tags: []
+- id: US-WNE-33-11
+  title: Implement WgConfig and WgPeer validation rejection tests
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-33
+  epic_id: null
+  tags: []
+- id: US-WNE-33-12
+  title: Implement ToString redaction and builder pattern tests
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-33
+  epic_id: null
+  tags: []
+- id: US-WNE-35-1
+  title: 'Test: Device instances stored in a global handle map with opaque usize handles'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-35
+  epic_id: null
+  tags: []
+- id: US-WNE-35-2
+  title: 'Test: Handles are validated on every FFI entry point'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-35
+  epic_id: null
+  tags: []
+- id: US-WNE-35-3
+  title: 'Test: Invalid handles return error codes and do not crash'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-35
+  epic_id: null
+  tags: []
+- id: US-WNE-35-4
+  title: 'Test: Ref-counting prevents device teardown while sockets are live'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-35
+  epic_id: null
+  tags: []
+- id: US-WNE-35-5
+  title: 'Test: Device cleanup zeroes sensitive memory (keys and session state)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-35
+  epic_id: null
+  tags: []
+- id: US-WNE-16-6
+  title: Implement wg_connect for outbound TCP connections
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-16
+  epic_id: null
+  tags: []
+- id: US-WNE-16-7
+  title: Implement wg_listen for binding a TCP listener
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-16
+  epic_id: null
+  tags: []
+- id: US-WNE-16-8
+  title: Implement wg_accept for incoming connections
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-16
+  epic_id: null
+  tags: []
+- id: US-WNE-16-9
+  title: Implement wg_close for socket and listener teardown
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-16
+  epic_id: null
+  tags: []
+- id: US-WNE-16-10
+  title: 'Test connection lifecycle: connect, listen, accept, close, invalid handles'
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-16
+  epic_id: null
+  tags: []
+- id: US-WNE-23-10
+  title: Create config test fixtures and helper module
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-23
+  epic_id: null
+  tags: []
+- id: US-WNE-23-11
+  title: Implement config parsing happy-path tests
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-23
+  epic_id: null
+  tags: []
+- id: US-WNE-23-12
+  title: Implement config parsing error-path tests
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-23
+  epic_id: null
+  tags: []
+- id: US-WNE-36-1
+  title: 'Test: Helper generates Curve25519 keypairs for tests'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-36
+  epic_id: null
+  tags: []
+- id: US-WNE-36-2
+  title: 'Test: Helper creates two WgDevice instances configured as peers (localhost
+    UDP different ports)'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-36
+  epic_id: null
+  tags: []
+- id: US-WNE-36-3
+  title: 'Test: Helper waits for handshake completion with configurable timeout'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-36
+  epic_id: null
+  tags: []
+- id: US-WNE-36-4
+  title: 'Test: Helper provides cleanup/disposal via IAsyncDisposable'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-36
+  epic_id: null
+  tags: []
+- id: US-WNE-36-5
+  title: 'Test: Works in CI with no network access needed beyond localhost'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-36
+  epic_id: null
+  tags: []
+- id: US-WNE-36-6
+  title: 'Test: Harness exposes tunnel IPs and ports for test assertions'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-36
+  epic_id: null
+  tags: []
+- id: US-WNE-20-7
+  title: Implement WgDevice constructor and tunnel creation
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-20
+  epic_id: null
+  tags: []
+- id: US-WNE-20-8
+  title: Implement WgDevice IDisposable, IAsyncDisposable, and ref-counting
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-20
+  epic_id: null
+  tags: []
+- id: US-WNE-20-9
+  title: Implement WgDevice.CreateSocket() and GetStats()
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-20
+  epic_id: null
+  tags: []
+- id: US-WNE-20-10
+  title: Test WgDevice lifecycle, ref-counting, and stats
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-20
+  epic_id: null
+  tags: []
+- id: US-WNE-37-1
+  title: 'Test: Test NativeMethods declarations compile and link correctly'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-37
+  epic_id: null
+  tags: []
+- id: US-WNE-37-2
+  title: 'Test: Test string marshalling (UTF-8 and null terminator)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-37
+  epic_id: null
+  tags: []
+- id: US-WNE-37-3
+  title: 'Test: Test buffer pinning during P/Invoke calls'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-37
+  epic_id: null
+  tags: []
+- id: US-WNE-37-4
+  title: 'Test: Test ReadOnlySpan<byte> key parameter marshalling'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-37
+  epic_id: null
+  tags: []
+- id: US-WNE-37-5
+  title: 'Test: Test return code handling for all error codes'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-37
+  epic_id: null
+  tags: []
+- id: US-WNE-37-6
+  title: 'Test: Test wg_last_error string retrieval'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-37
+  epic_id: null
+  tags: []
+- id: US-WNE-18-6
+  title: Implement wg_send for writing data to a socket
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-18
+  epic_id: null
+  tags: []
+- id: US-WNE-18-7
+  title: Implement wg_recv for reading data from a socket
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-18
+  epic_id: null
+  tags: []
+- id: US-WNE-18-8
+  title: 'Test send/recv: full transfer, partial transfer, would-block, null buffer,
+    closed socket'
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-18
+  epic_id: null
+  tags: []
+- id: US-WNE-38-1
+  title: 'Test: Server device listens on tunnel IP and client device connects through
+    tunnel'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-38
+  epic_id: null
+  tags: []
+- id: US-WNE-38-2
+  title: 'Test: Client sends byte[] through tunnel and server echoes it back'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-38
+  epic_id: null
+  tags: []
+- id: US-WNE-38-3
+  title: 'Test: Received data matches sent data exactly (byte-for-byte comparison)'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-38
+  epic_id: null
+  tags: []
+- id: US-WNE-38-4
+  title: 'Test: Works with small payloads (1 byte and 100 bytes)'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-38
+  epic_id: null
+  tags: []
+- id: US-WNE-38-5
+  title: 'Test: Works with medium payloads (1KB and 64KB)'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-38
+  epic_id: null
+  tags: []
+- id: US-WNE-38-6
+  title: 'Test: Works with large payloads (1MB -- tests fragmentation and reassembly)'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-38
+  epic_id: null
+  tags: []
+- id: US-WNE-38-7
+  title: 'Test: Test both sync and async API paths'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-38
+  epic_id: null
+  tags: []
+- id: US-WNE-39-1
+  title: 'Test: Both peers send data simultaneously in both directions'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-39
+  epic_id: null
+  tags: []
+- id: US-WNE-39-2
+  title: 'Test: Data integrity verified with no corruption and no mixing'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-39
+  epic_id: null
+  tags: []
+- id: US-WNE-39-3
+  title: 'Test: Multiple concurrent sockets between same peers work correctly'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-39
+  epic_id: null
+  tags: []
+- id: US-WNE-39-4
+  title: 'Test: Test under load with many small messages sent rapidly'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-39
+  epic_id: null
+  tags: []
+- id: US-WNE-39-5
+  title: 'Test: All async operations complete without deadlock or timeout'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-39
+  epic_id: null
+  tags: []
+- id: US-WNE-19-4
+  title: Define WgStats repr(C) struct and implement wg_get_stats
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-19
+  epic_id: null
+  tags: []
+- id: US-WNE-19-5
+  title: 'Test wg_get_stats: valid stats, null pointer, invalid handle'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-19
+  epic_id: null
+  tags: []
+- id: US-WNE-25-9
+  title: Create boringtun test harness with paired tunnels
+  type: task
+  status: todo
+  points: 3
+  story_id: US-WNE-25
+  epic_id: null
+  tags: []
+- id: US-WNE-25-10
+  title: Implement WireGuard message format and handshake tests
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-25
+  epic_id: null
+  tags: []
+- id: US-WNE-25-11
+  title: Implement encrypt/decrypt roundtrip and crypto property tests
+  type: task
+  status: todo
+  points: 3
+  story_id: US-WNE-25
+  epic_id: null
+  tags: []
+- id: US-WNE-35-6
+  title: Implement global handle map with opaque usize handles
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-35
+  epic_id: null
+  tags: []
+- id: US-WNE-35-7
+  title: Implement handle validation, ref-counting, and secure cleanup
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-35
+  epic_id: null
+  tags: []
+- id: US-WNE-35-8
+  title: Test handle map safety and secure memory cleanup
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-35
+  epic_id: null
+  tags: []
+- id: US-WNE-40-1
+  title: 'Test: Three or more WgDevice instances configured in a mesh or star topology'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-40
+  epic_id: null
+  tags: []
+- id: US-WNE-40-2
+  title: 'Test: Device A can communicate with Device B and Device C'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-40
+  epic_id: null
+  tags: []
+- id: US-WNE-40-3
+  title: 'Test: Devices B and C can communicate with each other when configured as
+    peers'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-40
+  epic_id: null
+  tags: []
+- id: US-WNE-40-4
+  title: 'Test: Each peer relationship has independent handshakes'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-40
+  epic_id: null
+  tags: []
+- id: US-WNE-40-5
+  title: 'Test: Test message routing between non-directly-connected peers if applicable
+    via AllowedIPs'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-40
+  epic_id: null
+  tags: []
+- id: US-WNE-40-6
+  title: 'Test: All peers can be created and torn down cleanly'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-40
+  epic_id: null
+  tags: []
+- id: US-WNE-41-1
+  title: 'Test: Configure peer with restricted AllowedIPs (e.g. only 10.0.0.1/32)'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-41
+  epic_id: null
+  tags: []
+- id: US-WNE-41-2
+  title: 'Test: Verify traffic to allowed IP succeeds'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-41
+  epic_id: null
+  tags: []
+- id: US-WNE-41-3
+  title: 'Test: Verify traffic to disallowed IP is silently dropped (connection fails
+    or times out)'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-41
+  epic_id: null
+  tags: []
+- id: US-WNE-41-4
+  title: 'Test: Verify packets FROM wrong source IP are dropped'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-41
+  epic_id: null
+  tags: []
+- id: US-WNE-41-5
+  title: 'Test: Test with various CIDR ranges (/32 and /24 and /16 and /0)'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-41
+  epic_id: null
+  tags: []
+- id: US-WNE-22-9
+  title: Implement Socket class scaffold and constructor
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-22
+  epic_id: null
+  tags: []
+- id: US-WNE-22-10
+  title: Implement Socket.Connect and Socket.Bind
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-22
+  epic_id: null
+  tags: []
+- id: US-WNE-22-11
+  title: Implement Socket.Listen and Socket.Accept
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-22
+  epic_id: null
+  tags: []
+- id: US-WNE-22-12
+  title: Implement Socket.Send and Socket.Receive
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-22
+  epic_id: null
+  tags: []
+- id: US-WNE-22-13
+  title: Implement Socket.Close and Dispose
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-22
+  epic_id: null
+  tags: []
+- id: US-WNE-22-14
+  title: Test Socket synchronous API end-to-end
+  type: task
+  status: todo
+  points: 3
+  story_id: US-WNE-22
+  epic_id: null
+  tags: []
+- id: US-WNE-42-1
+  title: 'Test: WgSocket.sln at repo root with all projects referenced'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-42
+  epic_id: null
+  tags: []
+- id: US-WNE-42-2
+  title: 'Test: src/WgSocket/WgSocket.csproj targeting net8.0 with proper SDK-style
+    format'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-42
+  epic_id: null
+  tags: []
+- id: US-WNE-42-3
+  title: 'Test: src/WgSocket.Tests/WgSocket.Tests.csproj with xUnit and Microsoft.NET.Test.Sdk
+    references'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-42
+  epic_id: null
+  tags: []
+- id: US-WNE-42-4
+  title: 'Test: src/wgsocket-native/Cargo.toml configured as cdylib crate type'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-42
+  epic_id: null
+  tags: []
+- id: US-WNE-42-5
+  title: 'Test: dotnet build succeeds locally without errors'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-42
+  epic_id: null
+  tags: []
+- id: US-WNE-42-6
+  title: 'Test: dotnet test runs and passes locally'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-42
+  epic_id: null
+  tags: []
+- id: US-WNE-42-7
+  title: 'Test: Local dev references native library via local path convention'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-42
+  epic_id: null
+  tags: []
+- id: US-WNE-37-7
+  title: Create INativeMethodsProxy interface and mock for P/Invoke testing
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-37
+  epic_id: null
+  tags: []
+- id: US-WNE-37-8
+  title: Implement NativeMethods declaration and string marshalling tests
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-37
+  epic_id: null
+  tags: []
+- id: US-WNE-37-9
+  title: Implement buffer pinning and Span marshalling tests
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-37
+  epic_id: null
+  tags: []
+- id: US-WNE-37-10
+  title: Implement return code handling and wg_last_error tests
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-37
+  epic_id: null
+  tags: []
+- id: US-WNE-27-8
+  title: Create smoltcp test harness with loopback interface
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-27
+  epic_id: null
+  tags: []
+- id: US-WNE-27-9
+  title: Implement TCP socket lifecycle tests
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-27
+  epic_id: null
+  tags: []
+- id: US-WNE-27-10
+  title: Implement UDP and concurrent socket tests
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-27
+  epic_id: null
+  tags: []
+- id: US-WNE-21-6
+  title: Create cbindgen.toml and build.rs integration
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-21
+  epic_id: null
+  tags: []
+- id: US-WNE-21-7
+  title: Commit generated header and add CI staleness check
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-21
+  epic_id: null
+  tags: []
+- id: US-WNE-21-8
+  title: 'Test cbindgen output: verify header contains expected symbols'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-21
+  epic_id: null
+  tags: []
+- id: US-WNE-43-1
+  title: 'Test: Verify initial Noise_IKpsk2 handshake completes successfully'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-43
+  epic_id: null
+  tags: []
+- id: US-WNE-43-2
+  title: 'Test: Verify data flows after handshake'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-43
+  epic_id: null
+  tags: []
+- id: US-WNE-43-3
+  title: 'Test: Verify rekey occurs (force by time or packet count)'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-43
+  epic_id: null
+  tags: []
+- id: US-WNE-43-4
+  title: 'Test: Verify data continues to flow after rekey without interruption'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-43
+  epic_id: null
+  tags: []
+- id: US-WNE-43-5
+  title: 'Test: Verify handshake with PSK (pre-shared key) works correctly'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-43
+  epic_id: null
+  tags: []
+- id: US-WNE-43-6
+  title: 'Test: Test handshake timeout when peer is unreachable'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-43
+  epic_id: null
+  tags: []
+- id: US-WNE-44-1
+  title: 'Test: Test connection refused when no listener is active'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-44
+  epic_id: null
+  tags: []
+- id: US-WNE-44-2
+  title: 'Test: Test connection to non-existent peer'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-44
+  epic_id: null
+  tags: []
+- id: US-WNE-44-3
+  title: 'Test: Test clean disconnect via FIN handshake'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-44
+  epic_id: null
+  tags: []
+- id: US-WNE-44-4
+  title: 'Test: Test abrupt disconnect when device is disposed during active transfer'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-44
+  epic_id: null
+  tags: []
+- id: US-WNE-44-5
+  title: 'Test: Test reconnect after disconnect'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-44
+  epic_id: null
+  tags: []
+- id: US-WNE-44-6
+  title: 'Test: Test socket reuse after close'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-44
+  epic_id: null
+  tags: []
+- id: US-WNE-44-7
+  title: 'Test: Test timeout on blocked receive'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-44
+  epic_id: null
+  tags: []
+- id: US-WNE-45-1
+  title: 'Test: cargo build --release works for all 4 targets (x86_64-pc-windows-msvc
+    x86_64-unknown-linux-gnu x86_64-apple-dar...'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-45
+  epic_id: null
+  tags: []
+- id: US-WNE-45-2
+  title: 'Test: Cross-compilation toolchains and prerequisites documented in CONTRIBUTING.md
+    or build docs'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-45
+  epic_id: null
+  tags: []
+- id: US-WNE-45-3
+  title: 'Test: Output binaries placed in correct runtimes/{rid}/native/ directories
+    matching NuGet RID conventions'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-45
+  epic_id: null
+  tags: []
+- id: US-WNE-45-4
+  title: 'Test: Build script or Makefile automates multi-target build with a single
+    command'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-45
+  epic_id: null
+  tags: []
+- id: US-WNE-45-5
+  title: 'Test: cargo fmt --check passes with no formatting violations'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-45
+  epic_id: null
+  tags: []
+- id: US-WNE-45-6
+  title: 'Test: cargo clippy -- -D warnings passes with no warnings'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-45
+  epic_id: null
+  tags: []
+- id: US-WNE-24-7
+  title: Implement ConnectAsync and AcceptAsync
+  type: task
+  status: todo
+  points: 3
+  story_id: US-WNE-24
+  epic_id: null
+  tags: []
+- id: US-WNE-24-8
+  title: Implement SendAsync and ReceiveAsync
+  type: task
+  status: todo
+  points: 3
+  story_id: US-WNE-24
+  epic_id: null
+  tags: []
+- id: US-WNE-24-9
+  title: Implement async cancellation and timeout support
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-24
+  epic_id: null
+  tags: []
+- id: US-WNE-24-10
+  title: Test Socket async API with cancellation
+  type: task
+  status: todo
+  points: 3
+  story_id: US-WNE-24
+  epic_id: null
+  tags: []
+- id: US-WNE-46-1
+  title: 'Test: Test WgDeviceHandle creation and disposal'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-46
+  epic_id: null
+  tags: []
+- id: US-WNE-46-2
+  title: 'Test: Test WgSocketHandle creation and disposal'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-46
+  epic_id: null
+  tags: []
+- id: US-WNE-46-3
+  title: 'Test: Test double-dispose is safe (no exception and no crash)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-46
+  epic_id: null
+  tags: []
+- id: US-WNE-46-4
+  title: 'Test: Test dispose order (socket before device)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-46
+  epic_id: null
+  tags: []
+- id: US-WNE-46-5
+  title: 'Test: Test finalizer fires on GC if not disposed'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-46
+  epic_id: null
+  tags: []
+- id: US-WNE-46-6
+  title: 'Test: Test ObjectDisposedException after dispose'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-46
+  epic_id: null
+  tags: []
+- id: US-WNE-46-7
+  title: 'Test: Test concurrent dispose from multiple threads'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-46
+  epic_id: null
+  tags: []
+- id: US-WNE-30-8
+  title: Create integrated tunnel test harness (smoltcp + boringtun)
+  type: task
+  status: todo
+  points: 3
+  story_id: US-WNE-30
+  epic_id: null
+  tags: []
+- id: US-WNE-30-9
+  title: Implement end-to-end data path integration tests
+  type: task
+  status: todo
+  points: 3
+  story_id: US-WNE-30
+  epic_id: null
+  tags: []
+- id: US-WNE-30-10
+  title: Implement fragmentation and concurrency integration tests
+  type: task
+  status: todo
+  points: 3
+  story_id: US-WNE-30
+  epic_id: null
+  tags: []
+- id: US-WNE-47-1
+  title: 'Test: Measure single-stream TCP throughput (bytes/sec) through tunnel'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-47
+  epic_id: null
+  tags: []
+- id: US-WNE-47-2
+  title: 'Test: Measure latency (roundtrip time for small packets)'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-47
+  epic_id: null
+  tags: []
+- id: US-WNE-47-3
+  title: 'Test: Compare against baseline (direct socket with no tunnel) to quantify
+    overhead'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-47
+  epic_id: null
+  tags: []
+- id: US-WNE-47-4
+  title: 'Test: Test with different buffer sizes (4KB and 64KB and 256KB)'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-47
+  epic_id: null
+  tags: []
+- id: US-WNE-47-5
+  title: 'Test: Test sustained transfer (100MB+) for stability'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-47
+  epic_id: null
+  tags: []
+- id: US-WNE-47-6
+  title: 'Test: Results logged to console/file for CI tracking'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-47
+  epic_id: null
+  tags: []
+- id: US-WNE-47-7
+  title: 'Test: BenchmarkDotNet or similar for reproducible results'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-47
+  epic_id: null
+  tags: []
+- id: US-WNE-48-1
+  title: 'Test: Pipeline triggers on push to main and pull_request to main'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-48
+  epic_id: null
+  tags: []
+- id: US-WNE-48-2
+  title: 'Test: rust-build job uses a matrix strategy for 4 targets: windows-latest
+    (win-x64) and ubuntu-latest (linux-x64) and...'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-48
+  epic_id: null
+  tags: []
+- id: US-WNE-48-3
+  title: 'Test: Each matrix leg runs cargo fmt --check and cargo clippy -- -D warnings
+    and cargo test (native only) and cargo b...'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-48
+  epic_id: null
+  tags: []
+- id: US-WNE-48-4
+  title: 'Test: Native binaries uploaded as GitHub Actions artifacts per target'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-48
+  epic_id: null
+  tags: []
+- id: US-WNE-48-5
+  title: 'Test: dotnet-build job depends on rust-build: downloads all 4 artifacts
+    and runs dotnet build and dotnet test and dot...'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-48
+  epic_id: null
+  tags: []
+- id: US-WNE-48-6
+  title: 'Test: Full pipeline completes in under 15 minutes'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-48
+  epic_id: null
+  tags: []
+- id: US-WNE-49-1
+  title: 'Test: Test WgSocket connecting to wireguard-go peer if available in CI'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-49
+  epic_id: null
+  tags: []
+- id: US-WNE-49-2
+  title: 'Test: Test wireguard-go connecting to WgSocket listener'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-49
+  epic_id: null
+  tags: []
+- id: US-WNE-49-3
+  title: 'Test: Verify handshake interop between implementations'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-49
+  epic_id: null
+  tags: []
+- id: US-WNE-49-4
+  title: 'Test: Verify data transfer between implementations'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-49
+  epic_id: null
+  tags: []
+- id: US-WNE-49-5
+  title: 'Test: Skip gracefully if wireguard-go not available'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-49
+  epic_id: null
+  tags: []
+- id: US-WNE-49-6
+  title: 'Test: Document how to set up the external peer for local testing'
+  type: task
+  status: done
+  points: null
+  story_id: US-WNE-49
+  epic_id: null
+  tags: []
+- id: US-WNE-50-1
+  title: 'Test: .csproj configured with NuGet metadata: PackageId and Version and
+    Description and Authors and License and Repos...'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-50
+  epic_id: null
+  tags: []
+- id: US-WNE-50-2
+  title: 'Test: Native binaries included via runtimes/{rid}/native/ directory conventions
+    with correct MSBuild Content items'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-50
+  epic_id: null
+  tags: []
+- id: US-WNE-50-3
+  title: 'Test: dotnet pack produces a self-contained .nupkg containing all 4 native
+    binaries'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-50
+  epic_id: null
+  tags: []
+- id: US-WNE-50-4
+  title: 'Test: Package size is reasonable at approximately 8-16MB with 4 native binaries'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-50
+  epic_id: null
+  tags: []
+- id: US-WNE-50-5
+  title: 'Test: Package installs correctly in a fresh .NET 8 console project'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-50
+  epic_id: null
+  tags: []
+- id: US-WNE-50-6
+  title: 'Test: Consumer project can resolve and P/Invoke load the native library
+    after install without manual steps'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-50
+  epic_id: null
+  tags: []
+- id: US-WNE-26-7
+  title: Implement NetworkStream class inheriting System.IO.Stream
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-26
+  epic_id: null
+  tags: []
+- id: US-WNE-26-8
+  title: Implement NetworkStream Read/Write and async variants
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-26
+  epic_id: null
+  tags: []
+- id: US-WNE-26-9
+  title: Implement NetworkStream Dispose and ownership semantics
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-26
+  epic_id: null
+  tags: []
+- id: US-WNE-26-10
+  title: Test NetworkStream with mock socket and framework compatibility
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-26
+  epic_id: null
+  tags: []
+- id: US-WNE-51-1
+  title: 'Test: Rust side uses zeroize crate on all key fields (private key and PSK
+    and session keys)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-51
+  epic_id: null
+  tags: []
+- id: US-WNE-51-2
+  title: 'Test: Key material zeroed when WgDevice is dropped'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-51
+  epic_id: null
+  tags: []
+- id: US-WNE-51-3
+  title: 'Test: C# side uses fixed/pinned buffers and explicit zeroing for key parameters'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-51
+  epic_id: null
+  tags: []
+- id: US-WNE-51-4
+  title: 'Test: Verify with test: dump memory region after dispose and confirm keys
+    are zeroed'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-51
+  epic_id: null
+  tags: []
+- id: US-WNE-51-5
+  title: 'Test: Debug output (Display/Debug traits) never includes key material'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-51
+  epic_id: null
+  tags: []
+- id: US-WNE-32-10
+  title: Create FFI test harness with C-calling-convention helpers
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-32
+  epic_id: null
+  tags: []
+- id: US-WNE-32-11
+  title: Implement FFI valid-path and error-code tests
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-32
+  epic_id: null
+  tags: []
+- id: US-WNE-32-12
+  title: Implement FFI null-pointer, double-free, and concurrency tests
+  type: task
+  status: todo
+  points: 3
+  story_id: US-WNE-32
+  epic_id: null
+  tags: []
+- id: US-WNE-52-1
+  title: 'Test: CI step generates wgsocket.h via cbindgen from Rust source'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-52
+  epic_id: null
+  tags: []
+- id: US-WNE-52-2
+  title: 'Test: Generated header is diffed against the checked-in header file'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-52
+  epic_id: null
+  tags: []
+- id: US-WNE-52-3
+  title: 'Test: Build fails with a non-zero exit code if the header is stale (Rust
+    exports changed but header not regenerated)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-52
+  epic_id: null
+  tags: []
+- id: US-WNE-52-4
+  title: 'Test: Error message clearly explains how to regenerate the header locally'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-52
+  epic_id: null
+  tags: []
+- id: US-WNE-52-5
+  title: 'Test: cbindgen.toml configuration checked in and maintained'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-52
+  epic_id: null
+  tags: []
+- id: US-WNE-46-8
+  title: Scaffold SafeHandle test infrastructure with mock release callbacks
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-46
+  epic_id: null
+  tags: []
+- id: US-WNE-46-9
+  title: Implement handle creation and single-dispose tests
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-46
+  epic_id: null
+  tags: []
+- id: US-WNE-46-10
+  title: Implement double-dispose and post-dispose safety tests
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-46
+  epic_id: null
+  tags: []
+- id: US-WNE-46-11
+  title: Implement disposal ordering and finalizer tests
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-46
+  epic_id: null
+  tags: []
+- id: US-WNE-29-7
+  title: Implement Socket connection and endpoint properties
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-29
+  epic_id: null
+  tags: []
+- id: US-WNE-29-8
+  title: Implement Socket type properties and state machine
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-29
+  epic_id: null
+  tags: []
+- id: US-WNE-29-9
+  title: Test Socket properties and state transitions
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-29
+  epic_id: null
+  tags: []
+- id: US-WNE-53-1
+  title: 'Test: Workflow triggers on manual dispatch (workflow_dispatch) or git tag
+    matching v* pattern'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-53
+  epic_id: null
+  tags: []
+- id: US-WNE-53-2
+  title: 'Test: Builds fresh from source (not from cached artifacts) to ensure reproducibility'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-53
+  epic_id: null
+  tags: []
+- id: US-WNE-53-3
+  title: 'Test: Pushes .nupkg to nuget.org using NUGET_API_KEY secret'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-53
+  epic_id: null
+  tags: []
+- id: US-WNE-53-4
+  title: 'Test: Version in .csproj matches Cargo.toml version (single source of truth)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-53
+  epic_id: null
+  tags: []
+- id: US-WNE-53-5
+  title: 'Test: GitHub release created automatically with tag name and changelog'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-53
+  epic_id: null
+  tags: []
+- id: US-WNE-53-6
+  title: 'Test: Release includes the .nupkg as a downloadable asset'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-53
+  epic_id: null
+  tags: []
+- id: US-WNE-34-6
+  title: Implement socket and resource release tests
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-34
+  epic_id: null
+  tags: []
+- id: US-WNE-34-7
+  title: Implement memory leak and key-zeroization tests
+  type: task
+  status: todo
+  points: 3
+  story_id: US-WNE-34
+  epic_id: null
+  tags: []
+- id: US-WNE-54-1
+  title: 'Test: Test each error code maps to correct exception type'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-54
+  epic_id: null
+  tags: []
+- id: US-WNE-54-2
+  title: 'Test: Test exception message includes native error detail'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-54
+  epic_id: null
+  tags: []
+- id: US-WNE-54-3
+  title: 'Test: Test WgException.ErrorCode property'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-54
+  epic_id: null
+  tags: []
+- id: US-WNE-54-4
+  title: 'Test: Test throwing and catching specific exception types'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-54
+  epic_id: null
+  tags: []
+- id: US-WNE-54-5
+  title: 'Test: Test error codes not in enum produce generic WgException'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-54
+  epic_id: null
+  tags: []
+- id: US-WNE-31-5
+  title: Configure namespace and verify public API surface
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-31
+  epic_id: null
+  tags: []
+- id: US-WNE-31-6
+  title: Test single-file import and namespace conflict scenarios
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-31
+  epic_id: null
+  tags: []
+- id: US-WNE-36-7
+  title: Implement WgTestKeypair helper for Curve25519 key generation
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-36
+  epic_id: null
+  tags: []
+- id: US-WNE-36-8
+  title: Implement WgTunnelPair test fixture for paired WgDevice creation
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-36
+  epic_id: null
+  tags: []
+- id: US-WNE-36-9
+  title: Implement handshake wait and health check in test harness
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-36
+  epic_id: null
+  tags: []
+- id: US-WNE-36-10
+  title: Implement xUnit collection fixture and CI port allocation
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-36
+  epic_id: null
+  tags: []
+- id: US-WNE-36-11
+  title: 'Test: Verify test harness creates functional paired tunnel'
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-36
+  epic_id: null
+  tags: []
+- id: US-WNE-55-1
+  title: 'Test: Console app in samples/EchoServer/ with its own .csproj referencing
+    WgSocket'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-55
+  epic_id: null
+  tags: []
+- id: US-WNE-55-2
+  title: 'Test: Demonstrates WgDevice setup and configuration from wg.conf'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-55
+  epic_id: null
+  tags: []
+- id: US-WNE-55-3
+  title: 'Test: Uses Socket.Listen and Accept to handle incoming connections'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-55
+  epic_id: null
+  tags: []
+- id: US-WNE-55-4
+  title: 'Test: Implements a full echo loop that reads data and writes it back'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-55
+  epic_id: null
+  tags: []
+- id: US-WNE-55-5
+  title: 'Test: Includes a wg.conf with test configuration and key pair for local
+    testing'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-55
+  epic_id: null
+  tags: []
+- id: US-WNE-55-6
+  title: 'Test: Runs against the ChatClient sample or any other WgSocket peer'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-55
+  epic_id: null
+  tags: []
+- id: US-WNE-55-7
+  title: 'Test: Includes README.md with usage instructions and expected output'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-55
+  epic_id: null
+  tags: []
+- id: US-WNE-55-8
+  title: 'Test: Shows the single-file import experience prominently with ''using WgSocket''
+    as the only namespace change'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-55
+  epic_id: null
+  tags: []
+- id: US-WNE-56-1
+  title: 'Test: Console app in samples/ChatClient/ with its own .csproj referencing
+    WgSocket'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-56
+  epic_id: null
+  tags: []
+- id: US-WNE-56-2
+  title: 'Test: Demonstrates WgDevice setup and configuration from wg.conf'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-56
+  epic_id: null
+  tags: []
+- id: US-WNE-56-3
+  title: 'Test: Uses Socket.Connect to establish outbound connection to a peer'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-56
+  epic_id: null
+  tags: []
+- id: US-WNE-56-4
+  title: 'Test: Interactive send/receive loop with console input and output'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-56
+  epic_id: null
+  tags: []
+- id: US-WNE-56-5
+  title: 'Test: Bidirectional messaging over WireGuard tunnel'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-56
+  epic_id: null
+  tags: []
+- id: US-WNE-56-6
+  title: 'Test: Uses async API (ReadAsync/WriteAsync via NetworkStream) for non-blocking
+    I/O'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-56
+  epic_id: null
+  tags: []
+- id: US-WNE-56-7
+  title: 'Test: Includes wg.conf with test configuration and key pair for local testing'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-56
+  epic_id: null
+  tags: []
+- id: US-WNE-56-8
+  title: 'Test: Includes README.md with usage instructions and expected output'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-56
+  epic_id: null
+  tags: []
+- id: US-WNE-54-6
+  title: Scaffold ExceptionMappingTests with error code table
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-54
+  epic_id: null
+  tags: []
+- id: US-WNE-54-7
+  title: Implement error code to exception type mapping tests
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-54
+  epic_id: null
+  tags: []
+- id: US-WNE-51-6
+  title: Add zeroize crate and derive Zeroize/ZeroizeOnDrop on all Rust key structs
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-51
+  epic_id: null
+  tags: []
+- id: US-WNE-51-7
+  title: Implement secure key handling on C# side with fixed/pinned buffers
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-51
+  epic_id: null
+  tags: []
+- id: US-WNE-51-8
+  title: Redact key material from Debug/Display trait implementations
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-51
+  epic_id: null
+  tags: []
+- id: US-WNE-51-9
+  title: 'Test: verify memory zeroization after Rust WgDevice drop'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-51
+  epic_id: null
+  tags: []
+- id: US-WNE-51-10
+  title: 'Test: verify C# key buffer zeroing after Dispose'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-51
+  epic_id: null
+  tags: []
+- id: US-WNE-51-11
+  title: 'Test: Debug/Display output never contains key material'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-51
+  epic_id: null
+  tags: []
+- id: US-WNE-57-1
+  title: 'Test: Project overview clearly states the value proposition: single-file
+    import WireGuard networking'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-57
+  epic_id: null
+  tags: []
+- id: US-WNE-57-2
+  title: 'Test: Badge section with CI status and NuGet version and license'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-57
+  epic_id: null
+  tags: []
+- id: US-WNE-57-3
+  title: 'Test: Quick-start section: install via NuGet and configure wg.conf and one-line
+    type change example'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-57
+  epic_id: null
+  tags: []
+- id: US-WNE-57-4
+  title: 'Test: Code examples for common scenarios including echo server and client
+    and NetworkStream usage'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-57
+  epic_id: null
+  tags: []
+- id: US-WNE-57-5
+  title: 'Test: API overview table listing key types and their purposes'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-57
+  epic_id: null
+  tags: []
+- id: US-WNE-57-6
+  title: 'Test: Links to samples directory and architecture docs and contributing
+    guide'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-57
+  epic_id: null
+  tags: []
+- id: US-WNE-57-7
+  title: 'Test: Before-and-after code comparison showing the System.Net.Sockets to
+    WgSocket type swap'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-57
+  epic_id: null
+  tags: []
+- id: US-WNE-42-8
+  title: Create WgSocket.sln and src/WgSocket/WgSocket.csproj
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-42
+  epic_id: null
+  tags: []
+- id: US-WNE-42-9
+  title: Create src/WgSocket.Tests/WgSocket.Tests.csproj with xUnit
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-42
+  epic_id: null
+  tags: []
+- id: US-WNE-42-10
+  title: Configure src/wgsocket-native/Cargo.toml as cdylib
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-42
+  epic_id: null
+  tags: []
+- id: US-WNE-42-11
+  title: Configure local native library path for dev builds
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-42
+  epic_id: null
+  tags: []
+- id: US-WNE-42-12
+  title: Verify local build and test roundtrip
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-42
+  epic_id: null
+  tags: []
+- id: US-WNE-38-8
+  title: Implement TCP echo server helper for integration tests
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-38
+  epic_id: null
+  tags: []
+- id: US-WNE-38-9
+  title: Implement TCP echo client helper for integration tests
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-38
+  epic_id: null
+  tags: []
+- id: US-WNE-38-10
+  title: 'Test: TCP echo roundtrip with small payloads (1 byte, 100 bytes)'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-38
+  epic_id: null
+  tags: []
+- id: US-WNE-38-11
+  title: 'Test: TCP echo roundtrip with medium payloads (1KB, 64KB)'
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-38
+  epic_id: null
+  tags: []
+- id: US-WNE-38-12
+  title: 'Test: TCP echo roundtrip with large payloads (1MB) testing fragmentation'
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-38
+  epic_id: null
+  tags: []
+- id: US-WNE-38-13
+  title: 'Test: TCP echo via sync and async API paths'
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-38
+  epic_id: null
+  tags: []
+- id: US-WNE-58-1
+  title: 'Test: All public types have summary XML docs describing their purpose'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-58
+  epic_id: null
+  tags: []
+- id: US-WNE-58-2
+  title: 'Test: All public methods have summary and param and returns and exception
+    XML docs'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-58
+  epic_id: null
+  tags: []
+- id: US-WNE-58-3
+  title: 'Test: All public properties have summary XML docs'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-58
+  epic_id: null
+  tags: []
+- id: US-WNE-58-4
+  title: 'Test: WgSocket.csproj configured with GenerateDocumentationFile=true to
+    produce XML doc file'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-58
+  epic_id: null
+  tags: []
+- id: US-WNE-58-5
+  title: 'Test: No CS1591 compiler warnings for missing XML docs on public members'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-58
+  epic_id: null
+  tags: []
+- id: US-WNE-58-6
+  title: 'Test: IntelliSense shows helpful descriptions when consuming the library
+    in other projects'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-58
+  epic_id: null
+  tags: []
+- id: US-WNE-59-1
+  title: 'Test: Private key and PSK fields never appear in log output at any level
+    (Trace through Critical)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-59
+  epic_id: null
+  tags: []
+- id: US-WNE-59-2
+  title: "Test: Test: enable all log levels and perform full lifecycle and grep logs\
+    \ for key material \u2014 must find nothing"
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-59
+  epic_id: null
+  tags: []
+- id: US-WNE-59-3
+  title: 'Test: Structured logging fields for keys are redacted'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-59
+  epic_id: null
+  tags: []
+- id: US-WNE-59-4
+  title: 'Test: Code review checklist item for no-log enforcement documented'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-59
+  epic_id: null
+  tags: []
+- id: US-WNE-60-1
+  title: 'Test: Test Socket constructor creates valid instance'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-60
+  epic_id: null
+  tags: []
+- id: US-WNE-60-2
+  title: 'Test: Test Connect/ConnectAsync method signatures match expected'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-60
+  epic_id: null
+  tags: []
+- id: US-WNE-60-3
+  title: 'Test: Test Bind/Listen/Accept/AcceptAsync signatures'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-60
+  epic_id: null
+  tags: []
+- id: US-WNE-60-4
+  title: 'Test: Test Send/SendAsync/Receive/ReceiveAsync signatures'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-60
+  epic_id: null
+  tags: []
+- id: US-WNE-60-5
+  title: 'Test: Test Close/Dispose releases resources'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-60
+  epic_id: null
+  tags: []
+- id: US-WNE-60-6
+  title: 'Test: Test property accessors (Connected and LocalEndPoint and RemoteEndPoint
+    and Available)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-60
+  epic_id: null
+  tags: []
+- id: US-WNE-60-7
+  title: 'Test: Test state validation (Send before Connect throws)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-60
+  epic_id: null
+  tags: []
+- id: US-WNE-60-8
+  title: 'Test: Test Blocking property toggle'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-60
+  epic_id: null
+  tags: []
+- id: US-WNE-60-9
+  title: 'Test: Test CancellationToken support in async methods'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-60
+  epic_id: null
+  tags: []
+- id: US-WNE-61-1
+  title: 'Test: Generated API reference from XML docs using docfx or similar tool'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-61
+  epic_id: null
+  tags: []
+- id: US-WNE-61-2
+  title: 'Test: Hosted on GitHub Pages or included as static HTML in the repo'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-61
+  epic_id: null
+  tags: []
+- id: US-WNE-61-3
+  title: 'Test: Covers all public types: Socket and WgDevice and WgConfig and WgPeer
+    and NetworkStream'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-61
+  epic_id: null
+  tags: []
+- id: US-WNE-61-4
+  title: 'Test: Includes code examples in doc comments that render in the reference'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-61
+  epic_id: null
+  tags: []
+- id: US-WNE-61-5
+  title: 'Test: Cross-references between related types with clickable links'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-61
+  epic_id: null
+  tags: []
+- id: US-WNE-61-6
+  title: 'Test: Build step in CI to regenerate docs on release'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-61
+  epic_id: null
+  tags: []
+- id: US-WNE-39-6
+  title: Implement bidirectional transfer test helper
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-39
+  epic_id: null
+  tags: []
+- id: US-WNE-39-7
+  title: 'Test: Simultaneous bidirectional TCP data transfer'
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-39
+  epic_id: null
+  tags: []
+- id: US-WNE-39-8
+  title: 'Test: Multiple concurrent sockets between same peers'
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-39
+  epic_id: null
+  tags: []
+- id: US-WNE-39-9
+  title: 'Test: Rapid small message stress test'
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-39
+  epic_id: null
+  tags: []
+- id: US-WNE-59-5
+  title: Audit and redact all Rust log statements touching key material
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-59
+  epic_id: null
+  tags: []
+- id: US-WNE-59-6
+  title: Audit and redact all C# log statements touching key material
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-59
+  epic_id: null
+  tags: []
+- id: US-WNE-59-7
+  title: 'Test: full lifecycle log capture confirms no key material leakage'
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-59
+  epic_id: null
+  tags: []
+- id: US-WNE-45-7
+  title: Create cross-compilation build script
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-45
+  epic_id: null
+  tags: []
+- id: US-WNE-45-8
+  title: Set up runtimes/{rid}/native/ output directory mapping
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-45
+  epic_id: null
+  tags: []
+- id: US-WNE-45-9
+  title: Add cargo fmt and clippy configuration
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-45
+  epic_id: null
+  tags: []
+- id: US-WNE-45-10
+  title: Document cross-compilation prerequisites
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-45
+  epic_id: null
+  tags: []
+- id: US-WNE-45-11
+  title: Verify cross-compilation for host platform target
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-45
+  epic_id: null
+  tags: []
+- id: US-WNE-60-10
+  title: Scaffold WgSocketTests with mock native backend
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-60
+  epic_id: null
+  tags: []
+- id: US-WNE-60-11
+  title: Implement constructor and connection method signature tests
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-60
+  epic_id: null
+  tags: []
+- id: US-WNE-60-12
+  title: Implement server-side and data transfer method signature tests
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-60
+  epic_id: null
+  tags: []
+- id: US-WNE-60-13
+  title: Implement property accessor and state validation tests
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-60
+  epic_id: null
+  tags: []
+- id: US-WNE-60-14
+  title: Implement disposal and CancellationToken tests
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-60
+  epic_id: null
+  tags: []
+- id: US-WNE-62-1
+  title: 'Test: cargo-fuzz harness targeting all extern C functions'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-62
+  epic_id: null
+  tags: []
+- id: US-WNE-62-2
+  title: 'Test: Fuzz wg_device_new with arbitrary config strings'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-62
+  epic_id: null
+  tags: []
+- id: US-WNE-62-3
+  title: 'Test: Fuzz wg_send/wg_recv with arbitrary buffer sizes and contents'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-62
+  epic_id: null
+  tags: []
+- id: US-WNE-62-4
+  title: 'Test: Fuzz wg_connect with arbitrary address/port combinations'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-62
+  epic_id: null
+  tags: []
+- id: US-WNE-62-5
+  title: 'Test: Fuzz handle values (random usize)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-62
+  epic_id: null
+  tags: []
+- id: US-WNE-62-6
+  title: 'Test: No panics and no segfaults and no undefined behavior under fuzz'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-62
+  epic_id: null
+  tags: []
+- id: US-WNE-62-7
+  title: 'Test: CI integration (nightly or on-demand)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-62
+  epic_id: null
+  tags: []
+- id: US-WNE-40-7
+  title: Implement WgMeshTopology test helper for multi-peer setup
+  type: task
+  status: todo
+  points: 3
+  story_id: US-WNE-40
+  epic_id: null
+  tags: []
+- id: US-WNE-40-8
+  title: 'Test: Three-peer mesh communication'
+  type: task
+  status: todo
+  points: 3
+  story_id: US-WNE-40
+  epic_id: null
+  tags: []
+- id: US-WNE-40-9
+  title: 'Test: Star topology with hub device'
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-40
+  epic_id: null
+  tags: []
+- id: US-WNE-40-10
+  title: 'Test: Clean teardown of multi-peer topology'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-40
+  epic_id: null
+  tags: []
+- id: US-WNE-55-9
+  title: Scaffold EchoServer console app project
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-55
+  epic_id: null
+  tags: []
+- id: US-WNE-55-10
+  title: Implement WgDevice setup and echo loop logic
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-55
+  epic_id: null
+  tags: []
+- id: US-WNE-55-11
+  title: Create test wg.conf and sample README
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-55
+  epic_id: null
+  tags: []
+- id: US-WNE-56-9
+  title: Scaffold ChatClient console app project
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-56
+  epic_id: null
+  tags: []
+- id: US-WNE-56-10
+  title: Implement async chat logic with bidirectional messaging
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-56
+  epic_id: null
+  tags: []
+- id: US-WNE-56-11
+  title: Create test wg.conf and sample README for ChatClient
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-56
+  epic_id: null
+  tags: []
+- id: US-WNE-63-1
+  title: 'Test: Test NetworkStream wraps Socket correctly'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-63
+  epic_id: null
+  tags: []
+- id: US-WNE-63-2
+  title: 'Test: Test Read delegates to Socket.Receive'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-63
+  epic_id: null
+  tags: []
+- id: US-WNE-63-3
+  title: 'Test: Test Write delegates to Socket.Send'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-63
+  epic_id: null
+  tags: []
+- id: US-WNE-63-4
+  title: 'Test: Test ReadAsync/WriteAsync delegate to async socket methods'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-63
+  epic_id: null
+  tags: []
+- id: US-WNE-63-5
+  title: 'Test: Test CanRead/CanWrite/CanSeek values'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-63
+  epic_id: null
+  tags: []
+- id: US-WNE-63-6
+  title: 'Test: Test Dispose optionally closes underlying socket'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-63
+  epic_id: null
+  tags: []
+- id: US-WNE-63-7
+  title: 'Test: Test Stream-based APIs (StreamReader/StreamWriter) work'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-63
+  epic_id: null
+  tags: []
+- id: US-WNE-48-7
+  title: Create rust-build CI workflow with matrix strategy
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-48
+  epic_id: null
+  tags: []
+- id: US-WNE-48-8
+  title: Add Rust quality checks to each matrix leg
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-48
+  epic_id: null
+  tags: []
+- id: US-WNE-48-9
+  title: Upload native binaries as CI artifacts
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-48
+  epic_id: null
+  tags: []
+- id: US-WNE-48-10
+  title: Create dotnet-build CI job with artifact download
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-48
+  epic_id: null
+  tags: []
+- id: US-WNE-48-11
+  title: Add dotnet pack step to CI
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-48
+  epic_id: null
+  tags: []
+- id: US-WNE-48-12
+  title: Validate CI pipeline end-to-end
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-48
+  epic_id: null
+  tags: []
+- id: US-WNE-41-6
+  title: Implement AllowedIPs test configuration helpers
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-41
+  epic_id: null
+  tags: []
+- id: US-WNE-41-7
+  title: 'Test: Traffic to allowed IP succeeds with /32 restriction'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-41
+  epic_id: null
+  tags: []
+- id: US-WNE-41-8
+  title: 'Test: Traffic to disallowed IP is silently dropped'
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-41
+  epic_id: null
+  tags: []
+- id: US-WNE-41-9
+  title: 'Test: Packets from wrong source IP are dropped'
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-41
+  epic_id: null
+  tags: []
+- id: US-WNE-41-10
+  title: 'Test: Various CIDR ranges (/32, /24, /16, /0)'
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-41
+  epic_id: null
+  tags: []
+- id: US-WNE-57-8
+  title: Write README header, badges, and value proposition
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-57
+  epic_id: null
+  tags: []
+- id: US-WNE-57-9
+  title: Write quick-start guide and code examples
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-57
+  epic_id: null
+  tags: []
+- id: US-WNE-63-8
+  title: Scaffold WgNetworkStreamTests with mock socket
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-63
+  epic_id: null
+  tags: []
+- id: US-WNE-63-9
+  title: Implement Read/Write delegation and capability property tests
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-63
+  epic_id: null
+  tags: []
+- id: US-WNE-63-10
+  title: Implement disposal behavior and StreamReader/StreamWriter integration tests
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-63
+  epic_id: null
+  tags: []
+- id: US-WNE-62-8
+  title: Set up cargo-fuzz project structure and base harness
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-62
+  epic_id: null
+  tags: []
+- id: US-WNE-62-9
+  title: Implement fuzz target for wg_device_new with arbitrary configs
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-62
+  epic_id: null
+  tags: []
+- id: US-WNE-62-10
+  title: Implement fuzz target for wg_send and wg_recv with arbitrary buffers
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-62
+  epic_id: null
+  tags: []
+- id: US-WNE-62-11
+  title: Implement fuzz target for wg_connect with arbitrary addresses
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-62
+  epic_id: null
+  tags: []
+- id: US-WNE-62-12
+  title: Implement fuzz target for handle validation with random usize values
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-62
+  epic_id: null
+  tags: []
+- id: US-WNE-62-13
+  title: Add CI workflow for nightly/on-demand fuzz runs
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-62
+  epic_id: null
+  tags: []
+- id: US-WNE-62-14
+  title: 'Test: verify fuzz corpus seeds produce no panics or UB'
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-62
+  epic_id: null
+  tags: []
+- id: US-WNE-50-7
+  title: Configure NuGet metadata in WgSocket.csproj
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-50
+  epic_id: null
+  tags: []
+- id: US-WNE-50-8
+  title: Configure runtimes/{rid}/native/ MSBuild items
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-50
+  epic_id: null
+  tags: []
+- id: US-WNE-50-9
+  title: Add .NET runtime native library resolution
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-50
+  epic_id: null
+  tags: []
+- id: US-WNE-50-10
+  title: Validate NuGet package contents and consumer install
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-50
+  epic_id: null
+  tags: []
+- id: US-WNE-58-7
+  title: Configure .csproj for XML documentation generation
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-58
+  epic_id: null
+  tags: []
+- id: US-WNE-58-8
+  title: Add XML doc comments to Socket and NetworkStream types
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-58
+  epic_id: null
+  tags: []
+- id: US-WNE-58-9
+  title: Add XML doc comments to WgDevice, WgConfig, and WgPeer types
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-58
+  epic_id: null
+  tags: []
+- id: US-WNE-43-7
+  title: Implement handshake observation helpers
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-43
+  epic_id: null
+  tags: []
+- id: US-WNE-43-8
+  title: 'Test: Initial Noise_IKpsk2 handshake completes and data flows'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-43
+  epic_id: null
+  tags: []
+- id: US-WNE-43-9
+  title: 'Test: Rekey occurs and data continues flowing'
+  type: task
+  status: todo
+  points: 3
+  story_id: US-WNE-43
+  epic_id: null
+  tags: []
+- id: US-WNE-43-10
+  title: 'Test: Handshake with PSK (pre-shared key)'
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-43
+  epic_id: null
+  tags: []
+- id: US-WNE-43-11
+  title: 'Test: Handshake timeout with unreachable peer'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-43
+  epic_id: null
+  tags: []
+- id: US-WNE-64-1
+  title: 'Test: Test WgDevice creation from WgConfig'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-64
+  epic_id: null
+  tags: []
+- id: US-WNE-64-2
+  title: 'Test: Test IDisposable pattern works correctly'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-64
+  epic_id: null
+  tags: []
+- id: US-WNE-64-3
+  title: 'Test: Test IAsyncDisposable pattern works correctly'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-64
+  epic_id: null
+  tags: []
+- id: US-WNE-64-4
+  title: 'Test: Test CreateSocket returns valid Socket'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-64
+  epic_id: null
+  tags: []
+- id: US-WNE-64-5
+  title: 'Test: Test GetStats returns tunnel statistics'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-64
+  epic_id: null
+  tags: []
+- id: US-WNE-64-6
+  title: 'Test: Test disposal while sockets are live (ref-counting or exception)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-64
+  epic_id: null
+  tags: []
+- id: US-WNE-64-7
+  title: 'Test: Test multiple devices coexist independently'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-64
+  epic_id: null
+  tags: []
+- id: US-WNE-64-8
+  title: 'Test: Test double-dispose is safe'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-64
+  epic_id: null
+  tags: []
+- id: US-WNE-65-1
+  title: 'Test: cargo audit runs in CI (weekly scheduled + on PR)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-65
+  epic_id: null
+  tags: []
+- id: US-WNE-65-2
+  title: 'Test: Cargo.lock committed and pinned'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-65
+  epic_id: null
+  tags: []
+- id: US-WNE-65-3
+  title: 'Test: Dependabot configured for Cargo.toml and .csproj'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-65
+  epic_id: null
+  tags: []
+- id: US-WNE-65-4
+  title: 'Test: Dependabot PRs for native deps flagged for manual review (not auto-merged)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-65
+  epic_id: null
+  tags: []
+- id: US-WNE-65-5
+  title: 'Test: dotnet list package --vulnerable in CI'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-65
+  epic_id: null
+  tags: []
+- id: US-WNE-61-7
+  title: Set up docfx project and configuration
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-61
+  epic_id: null
+  tags: []
+- id: US-WNE-61-8
+  title: Add code examples to doc comments for API reference
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-61
+  epic_id: null
+  tags: []
+- id: US-WNE-61-9
+  title: Add GitHub Pages deployment and CI doc generation
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-61
+  epic_id: null
+  tags: []
+- id: US-WNE-52-6
+  title: Create cbindgen.toml and generate baseline header
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-52
+  epic_id: null
+  tags: []
+- id: US-WNE-52-7
+  title: Add header staleness check script
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-52
+  epic_id: null
+  tags: []
+- id: US-WNE-52-8
+  title: Integrate cbindgen check into CI workflow
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-52
+  epic_id: null
+  tags: []
+- id: US-WNE-52-9
+  title: Verify staleness detection catches a real change
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-52
+  epic_id: null
+  tags: []
+- id: US-WNE-44-8
+  title: Implement connection lifecycle test helpers
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-44
+  epic_id: null
+  tags: []
+- id: US-WNE-44-9
+  title: 'Test: Connection refused and non-existent peer'
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-44
+  epic_id: null
+  tags: []
+- id: US-WNE-44-10
+  title: 'Test: Clean disconnect via FIN handshake'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-44
+  epic_id: null
+  tags: []
+- id: US-WNE-44-11
+  title: 'Test: Abrupt disconnect during active transfer'
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-44
+  epic_id: null
+  tags: []
+- id: US-WNE-44-12
+  title: 'Test: Reconnect after disconnect and socket reuse'
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-44
+  epic_id: null
+  tags: []
+- id: US-WNE-64-9
+  title: Scaffold WgDeviceTests with mock native device backend
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-64
+  epic_id: null
+  tags: []
+- id: US-WNE-64-10
+  title: Implement WgDevice creation and disposal pattern tests
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-64
+  epic_id: null
+  tags: []
+- id: US-WNE-64-11
+  title: Implement CreateSocket and GetStats tests
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-64
+  epic_id: null
+  tags: []
+- id: US-WNE-64-12
+  title: Implement multi-device coexistence and live-socket disposal tests
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-64
+  epic_id: null
+  tags: []
+- id: US-WNE-53-7
+  title: Create publish workflow YAML
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-53
+  epic_id: null
+  tags: []
+- id: US-WNE-53-8
+  title: Add version synchronization between .csproj and Cargo.toml
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-53
+  epic_id: null
+  tags: []
+- id: US-WNE-53-9
+  title: Add NuGet push and GitHub release steps
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-53
+  epic_id: null
+  tags: []
+- id: US-WNE-53-10
+  title: Validate publish workflow with dry run
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-53
+  epic_id: null
+  tags: []
+- id: US-WNE-65-6
+  title: Add cargo audit CI workflow (weekly + on PR)
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-65
+  epic_id: null
+  tags: []
+- id: US-WNE-65-7
+  title: Configure Dependabot for Cargo.toml and .csproj
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-65
+  epic_id: null
+  tags: []
+- id: US-WNE-65-8
+  title: Add dotnet vulnerability scanning to CI
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-65
+  epic_id: null
+  tags: []
+- id: US-WNE-65-9
+  title: 'Test: verify CI workflows catch known vulnerabilities'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-65
+  epic_id: null
+  tags: []
+- id: US-WNE-47-8
+  title: Implement BenchmarkDotNet benchmark harness for tunnel throughput
+  type: task
+  status: todo
+  points: 3
+  story_id: US-WNE-47
+  epic_id: null
+  tags: []
+- id: US-WNE-47-9
+  title: Implement sustained transfer stability benchmark
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-47
+  epic_id: null
+  tags: []
+- id: US-WNE-47-10
+  title: 'Test: Throughput benchmarks produce valid results'
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-47
+  epic_id: null
+  tags: []
+- id: US-WNE-47-11
+  title: Implement CI benchmark result logging and comparison
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-47
+  epic_id: null
+  tags: []
+- id: US-WNE-66-1
+  title: 'Test: All buffer operations validate length before access'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-66
+  epic_id: null
+  tags: []
+- id: US-WNE-66-2
+  title: 'Test: Null pointer checks on all FFI entry points'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-66
+  epic_id: null
+  tags: []
+- id: US-WNE-66-3
+  title: 'Test: Handle validation on every call (invalid handle returns error code
+    not crash)'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-66
+  epic_id: null
+  tags: []
+- id: US-WNE-66-4
+  title: 'Test: Ref-counting prevents use-after-free across device/socket boundary'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-66
+  epic_id: null
+  tags: []
+- id: US-WNE-66-5
+  title: 'Test: IDisposable + CriticalFinalizerObject ensures cleanup'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-66
+  epic_id: null
+  tags: []
+- id: US-WNE-66-6
+  title: "Test: Test: rapid create/dispose cycles under thread contention \u2014 no\
+    \ crashes"
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-66
+  epic_id: null
+  tags: []
+- id: US-WNE-49-7
+  title: Implement wireguard-go process manager for interop tests
+  type: task
+  status: todo
+  points: 3
+  story_id: US-WNE-49
+  epic_id: null
+  tags: []
+- id: US-WNE-49-8
+  title: Implement interop test configuration generator
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-49
+  epic_id: null
+  tags: []
+- id: US-WNE-49-9
+  title: 'Test: WgSocket connects to wireguard-go peer'
+  type: task
+  status: todo
+  points: 3
+  story_id: US-WNE-49
+  epic_id: null
+  tags: []
+- id: US-WNE-49-10
+  title: 'Test: wireguard-go connects to WgSocket listener'
+  type: task
+  status: todo
+  points: 3
+  story_id: US-WNE-49
+  epic_id: null
+  tags: []
+- id: US-WNE-49-11
+  title: Document external peer interop setup for local testing
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-49
+  epic_id: null
+  tags: []
+- id: US-WNE-66-7
+  title: Add null pointer and buffer length validation to all Rust FFI entry points
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-66
+  epic_id: null
+  tags: []
+- id: US-WNE-66-8
+  title: Implement handle validation with generational index pattern
+  type: task
+  status: todo
+  points: 3
+  story_id: US-WNE-66
+  epic_id: null
+  tags: []
+- id: US-WNE-66-9
+  title: Implement ref-counting for device/socket cross-boundary lifetime
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-66
+  epic_id: null
+  tags: []
+- id: US-WNE-66-10
+  title: 'Test: null pointer and invalid buffer handling returns error codes'
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-66
+  epic_id: null
+  tags: []
+- id: US-WNE-66-11
+  title: 'Test: invalid and stale handle rejection'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-66
+  epic_id: null
+  tags: []
+- id: US-WNE-66-12
+  title: 'Test: rapid create/dispose cycles under thread contention'
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-66
+  epic_id: null
+  tags: []
+- id: US-WNE-67-1
+  title: 'Test: Cargo.lock committed with pinned versions'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-67
+  epic_id: null
+  tags: []
+- id: US-WNE-67-2
+  title: 'Test: Verify boringtun and smoltcp crate checksums'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-67
+  epic_id: null
+  tags: []
+- id: US-WNE-67-3
+  title: 'Test: Document approved dependency versions in SECURITY.md'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-67
+  epic_id: null
+  tags: []
+- id: US-WNE-67-4
+  title: 'Test: Alerting on new CVEs for pinned dependencies'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-67
+  epic_id: null
+  tags: []
+- id: US-WNE-67-5
+  title: 'Test: Review process for dependency version bumps documented'
+  type: task
+  status: todo
+  points: null
+  story_id: US-WNE-67
+  epic_id: null
+  tags: []
+- id: US-WNE-67-6
+  title: Pin and verify critical crate versions with checksum validation
+  type: task
+  status: todo
+  points: 2
+  story_id: US-WNE-67
+  epic_id: null
+  tags: []
+- id: US-WNE-67-7
+  title: Document approved dependencies and review process in SECURITY.md
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-67
+  epic_id: null
+  tags: []
+- id: US-WNE-67-8
+  title: Configure CVE alerting for pinned dependencies
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-67
+  epic_id: null
+  tags: []
+- id: US-WNE-67-9
+  title: 'Test: verify checksum validation catches crate substitution'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-WNE-67
+  epic_id: null
+  tags: []
+total_points: 665
+completed_points: 0
+story_count: 67
+task_count: 653
+epic_count: 11

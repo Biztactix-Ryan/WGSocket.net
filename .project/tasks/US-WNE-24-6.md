@@ -1,0 +1,17 @@
+---
+assignee: null
+created: '2026-03-26'
+depends_on: []
+id: US-WNE-24-6
+points: null
+status: todo
+story_id: US-WNE-24
+tags: []
+title: 'Test: Async methods do not block threadpool threads (truly async via native
+  callbacks)'
+updated: '2026-03-26'
+---
+
+Verify acceptance criterion for story US-WNE-24:
+
+> Async methods do not block threadpool threads (truly async via native callbacks)
