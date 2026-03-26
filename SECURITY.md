@@ -95,7 +95,7 @@ var device = new WgDevice(new WgConfig
 | `cargo fuzz` (planned) | Fuzz the C FFI entry points | CI — nightly or on-demand |
 | `dotnet format` | Code style consistency | CI |
 | Dependabot | Automated dependency update PRs | GitHub — both Cargo.toml and .csproj |
-| `cbindgen` diff check | Ensure C header matches Rust exports | CI — fail if stale |
+| `csbindgen` diff check | Ensure auto-generated C# bindings match Rust exports | CI — fail if stale |
 
 ### Security Review Cadence
 

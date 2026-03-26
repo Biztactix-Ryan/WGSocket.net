@@ -27,27 +27,29 @@ WgSocket/
 ├── .project/                    # ProjectMan system-context docs (these files)
 ├── src/
 │   ├── wgsocket-native/         # Rust crate: boringtun + smoltcp glue + C ABI
-│   │   ├── Cargo.toml
+│   │   ├── Cargo.toml           # crate-type = ["staticlib", "cdylib"]
+│   │   ├── build.rs             # csbindgen integration — generates NativeMethods.g.cs
 │   │   ├── src/
 │   │   │   ├── lib.rs           # C FFI exports: wg_connect, wg_send, wg_recv, etc.
 │   │   │   ├── tunnel.rs        # boringtun ↔ smoltcp wiring
 │   │   │   └── config.rs        # WireGuard config parsing (wg.conf format)
-│   │   └── cbindgen.toml        # C header generation config
+│   │   └── generated/           # csbindgen output checked in for CI drift detection
+│   │       └── NativeMethods.g.cs
 │   ├── WgSocket/                # C# class library (.NET 8+)
 │   │   ├── WgSocket.csproj
-│   │   ├── Socket.cs            # Main WgSocket.Socket class (P/Invoke wrapper)
+│   │   ├── Socket.cs            # Main WgSocket.Socket class (managed wrapper)
 │   │   ├── WgDevice.cs          # Device/tunnel lifecycle management
 │   │   ├── WgPeer.cs            # Peer configuration model
-│   │   └── NativeMethods.cs     # P/Invoke declarations
+│   │   └── NativeMethods.g.cs   # ← symlink/copy from Rust generated/ (auto-generated, do not hand-edit)
 │   └── WgSocket.Tests/          # xUnit test project
 │       └── WgSocket.Tests.csproj
 ├── native/                      # Pre-built native binaries (CI output)
-│   ├── win-x64/
-│   ├── linux-x64/
-│   ├── osx-x64/
-│   └── osx-arm64/
+│   ├── win-x64/                 # Contains both .lib (static) and .dll (shared)
+│   ├── linux-x64/               # Contains both .a (static) and .so (shared)
+│   ├── osx-x64/                 # Contains both .a (static) and .dylib (shared)
+│   └── osx-arm64/               # Contains both .a (static) and .dylib (shared)
 ├── samples/
-│   ├── EchoServer/              # Simple TCP echo server using WgSocket
+│   ├── EchoServer/              # Simple TCP echo server using WgSocket (AOT-published)
 │   └── ChatClient/              # P2P chat example
 ├── build/                       # CI/CD scripts, cross-compilation tooling
 ├── README.md

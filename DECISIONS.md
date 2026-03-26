@@ -29,18 +29,20 @@ Decisions are recorded as lightweight ADRs (Architectural Decision Records).
   - smoltcp has a smaller feature set than lwIP (no DHCP client, limited multicast) — acceptable for an overlay network where IPs are statically configured via WireGuard config
   - smoltcp has a C FFI crate (`smoltcp-c`) that could also be used independently, but integrating at the Rust level is cleaner
 
-## ADR-003: Rust Glue Crate with C ABI Over Direct C# Unsafe Code
+## ADR-003: Rust Glue Crate with C ABI + csbindgen Auto-Generated Bindings
 
 - **Date:** 2026-03-26
 - **Status:** Accepted
-- **Context:** The composition of boringtun + smoltcp + poll loop + socket buffer management needs to live somewhere. Options: (a) a Rust crate that does all the wiring and exposes a simple C ABI (`wg_connect`, `wg_send`, etc.), (b) expose boringtun and smoltcp individually via C FFI and orchestrate them from C# unsafe code, (c) rewrite one or both components in C#.
-- **Decision:** Build a thin Rust crate (~200-400 lines) that composes boringtun and smoltcp internally and exports a high-level C ABI. The C# side only sees simple function calls, not the internal composition.
+- **Context:** The composition of boringtun + smoltcp + poll loop + socket buffer management needs to live somewhere. Options: (a) a Rust crate that does all the wiring and exposes a simple C ABI (`wg_connect`, `wg_send`, etc.), (b) expose boringtun and smoltcp individually via C FFI and orchestrate them from C# unsafe code, (c) rewrite one or both components in C#. Additionally, keeping the C# P/Invoke declarations in sync with the Rust exports is a maintenance burden — hand-writing `NativeMethods.cs` is error-prone and drifts over time.
+- **Decision:** Build a thin Rust crate (~200-400 lines) that composes boringtun and smoltcp internally and exports a high-level C ABI. Use **csbindgen** (Cysharp) to auto-generate the C# `LibraryImport` declarations directly from the Rust `extern "C"` functions at build time. The C# side never hand-writes P/Invoke signatures — `NativeMethods.g.cs` is a generated file.
 - **Consequences:**
-  - The FFI boundary is narrow and simple — opaque handles, byte buffers, integer return codes. Easy to get right in P/Invoke.
+  - The FFI boundary is narrow and simple — opaque handles, byte buffers, integer return codes
   - All unsafe memory management (raw pointers, buffer lifetimes) stays in Rust where the borrow checker provides guardrails
-  - The C# layer is ~300 lines of straightforward P/Invoke + managed wrapper — minimal unsafe C# code
+  - The auto-generated bindings eliminate an entire class of bugs (signature mismatch, incorrect marshalling attributes, stale declarations)
+  - The C# layer is ~300 lines of managed wrapper around the generated native methods — minimal unsafe C# code
   - Debugging across the FFI boundary is harder than pure-C# or pure-Rust — requires familiarity with both toolchains
   - The Rust crate is the single novel security-critical component — small enough to audit or fuzz thoroughly
+  - In NativeAOT mode with `DirectPInvoke`, the generated `LibraryImport` calls compile to direct native function calls with zero overhead (see ADR-007)
 
 ## ADR-004: System.Net.Sockets-Compatible API Surface
 
@@ -54,17 +56,19 @@ Decisions are recorded as lightweight ADRs (Architectural Decision Records).
   - Should also provide `WgSocket.NetworkStream` wrapping the socket for `Stream`-based consumers (ASP.NET Core Kestrel, HttpClient, etc.)
   - Async variants (`SendAsync`, `ReceiveAsync`, `ConnectAsync`) are expected and should be implemented from the start — async is the default in modern .NET
 
-## ADR-005: NuGet Package with Embedded Native Binaries
+## ADR-005: Dual-Mode NuGet Package (Static Libs for AOT + Shared Libs for JIT)
 
 - **Date:** 2026-03-26
-- **Status:** Accepted
-- **Context:** The library has a native component (the Rust cdylib) that must be distributed alongside the managed C# assembly. Options: (a) embed natives in the NuGet package using `runtimes/{rid}/native/` conventions, (b) require consumers to install the native library separately, (c) distribute as a dotnet tool that manages its own binaries.
-- **Decision:** Ship a single NuGet package containing the C# assembly and pre-built native binaries for `win-x64`, `linux-x64`, `osx-x64`, and `osx-arm64`. The .NET runtime's native library resolution handles loading the correct binary for the current platform.
+- **Status:** Accepted (supersedes original shared-only approach)
+- **Context:** The library has a native Rust component that must be distributed alongside the managed C# assembly. NativeAOT consumers benefit from static linking (single binary, no DLL loading, direct function calls). JIT consumers (`dotnet run`, standard publish) need shared libraries loaded at runtime. Shipping both in one NuGet package serves both use cases from a single `dotnet add package` step.
+- **Decision:** Ship a single NuGet package containing the C# assembly, **static libraries** (`.a`/`.lib`) for NativeAOT consumers, and **shared libraries** (`.dll`/`.so`/`.dylib`) for JIT consumers, for all four target platforms (`win-x64`, `linux-x64`, `osx-x64`, `osx-arm64`). The `.csproj` conditionally wires `<DirectPInvoke>` + `<NativeLibrary>` when `PublishAot=true`; JIT consumers use standard runtime library resolution with no extra config.
 - **Consequences:**
-  - `dotnet add package WgSocket` is the only step for consumers — no separate native install
-  - The NuGet package will be larger than a pure-C# library (~2-4MB per native binary × 4 targets = ~8-16MB total) — acceptable for a networking library
-  - Platforms not included (e.g. `linux-arm64`, `win-arm64`) will fail at runtime with a clear `DllNotFoundException` — additional targets can be added later based on demand
-  - CI must cross-compile for all four targets on every release — adds build complexity but ensures all binaries are always in sync
+  - `dotnet add package WgSocket` is still the only step for consumers — works for both AOT and JIT
+  - Package size roughly doubles compared to shared-only (~4-8MB of static libs added on top of ~8-16MB of shared libs) — acceptable given the value proposition
+  - The Rust crate's `Cargo.toml` specifies `crate-type = ["staticlib", "cdylib"]` — both outputs from one `cargo build`
+  - CI must produce 8 native artefacts (4 targets × 2 crate types) per release
+  - Platforms not included will fail at runtime with a clear error — additional targets added based on demand
+  - If NativeAOT static linking proves problematic on a specific platform (e.g. linker symbol conflicts, platform-specific AOT bugs), that platform falls back to the shared library path gracefully — the consumer just doesn't set `PublishAot=true` for that target
 
 ## ADR-006: No Built-In Control Plane or Peer Discovery
 
@@ -77,3 +81,27 @@ Decisions are recorded as lightweight ADRs (Architectural Decision Records).
   - Consumers who need dynamic peer discovery must layer it on top (e.g. use Headscale/NetBird for the control plane, WgSocket for the in-process data plane)
   - Static endpoint configuration means the library works best for known-topology scenarios (e.g. connecting to a fixed set of servers) rather than fully dynamic mesh networking
   - A future companion package (`WgSocket.Discovery` or similar) could add STUN/TURN support without bloating the core library
+
+## ADR-007: NativeAOT Static Linking as Primary Target, Shared Library as Fallback
+
+- **Date:** 2026-03-26
+- **Status:** Accepted
+- **Context:** The original design assumed a conventional shared-library P/Invoke approach — Rust compiles to a `.so`/`.dll`/`.dylib`, .NET loads it at runtime, function calls cross a marshalling boundary. This works but has drawbacks: separate native files to deploy, runtime library loading overhead, and a visible FFI seam in the architecture. .NET 8+ NativeAOT supports `<DirectPInvoke>` with `<NativeLibrary>`, which statically links a native `.a`/`.lib` directly into the published binary. At that point, P/Invoke annotations compile to direct native function calls — the Rust and C# code fuse into one executable with no FFI overhead at the binary level.
+- **Decision:** Target NativeAOT static linking as the primary integration mode. Build the Rust crate as both `staticlib` and `cdylib`. Design all C# interop using `LibraryImport` (which works identically in both modes). The shared library path is maintained as a fully functional fallback for JIT execution and for any platform where NativeAOT static linking proves problematic.
+- **Consequences:**
+  - Primary path: single-file deployment, zero interop overhead, no DLL management — the "it just works" experience for AOT consumers
+  - The shared library fallback means the project is never blocked by NativeAOT issues — if static linking breaks on a specific platform/version, consumers just publish without AOT and everything still works
+  - Both modes use identical C# source code (same `LibraryImport` declarations, auto-generated by csbindgen) — no conditional compilation or separate code paths
+  - NativeAOT static linking with Rust is well-trodden (many NuGet packages with native deps do this) but edge cases exist: symbol name collisions if the consumer links other Rust static libs, platform-specific linker quirks on macOS, potential issues with Rust's allocator conflicting with .NET's
+  - The project should validate NativeAOT static linking on all four target platforms early (Sprint 1 milestone) — if any platform fails, that platform uses the shared library path and the issue is logged for investigation, not treated as a blocker
+
+### Fallback Escalation Ladder
+
+If NativeAOT static linking encounters problems, the fallback strategy is tiered:
+
+1. **Platform-specific fallback** — If static linking fails on one platform (e.g. macOS linker issues), that platform uses the shared library while others stay on static. No code changes needed.
+2. **Full shared-library mode** — If static linking proves unreliable across multiple platforms, drop the static libs from the NuGet package entirely. The architecture is unchanged; consumers just don't get single-file deployment. This is what the original design assumed and it's proven technology.
+3. **Function pointer mode** — If `LibraryImport` P/Invoke has issues in a specific scenario, raw `delegate* unmanaged` function pointers via `NativeLibrary.GetExport()` can replace it. Near-zero overhead, bypasses the P/Invoke machinery entirely. More code to write but fully manual control.
+4. **Pure C# WireGuard implementation** — Nuclear option. Replace boringtun with a C# Noise Protocol implementation (Noise.NET + `System.Security.Cryptography`). Keep smoltcp via FFI for the TCP/IP stack only (or accept significantly more work to reimplement TCP in managed code). Eliminates the native dependency entirely but puts the WireGuard implementation's correctness on us rather than Cloudflare. Only pursue this if the Rust FFI approach proves fundamentally unworkable, which is unlikely given the widespread use of native interop in the .NET ecosystem.
+
+Each tier is a clean fallback — the API surface (`WgSocket.Socket`) never changes regardless of which interop strategy is used underneath. The consumer's code is always just `new WgSocket.Socket(...)` with no awareness of the plumbing.

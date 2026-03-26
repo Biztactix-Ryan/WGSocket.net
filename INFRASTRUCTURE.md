@@ -32,12 +32,16 @@ Trigger: push to main, PR to main
 │   ├── cargo clippy -- -D warnings
 │   ├── cargo test (on native runner only, not cross targets)
 │   ├── cargo build --release --target {target}
-│   └── Upload native binary as artifact
+│   │   └── Produces BOTH staticlib (.a/.lib) and cdylib (.so/.dll/.dylib)
+│   ├── Run csbindgen → generate NativeMethods.g.cs
+│   │   └── Fail if generated file differs from checked-in version (drift check)
+│   └── Upload native binaries (static + shared) as artefacts
 ├── Job: dotnet-build (depends on rust-build)
-│   ├── Download all 4 native binaries
+│   ├── Download all 8 native binaries (4 targets × 2 crate types)
 │   ├── Place in runtimes/{rid}/native/
 │   ├── dotnet build
-│   ├── dotnet test
+│   ├── dotnet test (JIT mode — exercises shared library path)
+│   ├── dotnet publish -p:PublishAot=true (AOT smoke test — exercises static link path)
 │   └── dotnet pack
 └── Job: publish (manual trigger or tag)
     └── dotnet nuget push to nuget.org
@@ -56,8 +60,8 @@ Cross-compilation from Linux to Windows/Mac via `cross` is an option if GitHub A
 
 ### Rust Tooling
 
-- `cbindgen` generates the C header (`wgsocket.h`) from the Rust source, ensuring the P/Invoke declarations stay in sync
-- The generated header is checked into the repo and CI fails if it's stale (diff check)
+- `csbindgen` (Cysharp) reads the Rust `extern "C"` functions and auto-generates `NativeMethods.g.cs` with correct `LibraryImport` declarations. This file is checked into the repo and CI fails if it's stale (diff check against regenerated output)
+- The generated bindings work identically in both NativeAOT (static link / DirectPInvoke) and JIT (shared library load) modes — no conditional code paths
 
 ## Services & Dependencies
 
@@ -67,11 +71,11 @@ Cross-compilation from Linux to Windows/Mac via `cross` is an option if GitHub A
 |---|---|---|
 | **boringtun** (Rust crate) | WireGuard protocol — handshake, key exchange, packet encrypt/decrypt | BSD-3-Clause |
 | **smoltcp** (Rust crate) | Userspace TCP/IP stack — TCP state machine, IP routing, no OS deps | MIT (0-clause) |
-| **cbindgen** (Rust tool) | Generates C headers from Rust `#[no_mangle] extern "C"` exports | MPL-2.0 |
+| **csbindgen** (Rust crate / build dep) | Auto-generates C# `LibraryImport` P/Invoke declarations from Rust `extern "C"` exports | MIT |
 
 ### Runtime Dependencies
 
-None beyond the OS's UDP socket API. The compiled native library is fully self-contained — boringtun and smoltcp are statically linked into the `.dll`/`.so`/`.dylib`. The NuGet package has no transitive native dependencies.
+None beyond the OS's UDP socket API. The compiled native library is fully self-contained — boringtun and smoltcp are statically linked into the Rust output. In NativeAOT mode, this is further statically linked into the .NET binary itself (single file, zero runtime native deps). In JIT mode, the shared library (`.dll`/`.so`/`.dylib`) is the only runtime native dependency. The NuGet package has no transitive native dependencies.
 
 ### .NET Dependencies
 
