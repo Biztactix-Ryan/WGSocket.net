@@ -1,10 +1,12 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
-depends_on: []
+depends_on:
+- US-WNE-4-6
+- US-WNE-4-7
 id: US-WNE-4-8
 points: 2
-status: todo
+status: done
 story_id: US-WNE-4
 tags: []
 title: Implement full config validation pass

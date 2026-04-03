@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T03:15:27.078677Z","outcome":"success","status":"done","note":"Created SocketAvailablePropertyTests.cs with 8 tests covering: zero/positive/negative poll returns, poll call verification, ObjectDisposedException after Dispose/Close, and Available after Connect. All 8 tests pass.","actor":"Ryan Tregea"}

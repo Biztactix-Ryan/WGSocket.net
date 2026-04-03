@@ -9,7 +9,7 @@ epic_id: EPIC-WNE-2
 id: US-WNE-6
 points: 2
 priority: must
-status: backlog
+status: done
 tags:
 - rust
 - config

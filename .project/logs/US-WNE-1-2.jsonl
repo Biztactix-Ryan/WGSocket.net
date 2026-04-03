@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T10:41:49.606668Z","outcome":"success","status":"done","note":"Verified cargo build produces libwgsocket_native.so (ELF 64-bit shared object) at target/debug/. The library exports wgsocket_ping symbol correctly. Platform-appropriate .so confirmed on Linux.","actor":"Ryan Tregea"}

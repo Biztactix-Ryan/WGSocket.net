@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T20:34:43.899478Z","outcome":"success","status":"done","note":"Created HandleCreationAndSingleDisposeTests.cs with 14 tests covering WgDeviceHandle and WgSocketHandle creation from mock IntPtr values, IsInvalid validation, single-dispose native release verification, and IsClosed transitions. All 14 tests pass.","actor":"Ryan Tregea"}

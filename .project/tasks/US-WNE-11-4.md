@@ -1,11 +1,11 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on:
 - US-WNE-11-6
 id: US-WNE-11-4
 points: 1
-status: todo
+status: done
 story_id: US-WNE-11
 tags: []
 title: 'Test: ThrowIfError returns cleanly on success codes'

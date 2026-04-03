@@ -1,10 +1,11 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
-depends_on: []
+depends_on:
+- US-WNE-17-6
 id: US-WNE-17-2
-points: null
-status: todo
+points: 1
+status: done
 story_id: US-WNE-17
 tags: []
 title: 'Test: WgPeer class with PublicKey and Endpoint and AllowedIPs and PresharedKey

@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T18:03:33.664138Z","outcome":"success","status":"done","note":"Verified WgConfigTests.cs already covers valid construction: 9 tests covering both constructor overloads, all properties (PrivateKey, Address, ListenPort, Peers), init setters, and multi-peer scenarios. All 9 tests pass.","actor":"Ryan Tregea"}

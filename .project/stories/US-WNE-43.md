@@ -11,14 +11,14 @@ epic_id: EPIC-WNE-8
 id: US-WNE-43
 points: 3
 priority: must
-status: backlog
+status: done
 tags:
 - testing
 - integration
 - handshake
 - crypto
 title: Handshake and rekey verification
-updated: '2026-03-26'
+updated: '2026-03-28'
 ---
 
 As a developer, I want to verify the Noise_IKpsk2 handshake and automatic rekeying so that I can confirm the cryptographic protocol works correctly through the full stack including PSK support and timeout handling.

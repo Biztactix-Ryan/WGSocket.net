@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T23:00:44.835644Z","outcome":"success","status":"done","note":"Test close_twice_second_returns_error already exists in ffi_null_doublefree_concurrency.rs:148. Verified it passes - double wg_close returns ERR_INVALID_HANDLE on second call without crash/UB.","actor":"Ryan Tregea"}

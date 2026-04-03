@@ -1,10 +1,11 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
-depends_on: []
+depends_on:
+- US-WNE-4-7
 id: US-WNE-4-3
-points: null
-status: todo
+points: 1
+status: done
 story_id: US-WNE-4
 tags: []
 title: 'Test: Validates endpoint format (IP:port or hostname:port)'

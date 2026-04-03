@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T14:19:34.916877Z","outcome":"success","status":"done","note":"Added 3 tests to netstack.rs: can_bind_listen_tcp_socket (verifies listen on port), can_connect_tcp_socket (verifies connect initiation), tcp_listen_then_accept_via_syn_injection (verifies SYN processing transitions socket to active/SynReceived). All 236 tests pass.","actor":"Ryan Tregea"}

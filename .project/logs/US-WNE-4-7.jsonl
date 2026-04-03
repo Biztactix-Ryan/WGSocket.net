@@ -1,0 +1,2 @@
+{"timestamp":"2026-03-26T12:08:42.085761Z","outcome":"success","status":"done","note":"Implemented validate_cidr() and validate_endpoint() functions plus Endpoint enum in config.rs. validate_cidr parses/validates CIDR notation via ipnet. validate_endpoint supports IPv4:port, [IPv6]:port, and hostname:port with port range 1-65535 validation. All 111 tests pass.","actor":"Ryan Tregea"}
+{"timestamp":"2026-03-26T13:13:19.447231Z","outcome":"info","status":"done","note":"Status was stale — run log already showed success. Correcting to done.","actor":"Ryan Tregea"}

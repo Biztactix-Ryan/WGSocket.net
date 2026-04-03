@@ -1,11 +1,11 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on:
 - US-WNE-13-5
 id: US-WNE-13-4
 points: 1
-status: todo
+status: done
 story_id: US-WNE-13
 tags: []
 title: 'Test: Custom resolver falls back to default when custom probing fails'

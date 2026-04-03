@@ -1,7 +1,8 @@
 ---
 assignee: null
 created: '2026-03-26'
-depends_on: []
+depends_on:
+- US-WNE-18-6
 id: US-WNE-18-4
 points: null
 status: done

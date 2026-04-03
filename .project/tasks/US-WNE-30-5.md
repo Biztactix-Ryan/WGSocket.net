@@ -1,14 +1,15 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
-depends_on: []
+depends_on:
+- US-WNE-30-8
 id: US-WNE-30-5
-points: null
-status: todo
+points: 1
+status: done
 story_id: US-WNE-30
 tags: []
 title: 'Test: Test data flows after successful handshake'
-updated: '2026-03-26'
+updated: '2026-03-28'
 ---
 
 Verify acceptance criterion for story US-WNE-30:

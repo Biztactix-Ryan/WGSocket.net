@@ -11,13 +11,13 @@ epic_id: EPIC-WNE-5
 id: US-WNE-29
 points: 2
 priority: must
-status: backlog
+status: done
 tags:
 - api
 - socket
 - state
 title: Socket properties & state management
-updated: '2026-03-26'
+updated: '2026-03-27'
 ---
 
 As a library consumer, I want Socket properties and state management that match System.Net.Sockets.Socket so that my existing code patterns (checking Connected, reading endpoints, validating state) work without changes.

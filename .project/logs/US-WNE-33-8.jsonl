@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T18:38:24.775479Z","outcome":"success","status":"done","note":"Builder/initializer pattern tests already exist in WgConfigBuilderTests.cs (13 tests). All pass. Covers: fluent builder API, required field validation, object initializer for WgConfig and WgPeer, null arg checks, end-to-end config.","actor":"Ryan Tregea"}

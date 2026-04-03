@@ -1,10 +1,11 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
-depends_on: []
+depends_on:
+- US-WNE-3-9
 id: US-WNE-3-5
-points: null
-status: todo
+points: 1
+status: done
 story_id: US-WNE-3
 tags: []
 title: 'Test: Returns descriptive error messages for malformed input including line

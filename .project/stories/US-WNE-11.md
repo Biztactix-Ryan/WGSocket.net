@@ -10,7 +10,7 @@ epic_id: EPIC-WNE-4
 id: US-WNE-11
 points: 2
 priority: must
-status: backlog
+status: done
 tags:
 - interop
 - exceptions

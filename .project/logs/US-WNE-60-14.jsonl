@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-03T09:03:13.453430Z","outcome":"success","status":"done","note":"Fixed disposal and CancellationToken tests. Updated SocketDisposeTests and SocketAsyncCancellationTests to use relative count assertions for parallel test safety. All 36 tests pass.","actor":"Ryan Tregea"}

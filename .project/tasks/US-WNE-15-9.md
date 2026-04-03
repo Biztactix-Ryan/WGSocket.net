@@ -1,5 +1,5 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on:
 - US-WNE-15-6
@@ -7,7 +7,7 @@ depends_on:
 - US-WNE-15-8
 id: US-WNE-15-9
 points: 3
-status: todo
+status: done
 story_id: US-WNE-15
 tags: []
 title: Test full outbound and inbound packet flow through composition engine

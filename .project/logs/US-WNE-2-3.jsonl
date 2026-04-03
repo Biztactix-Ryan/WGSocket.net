@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T10:55:34.743135Z","outcome":"success","status":"done","note":"Added test all_key_fields_are_fixed_size_byte_arrays in config.rs. Test verifies private_key, public_key, and preshared_key are all [u8; 32] via type-binding assertions. All 7 config tests pass.","actor":"Ryan Tregea"}

@@ -10,7 +10,7 @@ epic_id: EPIC-WNE-5
 id: US-WNE-17
 points: 2
 priority: must
-status: backlog
+status: done
 tags:
 - api
 - models

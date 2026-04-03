@@ -10,14 +10,14 @@ epic_id: EPIC-WNE-6
 id: US-WNE-34
 points: 2
 priority: must
-status: backlog
+status: done
 tags:
 - rust
 - testing
 - resource-management
 - safety
 title: Resource cleanup and leak tests
-updated: '2026-03-26'
+updated: '2026-03-28'
 ---
 
 As a developer, I want tests that verify resource cleanup and absence of memory leaks so that I can ensure the library safely frees all resources, zeroes sensitive key material, and handles repeated create/free cycles without handle map growth.

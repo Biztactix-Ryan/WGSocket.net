@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T18:10:12.816158Z","outcome":"success","status":"done","note":"wg_device_free implemented at lib.rs:171. Returns WG_OK on success, WG_ERR_INVALID_HANDLE on invalid/double-free. No unsafe code, cannot panic.","actor":"Ryan Tregea"}

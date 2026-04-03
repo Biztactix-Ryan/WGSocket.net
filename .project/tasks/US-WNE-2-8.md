@@ -1,5 +1,5 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on:
 - US-WNE-2-5
@@ -7,7 +7,7 @@ depends_on:
 - US-WNE-2-7
 id: US-WNE-2-8
 points: 1
-status: todo
+status: done
 story_id: US-WNE-2
 tags: []
 title: Tests for config data model

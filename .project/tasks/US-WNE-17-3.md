@@ -1,10 +1,12 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
-depends_on: []
+depends_on:
+- US-WNE-17-6
+- US-WNE-17-7
 id: US-WNE-17-3
-points: null
-status: todo
+points: 2
+status: done
 story_id: US-WNE-17
 tags: []
 title: 'Test: Validation on construction rejects invalid keys/ports/addresses'

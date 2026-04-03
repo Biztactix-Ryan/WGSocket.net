@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T18:06:53.549162Z","outcome":"success","status":"done","note":"wg_device_new already implemented in lib.rs:116. Parses wg.conf string, creates WgDevice, inserts into global DEVICES handle table, returns handle as i64. All 340 tests pass.","actor":"Ryan Tregea"}

@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T13:04:37.567949Z","outcome":"success","status":"done","note":"Defined WgError enum (repr(i32)) with all 10 FFI error codes and exported pub const values for C consumption. Added doc comments for each code. 5 new tests covering value correctness, negativity invariant, and enum-constant consistency. All 198 tests pass.","actor":"Ryan Tregea"}

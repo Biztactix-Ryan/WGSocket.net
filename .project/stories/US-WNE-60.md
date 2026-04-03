@@ -14,13 +14,13 @@ epic_id: EPIC-WNE-7
 id: US-WNE-60
 points: 5
 priority: must
-status: backlog
+status: done
 tags:
 - testing
 - mvp
 - api-surface
 title: Socket API surface tests
-updated: '2026-03-26'
+updated: '2026-04-03'
 ---
 
 As a developer, I want comprehensive unit tests for the WgSocket API surface so that I can verify the socket type provides a familiar System.Net.Sockets.Socket-compatible interface and that all method signatures, property accessors, state validation, and async patterns work as expected for drop-in replacement usage.

@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T12:36:36.985843Z","outcome":"success","status":"done","note":"Implemented ConfigBuilder struct in config.rs with fluent API: new(), private_key(&[u8; 32]), listen_port(u16), address(IpNet), dns(IpAddr). All setters consume and return self for chaining. Option fields for intermediate state. Compiles cleanly.","actor":"Ryan Tregea"}

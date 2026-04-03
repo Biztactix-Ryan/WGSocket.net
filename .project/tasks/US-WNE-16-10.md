@@ -1,5 +1,5 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on:
 - US-WNE-16-6
@@ -8,7 +8,7 @@ depends_on:
 - US-WNE-16-9
 id: US-WNE-16-10
 points: 2
-status: todo
+status: done
 story_id: US-WNE-16
 tags: []
 title: 'Test connection lifecycle: connect, listen, accept, close, invalid handles'

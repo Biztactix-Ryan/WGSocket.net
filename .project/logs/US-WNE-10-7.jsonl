@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T16:33:03.500285Z","outcome":"success","status":"done","note":"Implemented WgSocketHandle as sealed SafeHandle subclass. Wraps socket fd with platform-safe IsInvalid (checks both IntPtr.Zero and -1). ReleaseHandle calls NativeMethods.SocketClose. Stores parent device handle for cleanup. Build succeeds.","actor":"Ryan Tregea"}

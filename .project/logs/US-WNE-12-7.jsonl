@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T20:07:02.229788Z","outcome":"success","status":"done","note":"Implemented BufferMarshaller.PinAndReceive: accepts Span<byte>, pins with fixed, calls NativeMethods.Recv, returns bytes written, throws WgBufferTooSmallException on -3xx errors, validates non-empty buffer. Added recv tracking to stub C library. 14 tests passing.","actor":"Ryan Tregea"}

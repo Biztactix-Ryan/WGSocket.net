@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T16:03:34.638475Z","outcome":"success","status":"done","note":"Added LibraryImport declarations for PeerAdd, PeerRemove, PeerList, and GenerateKeypair in NativeMethods.cs. All use byte* for 32-byte key parameters. wg_last_error was already declared. Build succeeded with 0 warnings.","actor":"Ryan Tregea"}

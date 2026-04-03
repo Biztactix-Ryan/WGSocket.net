@@ -1,10 +1,10 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on: []
 id: US-WNE-5-5
-points: null
-status: todo
+points: 2
+status: done
 story_id: US-WNE-5
 tags: []
 title: 'Test: Timer events (rekey and keepalive) are handled'

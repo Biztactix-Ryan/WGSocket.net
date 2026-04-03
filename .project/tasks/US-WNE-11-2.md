@@ -1,12 +1,12 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on:
 - US-WNE-11-5
 - US-WNE-11-6
 id: US-WNE-11-2
 points: 1
-status: todo
+status: done
 story_id: US-WNE-11
 tags: []
 title: 'Test: Correct exception subclass thrown for each error code'

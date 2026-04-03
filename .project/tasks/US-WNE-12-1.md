@@ -1,11 +1,11 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on:
 - US-WNE-12-6
 id: US-WNE-12-1
 points: 1
-status: todo
+status: done
 story_id: US-WNE-12
 tags: []
 title: 'Test: Send operations accept ReadOnlySpan and pin correctly'

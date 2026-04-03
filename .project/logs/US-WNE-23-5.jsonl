@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T12:48:00.128176Z","outcome":"success","status":"done","note":"Verified existing CIDR error tests pass: bad_cidr (out-of-range /999), cidr_missing_prefix (bare IP), bad_allowed_ips (invalid string). All 3 tests green.","actor":"Ryan Tregea"}

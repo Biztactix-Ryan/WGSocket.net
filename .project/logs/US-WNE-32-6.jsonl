@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T22:45:39.474383Z","outcome":"success","status":"done","note":"Verified: test device_free_twice_second_returns_error_no_ub in ffi_null_doublefree_concurrency.rs covers double wg_device_free. Test passes — first free returns OK, second returns ERR_INVALID_HANDLE, no UB.","actor":"Ryan Tregea"}

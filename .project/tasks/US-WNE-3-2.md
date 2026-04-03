@@ -1,10 +1,12 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
-depends_on: []
+depends_on:
+- US-WNE-3-8
+- US-WNE-3-9
 id: US-WNE-3-2
-points: null
-status: todo
+points: 1
+status: done
 story_id: US-WNE-3
 tags: []
 title: 'Test: Parses [Peer] sections including PublicKey Endpoint AllowedIPs PresharedKey

@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T22:41:49.733643Z","outcome":"success","status":"done","note":"Verified 6 existing zero-length tests all pass: unit tests in socket_ffi::tests, FFI boundary tests in ffi_null_doublefree_concurrency.rs, and integration tests in send_recv.rs. Both wg_send and wg_recv correctly return ERR_BUFFER_TOO_SMALL when called with len=0.","actor":"Ryan Tregea"}

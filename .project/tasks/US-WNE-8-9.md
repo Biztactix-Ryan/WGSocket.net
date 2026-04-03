@@ -1,5 +1,5 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on:
 - US-WNE-8-6
@@ -7,7 +7,7 @@ depends_on:
 - US-WNE-8-8
 id: US-WNE-8-9
 points: 2
-status: todo
+status: done
 story_id: US-WNE-8
 tags: []
 title: Test smoltcp socket operations with loopback virtual device

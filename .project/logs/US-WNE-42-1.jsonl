@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-28T02:02:26.369560Z","outcome":"success","status":"done","note":"Verified WgSocket.slnx at repo root references all projects: src/WgSocket/WgSocket.csproj and tests/WgSocket.Tests/WgSocket.Tests.csproj. `dotnet sln list` confirms both projects load correctly.","actor":"Ryan Tregea"}

@@ -1,10 +1,10 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on: []
 id: US-WNE-35-7
 points: 2
-status: todo
+status: done
 story_id: US-WNE-35
 tags: []
 title: Implement handle validation, ref-counting, and secure cleanup

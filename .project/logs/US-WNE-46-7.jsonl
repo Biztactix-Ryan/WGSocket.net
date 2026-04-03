@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T19:55:22.953830Z","outcome":"success","status":"done","note":"Added ConcurrentDisposeTests.cs with 4 tests: concurrent dispose safety and single-release verification for both WgDeviceHandle and WgSocketHandle. All pass.","actor":"Ryan Tregea"}

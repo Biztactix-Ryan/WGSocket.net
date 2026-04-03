@@ -5,7 +5,7 @@ depends_on:
 - US-WNE-14-6
 id: US-WNE-14-7
 points: 1
-status: todo
+status: done
 story_id: US-WNE-14
 tags: []
 title: Implement wg_device_new_from_struct with WgConfig FFI struct

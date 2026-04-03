@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T15:44:49.268028Z","outcome":"success","status":"done","note":"Added cbindgen 0.27 as build-dep, created cbindgen.toml (C language, WGSOCKET_H guard, stdint/stdbool includes, ScreamingSnakeCase enums), updated build.rs to generate include/wgsocket.h. Header contains WgError enum, wg_last_error(), wgsocket_ping(). All 334 tests pass.","actor":"Ryan Tregea"}

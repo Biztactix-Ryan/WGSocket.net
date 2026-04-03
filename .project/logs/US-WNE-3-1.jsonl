@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T11:41:24.649695Z","outcome":"success","status":"done","note":"Added 2 acceptance tests via FromStr: acceptance_fromstr_parses_interface_all_fields (PrivateKey, ListenPort, Address, DNS with IPv4+IPv6) and acceptance_fromstr_parses_interface_optional_fields_absent. All 80 tests pass.","actor":"Ryan Tregea"}

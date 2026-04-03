@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T18:36:31.431533Z","outcome":"success","status":"done","note":"Implemented route_outbound() in tunnel.rs. Drains TX packets from VirtualDevice, encrypts each via Tunn::encapsulate(), returns encrypted WireGuard packets. 4 new tests pass, all 358 tests pass.","actor":"Ryan Tregea"}

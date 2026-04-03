@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T17:39:56.777508Z","outcome":"info","status":"done","note":"Superseded: tasks 27-1 through 27-7 each built their own test harness inline (common module with create_interface, poll helpers, socket allocation). The standalone harness this task described is no longer needed.","actor":"Ryan Tregea"}

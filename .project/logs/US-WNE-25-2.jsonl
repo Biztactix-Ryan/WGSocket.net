@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T13:20:47.665152Z","outcome":"success","status":"done","note":"Created decrypt_recovers_plaintext.rs with 7 tests: minimal IPv4, both directions, various sizes, sequential packets, all-zeros, all-ones, tampered ciphertext rejection. All pass.","actor":"Ryan Tregea"}

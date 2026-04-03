@@ -10,7 +10,7 @@ epic_id: EPIC-WNE-3
 id: US-WNE-19
 points: 2
 priority: should
-status: backlog
+status: done
 tags:
 - ffi
 - diagnostics

@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T23:10:56.844491Z","outcome":"success","status":"done","note":"Added IAsyncDisposable to WgDevice and created 12 tests in WgDeviceDisposableTests.cs covering: IDisposable/IAsyncDisposable interface verification, native handle release, idempotent dispose, using/await-using patterns, and cross-disposal interplay. All tests pass.","actor":"Ryan Tregea"}

@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T13:07:45.412317Z","outcome":"success","status":"done","note":"Implemented thread-local LAST_ERROR storage, set_last_error() helper, and #[no_mangle] extern \"C\" wg_last_error() -> *const c_char. All 198 tests pass.","actor":"Ryan Tregea"}

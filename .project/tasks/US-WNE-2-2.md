@@ -1,10 +1,11 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
-depends_on: []
+depends_on:
+- US-WNE-2-5
 id: US-WNE-2-2
-points: null
-status: todo
+points: 1
+status: done
 story_id: US-WNE-2
 tags: []
 title: 'Test: WgPeerConfig struct with public_key endpoint allowed_ips preshared_key

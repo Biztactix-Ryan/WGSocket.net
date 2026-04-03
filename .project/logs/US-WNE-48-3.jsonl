@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-29T03:17:21.555483Z","outcome":"success","status":"done","note":"Verified CI workflow .github/workflows/ci.yml lines 41-52: all 4 matrix legs run cargo fmt --check, cargo clippy -- -D warnings, cargo test (skipped for osx-arm64 cross-compile, matching \"native only\"), and cargo build --release. Criterion satisfied.","actor":"Ryan Tregea"}

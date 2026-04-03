@@ -1,11 +1,11 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on:
 - US-WNE-12-8
 id: US-WNE-12-5
 points: 1
-status: todo
+status: done
 story_id: US-WNE-12
 tags: []
 title: 'Test: Key material validated as 32-byte ReadOnlySpan and never string-allocated'

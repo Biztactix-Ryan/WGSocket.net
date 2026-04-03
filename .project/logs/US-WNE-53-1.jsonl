@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-03T18:57:49.139368Z","outcome":"success","status":"done","note":"Verified publish.yml has correct triggers: workflow_dispatch for manual runs and push.tags 'v*' for version tags","actor":"Ryan Tregea"}

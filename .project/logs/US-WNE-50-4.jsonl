@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-29T05:41:56.882821Z","outcome":"success","status":"done","note":"Created PackageSizeTests.cs with 2 tests: Package_Size_Is_Reasonable_With_Four_Native_Binaries (verifies .nupkg is 4-20MB with 4x2MB dummy binaries) and Package_Contains_Four_Native_Entries_With_Realistic_Sizes (verifies each native entry is ~2MB). Both pass.","actor":"Ryan Tregea"}

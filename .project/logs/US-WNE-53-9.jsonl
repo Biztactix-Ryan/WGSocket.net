@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-03T19:23:19.486372Z","outcome":"success","status":"done","note":"Added NuGet push step (dotnet nuget push with NUGET_API_KEY secret) and GitHub release step (softprops/action-gh-release@v2 with auto-generated notes and .nupkg asset) to publish.yml","actor":"Ryan Tregea"}

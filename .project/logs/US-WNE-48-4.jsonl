@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-29T03:51:02.527389Z","outcome":"success","status":"done","note":"Verified: ci.yml lines 54-59 upload native binaries via actions/upload-artifact@v4 with per-target naming (native-{win-x64,linux-x64,osx-x64,osx-arm64}) and if-no-files-found: error.","actor":"Ryan Tregea"}

@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T10:48:56.713723Z","outcome":"success","status":"done","note":"Added 4 tests for clean thread shutdown on device drop: handle map lifecycle, concurrent drops, foreign-thread drop, and shutdown flag verification. All 35 device tests pass.","actor":"Ryan Tregea"}

@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-03T06:31:09.152794Z","outcome":"success","status":"done","note":"All key-holding Rust types have custom Debug impls with [REDACTED]: WgConfig, WgPeerConfig, WgDevice, WgTunnel, InterfaceSection. C# WgConfig and WgPeer have ToString() with truncated key prefixes. All tests pass.","actor":"Ryan Tregea"}

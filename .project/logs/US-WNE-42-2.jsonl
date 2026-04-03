@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-28T02:22:05.804515Z","outcome":"success","status":"done","note":"Verified: src/WgSocket/WgSocket.csproj uses SDK-style format (Project Sdk=\"Microsoft.NET.Sdk\") and targets net9.0 (upgraded from original net8.0 plan). All SDK-style properties present: Nullable, ImplicitUsings, AllowUnsafeBlocks, GenerateDocumentationFile.","actor":"Ryan Tregea"}

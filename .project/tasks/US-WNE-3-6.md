@@ -1,10 +1,10 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on: []
 id: US-WNE-3-6
 points: 1
-status: todo
+status: done
 story_id: US-WNE-3
 tags: []
 title: Implement INI-style line tokenizer

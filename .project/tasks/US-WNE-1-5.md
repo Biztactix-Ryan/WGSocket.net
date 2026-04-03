@@ -1,10 +1,10 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on: []
 id: US-WNE-1-5
 points: 1
-status: todo
+status: done
 story_id: US-WNE-1
 tags: []
 title: Initialize Cargo project with cdylib crate type

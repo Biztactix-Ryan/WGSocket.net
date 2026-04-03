@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T20:26:13.565490Z","outcome":"success","status":"done","note":"Created DoubleDisposeAndPostDisposeSafetyTests.cs with 12 tests: 6 double-dispose tests (3 per handle type) verifying no-throw and native release called exactly once, plus 6 post-dispose tests verifying ObjectDisposedException with correct type name. All 12 tests pass.","actor":"Ryan Tregea"}

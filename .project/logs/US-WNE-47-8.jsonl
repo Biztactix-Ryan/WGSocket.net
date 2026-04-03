@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-03T12:57:02.883659Z","outcome":"success","status":"done","note":"Created WgSocket.Benchmarks project with BenchmarkDotNet. Includes TunnelThroughputBenchmarks (4KB/64KB/256KB buffer sizes), LatencyBenchmarks (64B roundtrip), and DirectSocket baselines. Configured JSON/CSV/Markdown exporters for CI-friendly output.","actor":"Ryan Tregea"}

@@ -1,0 +1,2 @@
+{"timestamp":"2026-04-03T07:20:09.537818Z","outcome":"blocked","status":"blocked","note":"README lacks API overview table. No markdown table exists. Need table listing key types (WgDevice, WgSocket, WgConfig, WgPeer) and their purposes.","actor":"Ryan Tregea"}
+{"timestamp":"2026-04-03T19:59:04.981311Z","outcome":"success","status":"done","note":"Verified API Overview table in README.md (lines 115-124) lists key types: WgDevice, WgConfig, WgPeer, Socket, NetworkStream with descriptions.","actor":"Ryan Tregea"}

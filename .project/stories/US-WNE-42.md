@@ -12,13 +12,13 @@ epic_id: EPIC-WNE-9
 id: US-WNE-42
 points: 2
 priority: must
-status: backlog
+status: active
 tags:
 - ci
 - structure
 - mvp
 title: Solution & project structure setup
-updated: '2026-03-26'
+updated: '2026-03-28'
 ---
 
 As a developer, I want the .NET solution and Rust crate project structure properly configured so that I can build and test locally with a single command.

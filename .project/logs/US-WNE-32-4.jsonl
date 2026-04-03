@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T22:37:51.432126Z","outcome":"success","status":"done","note":"Verified existing tests cover null buffer pointer for wg_send/wg_recv. Tests send_null_buffer_returns_error_not_crash and recv_null_buffer_returns_error_not_crash in ffi_null_doublefree_concurrency.rs both pass.","actor":"Ryan Tregea"}

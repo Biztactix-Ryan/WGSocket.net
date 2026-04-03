@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T00:14:28.395692Z","outcome":"success","status":"done","note":"Added Listen(int backlog) to Socket.cs, SocketListen P/Invoke to NativeMethods.cs, wg_socket_listen stub to stub_wgsocket.c, and 9 passing tests in SocketListenTests.cs.","actor":"Ryan Tregea"}

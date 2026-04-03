@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-03T09:48:26.512952Z","outcome":"success","status":"done","note":"Tests already exist in WgDeviceRefCountTests.cs - 8 tests covering ref-counting disposal behavior: Dispose with live sockets defers, CreateSocket after dispose throws ObjectDisposedException, multiple sockets handled, async dispose works. All tests passing.","actor":"Ryan Tregea"}

@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T19:07:29.719389Z","outcome":"success","status":"done","note":"Added WgExceptionErrorCodeTests.cs with 30 tests covering: boundary values (0, MinValue, MaxValue), all 3 constructor overloads for each subclass, ErrorCode independence from message, and ErrorCode accessibility when caught as base/Exception type.","actor":"Ryan Tregea"}

@@ -1,14 +1,14 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on: []
 id: US-WNE-66-4
-points: null
-status: todo
+points: 2
+status: done
 story_id: US-WNE-66
 tags: []
 title: 'Test: Ref-counting prevents use-after-free across device/socket boundary'
-updated: '2026-03-26'
+updated: '2026-04-03'
 ---
 
 Verify acceptance criterion for story US-WNE-66:

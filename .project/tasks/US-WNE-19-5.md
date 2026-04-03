@@ -5,7 +5,7 @@ depends_on:
 - US-WNE-19-4
 id: US-WNE-19-5
 points: 1
-status: todo
+status: done
 story_id: US-WNE-19
 tags: []
 title: 'Test wg_get_stats: valid stats, null pointer, invalid handle'

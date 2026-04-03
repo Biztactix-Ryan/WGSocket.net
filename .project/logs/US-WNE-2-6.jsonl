@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T11:11:26.813763Z","outcome":"success","status":"done","note":"Implemented custom fmt::Debug for WgConfig and WgPeerConfig. private_key, public_key print as \"[REDACTED]\"; preshared_key prints as \"Some([REDACTED])\" or \"None\". All other fields display normally. All existing tests pass, clean compile.","actor":"Ryan Tregea"}

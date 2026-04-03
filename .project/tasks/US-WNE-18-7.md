@@ -1,11 +1,11 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on:
 - US-WNE-18-6
 id: US-WNE-18-7
 points: 2
-status: todo
+status: done
 story_id: US-WNE-18
 tags: []
 title: Implement wg_recv for reading data from a socket

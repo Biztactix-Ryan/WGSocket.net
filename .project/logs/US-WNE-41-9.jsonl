@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-28T07:06:24.513474Z","outcome":"success","status":"done","note":"Tests already implemented in AllowedIPsWrongSourceTests.cs with /32 and /24 wrong-source scenarios plus positive case. Build passes with 0 errors.","actor":"Ryan Tregea"}

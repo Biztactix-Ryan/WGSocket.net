@@ -10,14 +10,14 @@ epic_id: EPIC-WNE-1
 id: US-WNE-28
 points: 5
 priority: must
-status: backlog
+status: done
 tags:
 - rust
 - io
 - threading
 - mvp
 title: Poll loop & I/O thread
-updated: '2026-03-26'
+updated: '2026-03-27'
 ---
 
 As a developer, I want a dedicated I/O thread with a poll loop so that the tunnel processes packets without blocking application threads.

@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T22:34:03.527178Z","outcome":"success","status":"done","note":"Added invalid handle tests for wg_listen, wg_accept, wg_get_stats (previously only connect/send/recv/close/device_free were tested). Added comprehensive freed-handle test covering all 8 handle-taking functions. All 23 tests pass.","actor":"Ryan Tregea"}

@@ -1,11 +1,11 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on:
 - US-WNE-16-6
 id: US-WNE-16-9
 points: 1
-status: todo
+status: done
 story_id: US-WNE-16
 tags: []
 title: Implement wg_close for socket and listener teardown

@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T18:11:48.530424Z","outcome":"success","status":"done","note":"5 new integration tests added: valid config creates device, free returns OK, double-free returns INVALID_HANDLE, null pointer returns INVALID_CONFIG, malformed config sets last_error. All 351 tests pass.","actor":"Ryan Tregea"}

@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T12:53:48.169954Z","outcome":"success","status":"done","note":"Added 5 new malformed endpoint fixtures (port overflow, empty, hostname, IPv6 without brackets, garbage) and 8 new tests. All 38 error-path tests pass.","actor":"Ryan Tregea"}

@@ -1,11 +1,11 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on:
 - US-WNE-11-5
 id: US-WNE-11-1
 points: 1
-status: todo
+status: done
 story_id: US-WNE-11
 tags: []
 title: 'Test: WgException hierarchy structure and ErrorCode property'

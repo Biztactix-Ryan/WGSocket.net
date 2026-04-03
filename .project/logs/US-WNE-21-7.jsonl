@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T15:49:03.874987Z","outcome":"success","status":"done","note":"Verified include/wgsocket.h is correct (include guard, C types, WgError enum, wg_last_error and wgsocket_ping declarations). Created check-header.sh CI script that runs cbindgen and diffs against committed header, failing on staleness. Both pass and fail paths tested.","actor":"Ryan Tregea"}

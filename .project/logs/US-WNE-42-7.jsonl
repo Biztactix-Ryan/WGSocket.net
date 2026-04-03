@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-28T01:46:55.452502Z","outcome":"success","status":"done","note":"Verified local dev references native library via local path convention. WgSocketNativeDir defaults to src/wgsocket-native/target/release/ and is overridable. Fixed XML comment syntax error in Directory.Build.props (invalid double-hyphens). dotnet build succeeds.","actor":"Ryan Tregea"}

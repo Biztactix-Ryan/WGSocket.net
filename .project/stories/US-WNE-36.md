@@ -12,14 +12,14 @@ epic_id: EPIC-WNE-8
 id: US-WNE-36
 points: 3
 priority: must
-status: backlog
+status: done
 tags:
 - testing
 - integration
 - harness
 - mvp
 title: Integration test harness setup
-updated: '2026-03-26'
+updated: '2026-03-28'
 ---
 
 As a developer, I want a reusable test harness that creates paired WgDevice instances so that integration tests can focus on behavior rather than boilerplate setup and teardown.

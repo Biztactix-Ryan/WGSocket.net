@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T18:46:31.645713Z","outcome":"success","status":"done","note":"Added composition_handles_both_tcp_and_udp_socket_types test in netstack.rs. Test creates two peers with both TCP and UDP sockets on the same interface, sends data simultaneously over both protocols in both directions, and verifies correct demuxing. All 359 tests pass.","actor":"Ryan Tregea"}

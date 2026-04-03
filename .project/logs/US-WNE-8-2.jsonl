@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T14:16:08.968028Z","outcome":"success","status":"done","note":"Added 3 tests to netstack.rs: can_open_tcp_socket_on_interface, can_open_udp_socket_on_interface, can_open_both_tcp_and_udp_sockets_on_same_interface. All 233 tests pass.","actor":"Ryan Tregea"}

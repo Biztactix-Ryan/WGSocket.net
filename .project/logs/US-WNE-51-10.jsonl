@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-03T06:13:32.403145Z","outcome":"success","status":"done","note":"Created KeyBufferZeroingAfterDisposeTests.cs with 14 tests covering: WgConfig.Dispose zeroing private key, WgPeer.Dispose zeroing PSK, cascading disposal, builder disposal, fixed statement pinning, and GC pressure stability. All tests pass.","actor":"Ryan Tregea"}

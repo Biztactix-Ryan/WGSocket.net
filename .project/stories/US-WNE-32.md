@@ -14,7 +14,7 @@ epic_id: EPIC-WNE-6
 id: US-WNE-32
 points: 3
 priority: must
-status: backlog
+status: done
 tags:
 - rust
 - testing
@@ -22,7 +22,7 @@ tags:
 - safety
 - unit-test
 title: FFI boundary safety tests
-updated: '2026-03-26'
+updated: '2026-03-27'
 ---
 
 As a developer, I want tests for every FFI entry point so that I can guarantee the C API handles invalid inputs, null pointers, double-free, and concurrent access safely without undefined behavior.

@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T16:24:03.260154Z","outcome":"success","status":"done","note":"Created NoDllImportRegressionTests.cs with 2 tests: SourceFiles_ContainNoLegacyDllImport scans all src/ .cs files (excluding obj/bin) for [DllImport] attribute patterns; SourceFiles_ScanFindsAtLeastOneFile validates the scan finds files. All 53 tests pass.","actor":"Ryan Tregea"}

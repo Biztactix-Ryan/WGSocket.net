@@ -11,13 +11,13 @@ epic_id: EPIC-WNE-8
 id: US-WNE-40
 points: 5
 priority: should
-status: backlog
+status: done
 tags:
 - testing
 - integration
 - multi-peer
 title: Multi-peer topology test
-updated: '2026-03-26'
+updated: '2026-04-03'
 ---
 
 As a developer, I want to verify that three or more WgDevice instances can communicate in mesh or star topologies so that I can confirm the library supports real-world multi-peer deployments.

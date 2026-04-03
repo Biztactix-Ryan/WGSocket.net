@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-29T05:57:58.462791Z","outcome":"success","status":"done","note":"Added PackageProjectUrl, PackageTags (wireguard;networking;vpn;native), PackageReadmeFile=README.md, GeneratePackageOnBuild=false, and README.md as a pack item to WgSocket.csproj. Version matches Cargo.toml (0.1.0). Build verified clean.","actor":"Ryan Tregea"}

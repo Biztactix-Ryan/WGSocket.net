@@ -12,13 +12,13 @@ epic_id: EPIC-WNE-9
 id: US-WNE-53
 points: 2
 priority: should
-status: backlog
+status: done
 tags:
 - ci
 - release
 - nuget
 title: Release & publish workflow
-updated: '2026-03-26'
+updated: '2026-04-03'
 ---
 
 As a maintainer, I want an automated release workflow that publishes the NuGet package and creates a GitHub release so that shipping a new version is a single-step process.

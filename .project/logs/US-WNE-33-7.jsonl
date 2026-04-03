@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T18:34:15.320315Z","outcome":"success","status":"done","note":"All 11 ToString redaction tests pass in WgConfigToStringRedactionTests.cs. Tests verify private key, public key, and PSK are all redacted (only first 4 Base64 chars shown). No code changes needed — tests already existed and pass.","actor":"Ryan Tregea"}

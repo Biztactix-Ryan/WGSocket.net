@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T18:30:31.653441Z","outcome":"success","status":"done","note":"Added AllowedIPs CIDR validation tests to WgPeerValidationTests.cs: 9 invalid CIDR cases (empty, non-CIDR, missing/empty/negative/too-large prefix, invalid IPv4/IPv6) and 6 valid CIDR cases (IPv4/IPv6 with various prefix lengths). All 15 tests pass.","actor":"Ryan Tregea"}

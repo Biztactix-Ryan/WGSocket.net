@@ -1,5 +1,5 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on:
 - US-WNE-20-7
@@ -7,7 +7,7 @@ depends_on:
 - US-WNE-20-9
 id: US-WNE-20-10
 points: 2
-status: todo
+status: done
 story_id: US-WNE-20
 tags: []
 title: Test WgDevice lifecycle, ref-counting, and stats

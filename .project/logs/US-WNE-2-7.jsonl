@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T11:16:45.616193Z","outcome":"success","status":"done","note":"Added ConfigError enum with 6 variants (InvalidKey, InvalidCidr, InvalidEndpoint, MissingField, ParseError, ValidationError), Display impl with descriptive messages, and std::error::Error impl. All 12 existing tests pass.","actor":"Ryan Tregea"}

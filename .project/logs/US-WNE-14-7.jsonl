@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T18:10:11.147199Z","outcome":"success","status":"done","note":"wg_device_new_from_struct implemented with WgConfigFfi repr(C) struct. 6 tests covering null pointer, null keys, minimal config, preshared key, and all optional fields.","actor":"Ryan Tregea"}

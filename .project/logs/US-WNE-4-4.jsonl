@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T12:27:47.098682Z","outcome":"success","status":"done","note":"Added 6 tests for required-field validation: rejects all-zero PrivateKey, rejects no peers, rejects all-zero peer PublicKey, collects multiple errors together, accepts valid config, identifies specific peer index with invalid key. All 157 tests pass.","actor":"Ryan Tregea"}

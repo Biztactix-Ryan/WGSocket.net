@@ -13,7 +13,7 @@ epic_id: EPIC-WNE-6
 id: US-WNE-25
 points: 5
 priority: must
-status: backlog
+status: done
 tags:
 - rust
 - testing
@@ -21,7 +21,7 @@ tags:
 - boringtun
 - unit-test
 title: Packet composition and crypto tests
-updated: '2026-03-26'
+updated: '2026-03-27'
 ---
 
 As a developer, I want tests for boringtun packet encryption/decryption and WireGuard message formats so that I can verify the cryptographic layer produces correct WireGuard protocol messages and handles replay protection.

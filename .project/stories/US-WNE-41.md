@@ -10,14 +10,14 @@ epic_id: EPIC-WNE-8
 id: US-WNE-41
 points: 3
 priority: must
-status: backlog
+status: done
 tags:
 - testing
 - integration
 - security
 - allowedips
 title: AllowedIPs enforcement test
-updated: '2026-03-26'
+updated: '2026-03-28'
 ---
 
 As a developer, I want to verify that the AllowedIPs configuration correctly controls which traffic is accepted and which is dropped so that I can confirm WireGuard's cryptokey routing works correctly through the FFI boundary.

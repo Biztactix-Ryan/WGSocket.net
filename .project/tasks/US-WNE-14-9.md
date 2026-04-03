@@ -7,7 +7,7 @@ depends_on:
 - US-WNE-14-8
 id: US-WNE-14-9
 points: 2
-status: todo
+status: done
 story_id: US-WNE-14
 tags: []
 title: 'Test device lifecycle: create, free, double-free, invalid config'

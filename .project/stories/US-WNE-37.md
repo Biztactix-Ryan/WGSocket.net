@@ -11,13 +11,13 @@ epic_id: EPIC-WNE-7
 id: US-WNE-37
 points: 3
 priority: must
-status: backlog
+status: done
 tags:
 - testing
 - mvp
 - ffi
 title: P/Invoke marshalling tests
-updated: '2026-03-26'
+updated: '2026-03-27'
 ---
 
 As a developer, I want unit tests covering the P/Invoke marshalling layer so that I can verify native interop declarations, string encoding, buffer management, and error code handling work correctly at the managed/unmanaged boundary.

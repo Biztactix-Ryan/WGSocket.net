@@ -1,12 +1,12 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on:
 - US-WNE-17-6
 - US-WNE-17-7
 id: US-WNE-17-8
 points: 1
-status: todo
+status: done
 story_id: US-WNE-17
 tags: []
 title: Test WgPeer and WgConfig models

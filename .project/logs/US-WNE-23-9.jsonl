@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T13:08:56.138223Z","outcome":"success","status":"done","note":"Added 5 new builder equivalence round-trip tests: IPv6, mixed optional peers, preshared key only, persistent keepalive only, and multiple DNS. All 8 round-trip tests pass.","actor":"Ryan Tregea"}

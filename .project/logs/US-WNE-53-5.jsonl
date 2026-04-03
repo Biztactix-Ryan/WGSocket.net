@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-03T19:33:35.105806Z","outcome":"success","status":"done","note":"Verified publish.yml lines 124-130: softprops/action-gh-release@v2 creates release automatically on tag push, uses tag name as title (github.ref_name), and generates changelog via generate_release_notes: true","actor":"Ryan Tregea"}

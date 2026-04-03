@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-03T07:37:16.327327Z","outcome":"success","status":"done","note":"Tests already exist and pass in log_output_never_includes_key_material.rs. Full lifecycle test with all log levels enabled (TRACE through ERROR) verifies no key material leaks in any encoding.","actor":"Ryan Tregea"}

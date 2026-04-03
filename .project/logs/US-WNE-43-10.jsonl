@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-28T06:43:04.947489Z","outcome":"success","status":"done","note":"Created handshake_psk.rs with 6 PSK-specific tests: matching PSK handshake, data flow, bidirectional data, multiple key seeds, mismatched PSK, and one-side-only PSK. Added create_tunnel_pair_with_psk helper to common/mod.rs. All 15 tests pass.","actor":"Ryan Tregea"}

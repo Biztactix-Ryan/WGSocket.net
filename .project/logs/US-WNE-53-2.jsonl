@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-03T19:03:37.438103Z","outcome":"success","status":"done","note":"Verified publish.yml builds fresh from source: no caching actions used, fresh checkout in both jobs, cargo build and dotnet build/pack run without cached artifacts. Reproducibility ensured.","actor":"Ryan Tregea"}

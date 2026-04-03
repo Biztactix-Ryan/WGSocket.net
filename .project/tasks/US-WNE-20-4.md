@@ -1,10 +1,10 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on: []
 id: US-WNE-20-4
-points: null
-status: todo
+points: 2
+status: done
 story_id: US-WNE-20
 tags: []
 title: 'Test: GetStats() returns tunnel health metrics (bytes tx/rx and handshake

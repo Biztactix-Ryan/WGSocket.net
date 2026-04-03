@@ -1,12 +1,12 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on:
 - US-WNE-7-11
 - US-WNE-7-12
 id: US-WNE-7-13
 points: 1
-status: todo
+status: done
 story_id: US-WNE-7
 tags: []
 title: Test error code values and wg_last_error thread safety

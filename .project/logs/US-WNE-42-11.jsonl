@@ -1,0 +1,2 @@
+{"timestamp":"2026-03-28T01:25:43.554164Z","outcome":"success","status":"done","note":"Created Directory.Build.props with WgSocketNativeDir property defaulting to src/wgsocket-native/target/release/. Updated WgSocket.csproj to include native library (linux/macOS/windows) with CopyToOutputDirectory and NuGet pack paths. Build verified successful.","actor":"Ryan Tregea"}
+{"timestamp":"2026-03-28T20:27:36.271188Z","outcome":"info","status":"done","note":"Correcting status — run log from 2026-03-28T01:25:43Z confirms task complete.","actor":"Ryan Tregea"}

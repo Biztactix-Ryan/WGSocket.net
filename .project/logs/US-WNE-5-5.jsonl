@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T13:45:33.785681Z","outcome":"success","status":"done","note":"Added 2 tests: timer_events_rekey_and_keepalive_are_handled (verifies update_timers returns Done after handshake and after data exchange) and timer_events_work_with_persistent_keepalive (verifies update_timers with persistent_keepalive configured). All 210 tests pass.","actor":"Ryan Tregea"}

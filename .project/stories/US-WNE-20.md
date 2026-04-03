@@ -12,13 +12,13 @@ epic_id: EPIC-WNE-5
 id: US-WNE-20
 points: 3
 priority: must
-status: backlog
+status: done
 tags:
 - api
 - lifecycle
 - mvp
 title: WgDevice tunnel lifecycle
-updated: '2026-03-26'
+updated: '2026-03-27'
 ---
 
 As a library consumer, I want a WgDevice class that manages the WireGuard tunnel lifecycle so that I can create, use, and cleanly dispose of tunnels with deterministic resource management.

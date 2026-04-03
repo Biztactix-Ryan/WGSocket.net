@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T13:40:04.736281Z","outcome":"success","status":"done","note":"Created anti_replay.rs with 7 tests: duplicate ciphertext rejected, replay after window advance, out-of-order accepted but replay rejected, per-direction counters, bit-flipped ciphertext rejected, rapid replays rejected, counter gap handling. All 7 tests pass.","actor":"Ryan Tregea"}

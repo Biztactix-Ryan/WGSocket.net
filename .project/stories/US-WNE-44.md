@@ -12,14 +12,14 @@ epic_id: EPIC-WNE-8
 id: US-WNE-44
 points: 3
 priority: must
-status: backlog
+status: done
 tags:
 - testing
 - integration
 - error-handling
 - lifecycle
 title: Connection lifecycle and error handling tests
-updated: '2026-03-26'
+updated: '2026-03-29'
 ---
 
 As a developer, I want to verify that connection lifecycle events and error conditions are handled correctly so that I can confirm the library is robust under adverse conditions and provides clear error behavior.

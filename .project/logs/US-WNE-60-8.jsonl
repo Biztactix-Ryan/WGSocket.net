@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-03T09:28:27.806014Z","outcome":"success","status":"done","note":"Verified existing SocketBlockingPropertyTests.cs - all 11 tests pass covering default value, toggle behavior, native calls, disposal, and error handling.","actor":"Ryan Tregea"}

@@ -12,14 +12,14 @@ epic_id: EPIC-WNE-8
 id: US-WNE-47
 points: 5
 priority: should
-status: backlog
+status: done
 tags:
 - testing
 - integration
 - performance
 - benchmarks
 title: Performance and throughput benchmarks
-updated: '2026-03-26'
+updated: '2026-04-03'
 ---
 
 As a developer, I want reproducible performance benchmarks measuring throughput and latency through the WireGuard tunnel so that I can quantify overhead, detect regressions, and establish performance baselines for CI tracking.

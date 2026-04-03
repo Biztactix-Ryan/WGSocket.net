@@ -1,10 +1,12 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
-depends_on: []
+depends_on:
+- US-WNE-2-5
+- US-WNE-2-6
 id: US-WNE-2-4
-points: null
-status: todo
+points: 1
+status: done
 story_id: US-WNE-2
 tags: []
 title: 'Test: Config structs derive Clone and Debug with key fields redacted in Debug

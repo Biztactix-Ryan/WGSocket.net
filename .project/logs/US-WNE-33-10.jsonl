@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T18:44:19.068918Z","outcome":"success","status":"done","note":"All happy-path construction tests already implemented in WgConfigTests.cs (9 tests) and WgPeerTests.cs (9 tests). All 18 tests pass. Covers constructor params, object-initializer patterns, defaults, and combined property assignment.","actor":"Ryan Tregea"}

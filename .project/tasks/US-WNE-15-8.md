@@ -1,10 +1,12 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
-depends_on: []
+depends_on:
+- US-WNE-15-6
+- US-WNE-15-7
 id: US-WNE-15-8
 points: 3
-status: todo
+status: done
 story_id: US-WNE-15
 tags: []
 title: Implement handshake packet routing and timer integration

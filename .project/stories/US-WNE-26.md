@@ -11,13 +11,13 @@ epic_id: EPIC-WNE-5
 id: US-WNE-26
 points: 3
 priority: must
-status: backlog
+status: done
 tags:
 - api
 - stream
 - mvp
 title: WgSocket.NetworkStream wrapper
-updated: '2026-03-26'
+updated: '2026-03-27'
 ---
 
 As a library consumer, I want a NetworkStream that wraps WgSocket.Socket so that I can use Stream-based APIs like ASP.NET Core Kestrel, HttpClient, StreamReader, and StreamWriter over WireGuard tunnels.

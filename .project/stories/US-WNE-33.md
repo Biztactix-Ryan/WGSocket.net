@@ -13,12 +13,12 @@ epic_id: EPIC-WNE-7
 id: US-WNE-33
 points: 2
 priority: must
-status: backlog
+status: done
 tags:
 - testing
 - mvp
 title: WgConfig & WgPeer model tests
-updated: '2026-03-26'
+updated: '2026-03-27'
 ---
 
 As a developer, I want comprehensive unit tests for the WgConfig and WgPeer model classes so that I can be confident that configuration construction, validation, and security-sensitive string formatting behave correctly.

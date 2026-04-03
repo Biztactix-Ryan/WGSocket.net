@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T18:12:18.864917Z","outcome":"success","status":"done","note":"Verified existing tests cover null/empty private key rejection: Constructor_NullPrivateKey_ThrowsArgumentNullException and Constructor_WrongLengthPrivateKey_ThrowsArgumentException with InlineData(0) in WgConfigValidationTests.cs. All 6 tests pass.","actor":"Ryan Tregea"}

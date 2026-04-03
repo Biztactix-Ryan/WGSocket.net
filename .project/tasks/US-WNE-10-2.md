@@ -1,11 +1,11 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on:
 - US-WNE-10-7
 id: US-WNE-10-2
 points: 1
-status: todo
+status: done
 story_id: US-WNE-10
 tags: []
 title: 'Test: WgSocketHandle lifecycle and platform-conditional IsInvalid'

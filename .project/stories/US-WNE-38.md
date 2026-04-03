@@ -12,14 +12,14 @@ epic_id: EPIC-WNE-8
 id: US-WNE-38
 points: 5
 priority: must
-status: backlog
+status: done
 tags:
 - testing
 - integration
 - tcp
 - mvp
 title: TCP echo roundtrip test
-updated: '2026-03-26'
+updated: '2026-03-28'
 ---
 
 As a developer, I want an end-to-end TCP echo test through a real WireGuard tunnel so that I can verify the full stack (C# API -> P/Invoke -> Rust FFI -> boringtun -> smoltcp -> UDP -> and back) works correctly with various payload sizes.

@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T22:47:02.818880Z","outcome":"success","status":"done","note":"Tests verifying: resolver returns IntPtr.Zero for non-wgsocket libraries (allowing default resolution), resolver falls back to DllNotFoundException when both custom and default probing fail, and single-segment RIDs return null fallback. All tests pass.","actor":"Ryan Tregea"}

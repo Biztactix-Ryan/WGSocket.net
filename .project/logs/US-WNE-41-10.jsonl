@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-28T19:49:19.283564Z","outcome":"success","status":"done","note":"AllowedIPsCidrRangeTests.cs already fully implements parameterized [Theory] tests for /32, /24, /16, /0 CIDR masks. Tests verify inside-range succeeds, outside-range drops, /0 wildcard allows all, plus IsAddressInRange utility validation. Build passes.","actor":"Ryan Tregea"}

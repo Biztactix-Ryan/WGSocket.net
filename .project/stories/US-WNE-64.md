@@ -13,13 +13,13 @@ epic_id: EPIC-WNE-7
 id: US-WNE-64
 points: 3
 priority: must
-status: backlog
+status: done
 tags:
 - testing
 - mvp
 - resource-management
 title: WgDevice lifecycle tests
-updated: '2026-03-26'
+updated: '2026-04-03'
 ---
 
 As a developer, I want unit tests for WgDevice creation, disposal, and socket management so that I can verify the device lifecycle works correctly including IDisposable/IAsyncDisposable patterns, socket creation, statistics retrieval, and safe coexistence of multiple devices.

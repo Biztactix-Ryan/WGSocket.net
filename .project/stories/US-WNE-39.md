@@ -10,13 +10,13 @@ epic_id: EPIC-WNE-8
 id: US-WNE-39
 points: 3
 priority: must
-status: backlog
+status: done
 tags:
 - testing
 - integration
 - concurrency
 title: Bidirectional concurrent data transfer
-updated: '2026-03-26'
+updated: '2026-03-28'
 ---
 
 As a developer, I want to verify that two peers can send and receive data simultaneously in both directions so that I can confirm the tunnel handles full-duplex communication without corruption or data mixing.

@@ -14,13 +14,13 @@ epic_id: EPIC-WNE-9
 id: US-WNE-48
 points: 5
 priority: must
-status: backlog
+status: done
 tags:
 - ci
 - github-actions
 - pipeline
 title: GitHub Actions CI pipeline
-updated: '2026-03-26'
+updated: '2026-03-29'
 ---
 
 As a maintainer, I want a GitHub Actions CI pipeline that builds all native targets and the .NET package on every push and PR so that regressions are caught automatically.

@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T15:02:21.486828Z","outcome":"success","status":"done","note":"Added validate_and_get/validate_and_get_mut helpers and 9 tests covering: bogus handles, zero handle, valid handles, removed handles, error message propagation, mutable access, and cross-map rejection.","actor":"Ryan Tregea"}

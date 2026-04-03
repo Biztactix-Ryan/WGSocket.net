@@ -13,14 +13,14 @@ epic_id: EPIC-WNE-5
 id: US-WNE-22
 points: 5
 priority: must
-status: backlog
+status: done
 tags:
 - api
 - socket
 - sync
 - mvp
 title: WgSocket.Socket synchronous API
-updated: '2026-03-26'
+updated: '2026-03-27'
 ---
 
 As a library consumer, I want a Socket class with synchronous methods that mirror System.Net.Sockets.Socket so that I can swap Socket types with a one-line change in existing synchronous code.

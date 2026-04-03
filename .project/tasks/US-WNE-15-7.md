@@ -1,10 +1,10 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on: []
 id: US-WNE-15-7
 points: 3
-status: todo
+status: done
 story_id: US-WNE-15
 tags: []
 title: Implement inbound packet path (UDP -> boringtun -> smoltcp)

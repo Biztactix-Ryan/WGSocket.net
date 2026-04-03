@@ -16,12 +16,12 @@ epic_id: EPIC-WNE-11
 id: US-WNE-57
 points: 2
 priority: must
-status: backlog
+status: done
 tags:
 - docs
 - mvp
 title: README and quick-start guide
-updated: '2026-03-26'
+updated: '2026-04-03'
 ---
 
 As a developer discovering WgSocket.net, I want a clear README with a quick-start guide so that I can understand the value proposition and get running in under 5 minutes.

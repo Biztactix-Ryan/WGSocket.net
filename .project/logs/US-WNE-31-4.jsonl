@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T04:01:28.342905Z","outcome":"success","status":"done","note":"Added XML doc comments to all 17 public exception constructors in WgException.cs. Enabled GenerateDocumentationFile in WgSocket.csproj. Build passes with 0 warnings/0 errors, confirming 100% XML doc coverage on public API. Fixed ambiguous cref in Socket.cs.","actor":"Ryan Tregea"}

@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T19:03:33.499907Z","outcome":"success","status":"done","note":"AC verified: ThrowIfErrorNativeMessageTests.cs has 6 passing tests covering native error detail in exception messages, null fallback, and context overloads.","actor":"Ryan Tregea"}

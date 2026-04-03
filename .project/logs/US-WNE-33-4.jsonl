@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T18:15:28.818347Z","outcome":"success","status":"done","note":"Invalid key length validation tests already exist and all 15 pass: WgConfig private key (5 lengths), WgPeer public key (5 lengths), WgPeer preshared key (5 lengths). Each verifies ArgumentException with \"32 bytes\" message.","actor":"Ryan Tregea"}

@@ -14,13 +14,13 @@ epic_id: EPIC-WNE-11
 id: US-WNE-55
 points: 3
 priority: should
-status: backlog
+status: done
 tags:
 - samples
 - docs
 - mvp
 title: EchoServer sample application
-updated: '2026-03-26'
+updated: '2026-04-03'
 ---
 
 As a developer evaluating WgSocket.net, I want a working EchoServer sample so that I can see the single-file import experience and understand how to set up a TCP listener over a WireGuard tunnel in minutes.

@@ -1,12 +1,12 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on:
 - US-WNE-35-6
 - US-WNE-35-7
 id: US-WNE-35-8
 points: 2
-status: todo
+status: done
 story_id: US-WNE-35
 tags: []
 title: Test handle map safety and secure memory cleanup

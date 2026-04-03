@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-29T05:55:10.331202Z","outcome":"success","status":"done","note":"Created ConsumerPInvokeResolutionTests.cs with 4 tests verifying consumer P/Invoke resolution: publish places native binary, build output contains native binary, consumer app with P/Invoke types builds, and NativeLibraryLoader probes correct paths. All 4 tests pass.","actor":"Ryan Tregea"}

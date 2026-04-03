@@ -1,11 +1,11 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on:
 - US-WNE-21-6
 id: US-WNE-21-7
 points: 1
-status: todo
+status: done
 story_id: US-WNE-21
 tags: []
 title: Commit generated header and add CI staleness check

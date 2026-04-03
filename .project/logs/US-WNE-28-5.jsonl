@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T11:10:34.618488Z","outcome":"success","status":"done","note":"Added tests/thread_safe_socket_access.rs with 8 tests: concurrent connect, concurrent send/recv, concurrent connect+listen, concurrent close race, stress test (8 threads), concurrent accept, separate devices, and send-races-with-device-free. All 472 tests pass.","actor":"Ryan Tregea"}

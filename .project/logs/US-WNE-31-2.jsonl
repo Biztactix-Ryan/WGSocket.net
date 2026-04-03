@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T03:51:15.245097Z","outcome":"success","status":"done","note":"Added parameterized test UsingWgSocket_GivesAccessTo_RequiredTypes verifying Socket, WgDevice, WgConfig, WgPeer, and NetworkStream are all public types in the WgSocket namespace. All 8 NamespaceTests pass.","actor":"Ryan Tregea"}

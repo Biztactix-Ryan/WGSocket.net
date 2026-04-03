@@ -4,7 +4,7 @@ created: '2026-03-26'
 depends_on: []
 id: US-WNE-19-4
 points: 2
-status: todo
+status: done
 story_id: US-WNE-19
 tags: []
 title: Define WgStats repr(C) struct and implement wg_get_stats

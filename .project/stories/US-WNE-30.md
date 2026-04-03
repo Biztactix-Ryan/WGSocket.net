@@ -12,14 +12,14 @@ epic_id: EPIC-WNE-6
 id: US-WNE-30
 points: 5
 priority: must
-status: backlog
+status: active
 tags:
 - rust
 - testing
 - integration
 - tunnel
 title: Tunnel composition integration tests
-updated: '2026-03-26'
+updated: '2026-03-28'
 ---
 
 As a developer, I want integration tests that exercise the full tunnel pipeline (smoltcp to boringtun and back) so that I can verify end-to-end encrypted data flow including handshake, fragmentation, and concurrent access.

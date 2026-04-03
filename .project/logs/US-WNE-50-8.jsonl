@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-29T06:00:27.211077Z","outcome":"success","status":"done","note":"All 4 native binary items already configured in WgSocket.csproj (lines 36-51) with None items, Pack=true, PackagePath=runtimes/{rid}/native/, CopyToOutputDirectory=PreserveNewest, and Condition=Exists() for graceful handling of missing files. Build verified clean.","actor":"Ryan Tregea"}

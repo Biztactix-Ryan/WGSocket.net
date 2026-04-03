@@ -12,7 +12,7 @@ epic_id: EPIC-WNE-6
 id: US-WNE-27
 points: 3
 priority: must
-status: backlog
+status: done
 tags:
 - rust
 - testing
@@ -20,7 +20,7 @@ tags:
 - networking
 - unit-test
 title: smoltcp interface tests
-updated: '2026-03-26'
+updated: '2026-03-27'
 ---
 
 As a developer, I want tests for the smoltcp virtual network interface so that I can verify TCP/UDP socket operations, buffer management, and concurrent socket handling work correctly on the userspace network stack.

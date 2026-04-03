@@ -1,12 +1,12 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on:
 - US-WNE-6-5
 - US-WNE-6-6
 id: US-WNE-6-7
 points: 2
-status: todo
+status: done
 story_id: US-WNE-6
 tags: []
 title: Tests for config builder

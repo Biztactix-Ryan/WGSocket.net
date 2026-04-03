@@ -12,13 +12,13 @@ epic_id: EPIC-WNE-7
 id: US-WNE-46
 points: 3
 priority: must
-status: backlog
+status: done
 tags:
 - testing
 - mvp
 - resource-management
 title: Safe handle lifecycle tests
-updated: '2026-03-26'
+updated: '2026-03-27'
 ---
 
 As a developer, I want unit tests for SafeHandle-derived types (WgDeviceHandle, WgSocketHandle) so that I can verify correct resource lifecycle management, safe disposal ordering, and resilience against misuse patterns like double-dispose and post-dispose access.

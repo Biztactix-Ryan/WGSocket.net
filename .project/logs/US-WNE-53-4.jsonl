@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-03T19:17:41.924387Z","outcome":"success","status":"done","note":"Verified version sync: Cargo.toml and WgSocket.csproj both have version 0.1.0. publish.yml lines 64-75 enforce sync by failing CI if versions diverge.","actor":"Ryan Tregea"}

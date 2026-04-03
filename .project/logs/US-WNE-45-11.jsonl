@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-29T02:59:11.341012Z","outcome":"success","status":"done","note":"Verified host platform build: ./build-native.sh host produces libwgsocket_native.so in runtimes/linux-x64/native/. cargo fmt --check and cargo clippy -- -D warnings both pass cleanly.","actor":"Ryan Tregea"}

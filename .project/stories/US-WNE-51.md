@@ -11,13 +11,13 @@ epic_id: EPIC-WNE-10
 id: US-WNE-51
 points: 3
 priority: must
-status: backlog
+status: done
 tags:
 - security
 - zeroization
 - mvp
 title: Key material zeroization
-updated: '2026-03-26'
+updated: '2026-04-03'
 ---
 
 As a security engineer, I want all key material (private keys, PSKs, session keys) to be securely zeroed from memory upon disposal so that sensitive cryptographic secrets cannot be recovered from process memory after use.

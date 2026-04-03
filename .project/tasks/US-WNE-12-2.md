@@ -1,11 +1,11 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on:
 - US-WNE-12-7
 id: US-WNE-12-2
 points: 1
-status: todo
+status: done
 story_id: US-WNE-12
 tags: []
 title: 'Test: Receive operations write to Span and report actual length'

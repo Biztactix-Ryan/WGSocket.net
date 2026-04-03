@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-03T10:20:22.098041Z","outcome":"success","status":"done","note":"Created tests/buffer_length_validation.rs with 11 tests verifying all FFI buffer operations validate length before access: wg_send, wg_recv, wg_get_stats, wg_device_new. All tests pass.","actor":"Ryan Tregea"}

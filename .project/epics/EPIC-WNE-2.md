@@ -3,7 +3,7 @@ created: '2026-03-26'
 id: EPIC-WNE-2
 points: null
 priority: must
-status: draft
+status: done
 tags:
 - rust
 - config

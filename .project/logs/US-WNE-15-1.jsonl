@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T18:40:40.873527Z","outcome":"success","status":"done","note":"Verified acceptance criterion. 4 existing tests cover the full outbound path (smoltcp IP packet -> boringtun encrypt -> UDP send): single packet roundtrip, empty queue, multiple packets, and session-not-established. All 4 tests pass.","actor":"Ryan Tregea"}

@@ -1,10 +1,11 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
-depends_on: []
+depends_on:
+- US-WNE-1-5
 id: US-WNE-1-6
 points: 1
-status: todo
+status: done
 story_id: US-WNE-1
 tags: []
 title: Add boringtun and smoltcp dependencies with feature flags

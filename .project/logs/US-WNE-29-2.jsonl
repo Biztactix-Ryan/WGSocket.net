@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T03:10:50.993216Z","outcome":"success","status":"done","note":"Added LocalEndPoint and RemoteEndPoint properties to Socket class. LocalEndPoint is set on Bind, RemoteEndPoint is set on Connect/ConnectAsync, both cleared on Dispose/Close. All 13 tests pass.","actor":"Ryan Tregea"}

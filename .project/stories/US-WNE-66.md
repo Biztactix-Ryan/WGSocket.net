@@ -11,13 +11,13 @@ epic_id: EPIC-WNE-10
 id: US-WNE-66
 points: 3
 priority: must
-status: backlog
+status: done
 tags:
 - security
 - ffi
 - memory-safety
 title: Safe memory handling at FFI boundary
-updated: '2026-03-26'
+updated: '2026-04-03'
 ---
 
 As a developer, I want all FFI boundary operations to be hardened against invalid inputs (null pointers, bad handles, buffer overflows) so that misuse from the C# side cannot cause crashes, memory corruption, or use-after-free in the native layer.

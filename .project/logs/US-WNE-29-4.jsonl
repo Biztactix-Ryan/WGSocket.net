@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T03:31:21.226275Z","outcome":"success","status":"done","note":"Added SocketType and ProtocolType properties to Socket.cs (returning Stream/Tcp). Created SocketTypePropertyTests.cs with 8 tests covering: basic values, consistency, post-connect, and post-dispose access. All tests pass.","actor":"Ryan Tregea"}

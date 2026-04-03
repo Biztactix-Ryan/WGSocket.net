@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-29T04:03:56.376753Z","outcome":"success","status":"done","note":"Added per-target binary matrix variable (wgsocket_native.dll, libwgsocket_native.so, libwgsocket_native.dylib) and updated upload-artifact path to use exact filename instead of broad glob, ensuring each artifact contains only the binary file.","actor":"Ryan Tregea"}

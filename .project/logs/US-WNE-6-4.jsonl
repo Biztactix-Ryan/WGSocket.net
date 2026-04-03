@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T12:55:41.299312Z","outcome":"success","status":"done","note":"Added 4 builder-equivalence tests proving ConfigBuilder can construct any valid wg.conf: full config with all fields, minimal config, multi-peer with IPv6, and no-optional-fields. All 192 tests pass.","actor":"Ryan Tregea"}

@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T12:39:49.493002Z","outcome":"success","status":"done","note":"Added 4 tests verifying ConfigBuilder accepts raw &[u8; 32] byte slices for keys: basic acceptance, not-base64 round-trip, all-zero edge case, and overwrite semantics. All pass.","actor":"Ryan Tregea"}

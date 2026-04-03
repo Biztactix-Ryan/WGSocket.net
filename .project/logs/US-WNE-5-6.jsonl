@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T13:51:05.293715Z","outcome":"success","status":"done","note":"Implemented WgTunnel wrapper struct in tunnel.rs with: base64 key parsing, peer metadata storage (endpoint, allowed_ips, preshared_key, persistent_keepalive), TunnelError enum, from_config constructor, Debug impl. Added 6 new tests. All 216 tests pass.","actor":"Ryan Tregea"}

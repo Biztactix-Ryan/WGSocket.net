@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T18:29:52.393834Z","outcome":"success","status":"done","note":"Added 3 tests verifying the inbound packet path (route_inbound): (1) full end-to-end decrypt+inject into smoltcp with UDP socket verification, (2) malformed packet graceful drop, (3) handshake packets returned to network without device injection. All 354 tests pass.","actor":"Ryan Tregea"}

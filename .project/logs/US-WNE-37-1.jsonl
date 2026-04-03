@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T20:21:26.421191Z","outcome":"success","status":"done","note":"All 7 NativeMethodsDeclarationTests + 2 NoDllImportRegressionTests pass. Tests verify: class structure, LibraryImport usage, library name, entry points, expected methods, no legacy DllImport. Stub native lib compiles/links via gcc during build.","actor":"Ryan Tregea"}

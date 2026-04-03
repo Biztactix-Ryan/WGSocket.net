@@ -1,10 +1,11 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
-depends_on: []
+depends_on:
+- US-WNE-3-6
 id: US-WNE-3-4
-points: null
-status: todo
+points: 1
+status: done
 story_id: US-WNE-3
 tags: []
 title: 'Test: Ignores comments (# lines) and blank lines'

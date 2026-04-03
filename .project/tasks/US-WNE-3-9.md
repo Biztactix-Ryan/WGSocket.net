@@ -1,10 +1,12 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
-depends_on: []
+depends_on:
+- US-WNE-3-7
+- US-WNE-3-8
 id: US-WNE-3-9
 points: 1
-status: todo
+status: done
 story_id: US-WNE-3
 tags: []
 title: Implement WgConfig::from_str and from_file

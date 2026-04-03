@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T10:37:01.969653Z","outcome":"success","status":"done","note":"Added 4 tests in device.rs verifying non-blocking UDP socket recv for poll loop: WouldBlock on empty, single packet recv, multi-packet drain, and recv on dedicated I/O thread.","actor":"Ryan Tregea"}

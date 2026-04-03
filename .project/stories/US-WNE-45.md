@@ -14,13 +14,13 @@ epic_id: EPIC-WNE-9
 id: US-WNE-45
 points: 3
 priority: must
-status: backlog
+status: ready
 tags:
 - ci
 - rust
 - cross-compile
 title: Rust cross-compilation setup
-updated: '2026-03-26'
+updated: '2026-03-29'
 ---
 
 As a CI pipeline, I want Rust cross-compilation configured for all 4 target platforms so that native binaries are produced for win-x64, linux-x64, osx-x64, and osx-arm64.

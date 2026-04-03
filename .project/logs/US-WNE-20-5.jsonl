@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T23:30:24.600173Z","outcome":"success","status":"done","note":"Implemented ref-counting in WgDevice and Socket. Added 8 tests in WgDeviceRefCountTests.cs verifying: disposal deferred while sockets live, freed after last socket disposed, multiple sockets tracked, DisposeAsync support, idempotent dispose. All 437 tests pass.","actor":"Ryan Tregea"}

@@ -1,5 +1,5 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on:
 - US-WNE-5-6
@@ -7,7 +7,7 @@ depends_on:
 - US-WNE-5-8
 id: US-WNE-5-9
 points: 2
-status: todo
+status: done
 story_id: US-WNE-5
 tags: []
 title: Test boringtun encrypt/decrypt roundtrip with two tunnel instances

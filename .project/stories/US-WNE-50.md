@@ -14,12 +14,12 @@ epic_id: EPIC-WNE-9
 id: US-WNE-50
 points: 3
 priority: must
-status: backlog
+status: done
 tags:
 - nuget
 - packaging
 title: NuGet package configuration
-updated: '2026-03-26'
+updated: '2026-03-29'
 ---
 
 As a package consumer, I want WgSocket published as a self-contained NuGet package with embedded native binaries so that dotnet add package WgSocket is the only step needed.

@@ -4,7 +4,7 @@ created: '2026-03-26'
 depends_on: []
 id: US-WNE-14-6
 points: 2
-status: todo
+status: done
 story_id: US-WNE-14
 tags: []
 title: Implement handle table and wg_device_new with string config

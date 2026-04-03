@@ -10,7 +10,7 @@ epic_id: EPIC-WNE-1
 id: US-WNE-35
 points: 3
 priority: must
-status: backlog
+status: done
 tags:
 - rust
 - ffi

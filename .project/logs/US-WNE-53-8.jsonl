@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-03T19:07:34.396581Z","outcome":"success","status":"done","note":"Added version sync check to both ci.yml and publish.yml workflows. Extracts version from Cargo.toml and .csproj, compares them, and fails with clear error message if they differ.","actor":"Ryan Tregea"}

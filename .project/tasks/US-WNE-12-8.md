@@ -1,10 +1,10 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on: []
 id: US-WNE-12-8
 points: 2
-status: todo
+status: done
 story_id: US-WNE-12
 tags: []
 title: Implement UTF-8 config string and key material marshalling

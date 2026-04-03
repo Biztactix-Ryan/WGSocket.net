@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T19:42:44.953123Z","outcome":"success","status":"done","note":"Created DisposeOrderTests.cs with 5 tests verifying socket-before-device dispose order: both handles cleaned up, SocketClose called before DeviceFree, correct args passed, no exceptions, and multiple sockets scenario.","actor":"Ryan Tregea"}

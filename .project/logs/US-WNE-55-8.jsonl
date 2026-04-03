@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-03T20:26:41.949130Z","outcome":"success","status":"done","note":"Verified: Program.cs uses only 'using WgSocket;' (line 1). README.md prominently highlights single-file import experience with dedicated section and code examples.","actor":"Ryan Tregea"}

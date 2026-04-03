@@ -11,14 +11,14 @@ epic_id: EPIC-WNE-8
 id: US-WNE-49
 points: 5
 priority: should
-status: backlog
+status: done
 tags:
 - testing
 - integration
 - interop
 - wireguard-go
 title: External WireGuard peer interop
-updated: '2026-03-26'
+updated: '2026-04-03'
 ---
 
 As a developer, I want to verify that WgSocket can interoperate with external WireGuard implementations (wireguard-go) so that I can confirm protocol compatibility and real-world usability beyond the library's own tunnel stack.

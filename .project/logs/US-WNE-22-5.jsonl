@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-27T00:24:51.049714Z","outcome":"success","status":"done","note":"Added Socket.Send(ReadOnlySpan<byte>) method and 13 tests covering: native call forwarding, return value, handle/fd/length passthrough, error handling (empty buffer, disposed socket, native error), various buffer sizes.","actor":"Ryan Tregea"}

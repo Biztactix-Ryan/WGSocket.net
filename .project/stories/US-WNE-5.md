@@ -10,7 +10,7 @@ epic_id: EPIC-WNE-1
 id: US-WNE-5
 points: 5
 priority: must
-status: backlog
+status: done
 tags:
 - rust
 - boringtun

@@ -1,10 +1,10 @@
 ---
-assignee: null
+assignee: claude
 created: '2026-03-26'
 depends_on: []
 id: US-WNE-5-8
 points: 2
-status: todo
+status: done
 story_id: US-WNE-5
 tags: []
 title: Implement handshake initiation and timer event handling

@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-03T19:43:27.865471Z","outcome":"success","status":"done","note":"Verified: samples/EchoServer/ exists with EchoServer.csproj (OutputType=Exe) containing ProjectReference to WgSocket.csproj. Build succeeds with 0 errors.","actor":"Ryan Tregea"}

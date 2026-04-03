@@ -1,0 +1,1 @@
+{"timestamp":"2026-03-26T16:57:23.209271Z","outcome":"success","status":"done","note":"Created UseAfterDisposeTests.cs with 9 tests covering: ObjectDisposedException thrown after explicit Dispose for both handle types, exception ObjectName/Message identifies handle type, invalid-handle paths (zero, -1), and double-dispose consistency. All tests pass.","actor":"Ryan Tregea"}
