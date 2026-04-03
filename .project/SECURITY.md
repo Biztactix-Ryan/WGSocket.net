@@ -90,6 +90,23 @@ var device = new WgDevice(new WgConfig
 
 Not applicable for a library. Consumers handle their own incident response. Security issues in the library itself should be reported via GitHub security advisories.
 
+## Code Review Checklist
+
+Security-critical items that must be verified during code review:
+
+### No-Log Enforcement for Secrets
+
+**Requirement:** Private keys, pre-shared keys (PSKs), and any derived key material must NEVER appear in log output at any level (Trace through Critical).
+
+**Checklist:**
+- [ ] New/modified log statements do not include `PrivateKey`, `Psk`, `PresharedKey`, or similar fields
+- [ ] Structured logging fields containing key material use `[Redacted]` or are excluded entirely
+- [ ] Debug/trace logs for crypto operations log only public identifiers (peer public key fingerprint, not the key itself)
+- [ ] Error messages involving keys show only the operation that failed, not the key value
+- [ ] Test coverage exists for log redaction (see `US-WNE-59` acceptance criteria)
+
+**Why:** Key material in logs can leak through log aggregators, error reporting services, diagnostics, or telemetry — compromising tunnel security.
+
 ## Security Tooling
 
 | Tool | Purpose | Integration |
