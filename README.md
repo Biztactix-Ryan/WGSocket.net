@@ -1,5 +1,9 @@
 # WgSocket.net
 
+[![CI](https://github.com/YOUR_ORG/wgsocket-net/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_ORG/wgsocket-net/actions/workflows/ci.yml)
+[![NuGet](https://img.shields.io/nuget/v/WgSocket.svg)](https://www.nuget.org/packages/WgSocket)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 A .NET library providing a `System.Net.Sockets.Socket`-compatible API for WireGuard overlay networking, running entirely in userspace with no daemon, no TUN adapter, and no elevated privileges.
 
 ## What is this?
@@ -59,6 +63,65 @@ Same API. No daemon. No TUN. No elevated privileges.
 - **Multi-threaded** — leverages WireGuard's concurrent design (unlike ZeroTier's single-threaded ZSSP)
 - **AOT-compatible** — uses `LibraryImport` source-generated P/Invoke
 
+## Code Examples
+
+### Echo Server
+
+```csharp
+using var device = new WgDevice(config);
+using var listener = device.CreateSocket();
+
+listener.Bind(new IPEndPoint(IPAddress.Parse("10.0.0.1"), 9000));
+listener.Listen(10);
+
+while (true)
+{
+    using var client = await listener.AcceptAsync();
+    var buffer = new byte[1024];
+    int received = await client.ReceiveAsync(buffer);
+    await client.SendAsync(buffer.AsMemory(0, received));
+}
+```
+
+### Client Connection
+
+```csharp
+using var device = new WgDevice(config);
+using var socket = device.CreateSocket();
+
+await socket.ConnectAsync(new IPEndPoint(IPAddress.Parse("10.0.0.2"), 9000));
+await socket.SendAsync("Hello"u8.ToArray());
+
+var response = new byte[1024];
+int bytes = await socket.ReceiveAsync(response);
+Console.WriteLine(Encoding.UTF8.GetString(response, 0, bytes));
+```
+
+### NetworkStream with Async I/O
+
+```csharp
+using var device = new WgDevice(config);
+using var socket = device.CreateSocket();
+await socket.ConnectAsync(new IPEndPoint(IPAddress.Parse("10.0.0.2"), 8080));
+
+await using var stream = new NetworkStream(socket, ownsSocket: true);
+using var reader = new StreamReader(stream);
+using var writer = new StreamWriter(stream) { AutoFlush = true };
+
+await writer.WriteLineAsync("GET / HTTP/1.0\r\n");
+string? line = await reader.ReadLineAsync();
+```
+
+## API Overview
+
+| Type | Description |
+|------|-------------|
+| `WgDevice` | Manages a WireGuard tunnel lifecycle; creates sockets via `CreateSocket()` |
+| `WgConfig` | Tunnel configuration: private key, listen port, address, and peers |
+| `WgPeer` | Peer configuration: public key, endpoint, allowed IPs, optional PSK |
+| `Socket` | Drop-in replacement for `System.Net.Sockets.Socket` over the tunnel |
+| `NetworkStream` | Stream adapter for use with `StreamReader`, `StreamWriter`, ASP.NET Core |
+
 ## Architecture
 
 ```
@@ -89,7 +152,7 @@ See [.project/ARCHITECTURE.md](.project/ARCHITECTURE.md) for the full component 
 
 ## Building from Source
 
-**Prerequisites:** .NET 8+ SDK, Rust toolchain (stable)
+**Prerequisites:** .NET 9+ SDK, Rust toolchain (stable)
 
 ```bash
 # Rust native library
@@ -99,6 +162,8 @@ cd src/wgsocket-native && cargo build --release
 dotnet build
 dotnet test
 ```
+
+For cross-compilation setup (all 4 target platforms), toolchain prerequisites, and output directory layout, see [docs/BUILDING.md](docs/BUILDING.md).
 
 ## Project Documentation
 
@@ -111,10 +176,16 @@ Detailed docs are in [.project/](.project/):
 - [INFRASTRUCTURE.md](.project/INFRASTRUCTURE.md) — CI/CD, cross-compilation, NuGet packaging
 - [VISION.md](.project/VISION.md) — problem statement, goals, differentiators
 
+## Links
+
+- [**Samples**](samples/) — Echo server, chat client, and more example applications
+- [**Architecture**](.project/ARCHITECTURE.md) — Component map, data flow, and design patterns
+- [**Contributing**](CONTRIBUTING.md) — How to contribute, code style, and PR guidelines
+
 ## Status
 
 **Greenfield — Design phase.** Architecture defined, project fully scoped (11 epics, 67 stories, 653 tasks). No code written yet.
 
 ## License
 
-TBD (MIT or Apache-2.0)
+MIT — see [LICENSE](LICENSE) for details.
